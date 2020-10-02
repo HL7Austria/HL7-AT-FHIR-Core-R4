@@ -1,0 +1,58 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭────────────────────────────ImplementationGuide-AustrianPatient.json────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: HL7ATBaseProfiles
+canonical: http://hl7.at/fhir/4.0/HL7ATBaseProfiles
+version: 0.1.0
+name: HL7AustriaImplementationGuide
+title: HL7 Austria FHIR Implementation Guide
+status: active
+publisher: Reinhard Egekraut
+contact:
+  - name: Reinhard Egelkraut
+    telecom:
+      - system: email
+        value: office@hl7.at
+description: An example of how FSH can be used to create an IG about the HL7 Austria FHIR Base Profiles.
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2019+
+releaseLabel: STU1
+
+# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
+# │  To control the ig.ini using this config, uncomment and set the "template" property.           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# template: fhir.base.template
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# menu:
+#   IG Home: index.html
+#   Table of Contents: toc.html
+#   Artifacts Summary: artifacts.html
+#   Other Resources:
+#     "FHIR Spec ": new-tab external {{site.data.fhir.path}}index.html
+
+# ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
+# │  To control the package-list.json using this config, uncomment and set the "history" property. │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# history:
+#   introduction: An example of how FSH can be used to create an IG about AustrianPatient
+#   current:
+#     version: current
+#     desc: Draft
+#     path: http://hl7.at/fhir/4.0/HL7ATBaseProfiles
+#     status: ci-build
+#     current: true

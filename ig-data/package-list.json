@@ -1,0 +1,15 @@
+{
+  "package-id": "HL7ATBaseProfiles",
+  "title": "HL7 Austria FHIR Implementation Guide",
+  "canonical": "http://hl7.at/fhir/4.0/HL7ATBaseProfiles",
+  "introduction": "An example of how FSH can be used to create an IG about the HL7 Austria FHIR Base Profiles.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Draft",
+      "path": "http://hl7.at/fhir/4.0/HL7ATBaseProfiles",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}
