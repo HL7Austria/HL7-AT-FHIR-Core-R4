@@ -3,11 +3,7 @@
 name: IGPublisher
 
 # Run on updates to the master
-on: 
-  workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Test workflow'  
+on: [workflow_dispatch]
 
 jobs:
   build:
