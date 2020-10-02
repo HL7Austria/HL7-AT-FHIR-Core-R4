@@ -1,0 +1,56 @@
+# Workflow to deploy with IG Publisher and Shorthand to the hl7austria.github.io repository
+
+name: PublishIG
+
+# Run on updates to the master
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Checkout the implementation guide
+      uses: actions/checkout@v2
+      with:
+        repository: oliver-krauss/HL7ShorthandTest
+        path: .
+
+    - name: Install NPM
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+        check-lastest: true
+        
+    - name: Install Sushi
+      run: npm install -g fsh-sushi
+
+    - name: Run Sushi
+      env: 
+        DISPLAY: :0.0
+      run: |
+        sushi 
+        
+    - name: Download IG Publisher
+      env: 
+        DISPLAY: :0.0
+      run: |
+        ./build/_updatePublisher.sh
+        
+    - name: Run IG Publisher
+      env: 
+        DISPLAY: :0.0
+      run: |
+        ./build/_genonce.sh   
+        
+    - name: Deploy Implementation Guide
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: master
+        publish_dir: ./public # TODO publish correct folder
