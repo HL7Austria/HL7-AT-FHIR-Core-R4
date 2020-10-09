@@ -21,7 +21,7 @@ contact:
   - name: Reinhard Egelkraut
     telecom:
       - system: email
-        value: office@hl7.at
+        value: mailto:office@hl7.at
 description: An example of how FSH can be used to create an IG about the HL7 Austria FHIR Base Profiles.
 license: CC0-1.0
 fhirVersion: 4.0.1
