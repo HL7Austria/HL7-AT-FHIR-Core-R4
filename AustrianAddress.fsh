@@ -1,8 +1,15 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR Profile
+# About:      HL7 Austria FHIR Core Profile on the FHIR datatype Address to 
+#             align with the special requirements for addresses in Austria.
+# Created by: HL7 Austria, TC FHIR 
+##############################################################################*/
+
 Profile:        AustrianAddress
 Parent:         Address
 Id:             AustrianRepresentationOfAddress
 Title:          "Austrian Representation of an Address"
-Description:    "FHIR Base Profile for Address Data in Austria."
+Description:    "HL7 Austria FHIR Core Profile for Address Data in Austria."
 * period 0..0
 * district 0..0
 

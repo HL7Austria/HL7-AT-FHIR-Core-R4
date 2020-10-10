@@ -1,3 +1,9 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR Example
+# About:      Full example for the HL7 Austria FHIR Core Profile for Patient.
+# Created by: HL7 Austria, TC FHIR 
+##############################################################################*/
+
 Instance:    AustrianPatientExample01
 InstanceOf:  AustrianPatient
 Description: "Example for the usage of the AustrianPatient Profile"
@@ -13,8 +19,13 @@ Usage:       #example
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS
 * identifier[socialSecurityNumber].type.coding.display = "Social Security Number"
-//* identifier[socialSecurityNumber].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.1.4.3.1"
 * identifier[socialSecurityNumber].assigner.display = "Hauptverband der österreichischen Sozialversicherungsträger"
+* identifier[bPK].value = "GH:oeLdSEb0l+8kSdJWjOYyYmnYki0="
+* identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149"
+* identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[bPK].type.coding.code = HL7V2#NI
+* identifier[bPK].type.coding.display = "National unique individual identifier"
+* identifier[bPK].assigner.display = "Bundesministerium für Inneres"
 
 * telecom[0].use = http://hl7.org/fhir/ValueSet/contact-point-use#work
 * telecom[0].system = http://hl7.org/fhir/ValueSet/contact-point-system#email
