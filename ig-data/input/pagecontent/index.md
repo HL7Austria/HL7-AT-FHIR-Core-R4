@@ -1,15 +1,14 @@
 ### Background
+This is a draft for an implementation guide for the HL7 Austria FHIR Core Profiles.
 
-This is the most awesome first try to create a profile of the AustrianPatient with Shorthand
 ### HL7 Austria
+![HL7 Austria Logo](./hl7at.site.logo.png)
 
-HL7 Austria is an official HL7 Affiliate.
-
-![Shorty the FSH](./Shorty.png)
+HL7 Austria is an official Affiliate of HL7 International.
 
 ### FHIR Shorthand Resources
 
-FHIR Shorthand calls currently are every other Thursday at 9 am Eastern US Time: https://meet.mitre.org/mkramer/K383VJGC
+For the creation of this implementation guide FHIR Shorthand was used.
 
 [HL7 Confluence site](https://confluence.hl7.org/display/FHIRI/FHIR+Shorthand)
 
@@ -21,3 +20,4 @@ FHIR Shorthand calls currently are every other Thursday at 9 am Eastern US Time:
 
 Zulip (chat.fhir.org) channel: #shorthand
 
+FHIR Shorthand calls currently are every other Thursday at 9 am Eastern US Time: https://meet.mitre.org/mkramer/K383VJG

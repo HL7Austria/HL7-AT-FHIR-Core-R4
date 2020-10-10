@@ -10,19 +10,19 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: HL7ATBaseProfiles
-canonical: http://hl7.at/fhir/4.0/HL7ATBaseProfiles
+id: HL7ATCoreProfiles
+canonical: http://hl7.at/fhir/4.0.1/HL7ATCoreProfiles
 version: 0.1.0
 name: HL7AustriaImplementationGuide
 title: HL7 Austria FHIR Implementation Guide
 status: active
-publisher: Reinhard Egekraut
+publisher: HL7 Austria, TC FHIR
 contact:
   - name: Reinhard Egelkraut
     telecom:
       - system: email
         value: mailto:office@hl7.at
-description: An example of how FSH can be used to create an IG about the HL7 Austria FHIR Base Profiles.
+description: An example of how FSH can be used to create an IG about the HL7 Austria FHIR Core Profiles.
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
@@ -53,6 +53,6 @@ releaseLabel: STU1
 #   current:
 #     version: current
 #     desc: Draft
-#     path: http://hl7.at/fhir/4.0/HL7ATBaseProfiles
+#     path: http://hl7.at/fhir/4.0.1/HL7ATCoreProfiles
 #     status: ci-build
 #     current: true
