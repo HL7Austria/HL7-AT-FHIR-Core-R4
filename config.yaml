@@ -11,18 +11,18 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: HL7ATCoreProfiles
-canonical: http://hl7.at/fhir/4.0.1/HL7ATCoreProfiles
+canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
 version: 0.1.0
 name: HL7AustriaImplementationGuide
-title: HL7 Austria FHIR Implementation Guide
+title: HL7 Austria FHIR Core Implementation Guide
 status: active
 publisher: HL7 Austria, TC FHIR
 contact:
-  - name: Reinhard Egelkraut
+  - name: Technical Committee for FHIR at HL7 Austria
     telecom:
       - system: email
-        value: mailto:office@hl7.at
-description: An example of how FSH can be used to create an IG about the HL7 Austria FHIR Core Profiles.
+        value: mailto:tc-fhir@hl7.at
+description: An Implementation Guide for the HL7 Austria FHIR Core Profiles.
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
@@ -49,10 +49,10 @@ releaseLabel: STU1
 # │  To control the package-list.json using this config, uncomment and set the "history" property. │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 # history:
-#   introduction: An example of how FSH can be used to create an IG about AustrianPatient
+#   introduction: An Implementation Guide for the HL7 Austria FHIR Core Profiles.
 #   current:
 #     version: current
 #     desc: Draft
-#     path: http://hl7.at/fhir/4.0.1/HL7ATCoreProfiles
+#     path: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
 #     status: ci-build
 #     current: true

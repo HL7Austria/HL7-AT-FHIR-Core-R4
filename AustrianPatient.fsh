@@ -27,7 +27,7 @@ Description:    "HL7 Austria FHIR Core Profile for Patient Data in Austria."
 * identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1" (exactly)
 * identifier[socialSecurityNumber].system ^short = "OID for the Social Security Number in Austria"
 //* identifier[socialSecurityNumber].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.1.4.3.1" (exactly)
-* identifier[socialSecurityNumber].assigner.display = "Hauptverband der österreichischen Sozialversicherungsträger" (exactly)
+* identifier[socialSecurityNumber].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
 * identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[bPK].type.coding.code = HL7V2#NI (exactly)
 * identifier[bPK].type.coding.display = "National unique individual identifier" (exactly)
