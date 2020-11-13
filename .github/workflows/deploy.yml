@@ -3,7 +3,7 @@
 name: PublishIG
 
 # Run on updates to the master
-on: 
+on:
   push:
     branches: [ master ]
   pull_request:
@@ -17,18 +17,20 @@ jobs:
     - name: Checkout the implementation guide
       uses: actions/checkout@v2
       with:
-        repository: oliver-krauss/HL7ShorthandTest
+        repository: HL7Austria/HL7-AT-FHIR-Core-R4
         path: .
 
     - name: Install NPM
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v2.1.2
       with:
-        node-version: '12'
         check-lastest: true
         
     - name: Install Sushi
-      run: npm install -g fsh-sushi
+      run: sudo npm install -g fsh-sushi
 
+    - name: Install Jekyll
+      run: |
+        sudo apt-get install jekyll
     - name: Run Sushi
       env: 
         DISPLAY: :0.0
@@ -39,18 +41,20 @@ jobs:
       env: 
         DISPLAY: :0.0
       run: |
-        ./build/_updatePublisher.sh
+        cd ./build
+        ./_updatePublisher.sh --force
         
     - name: Run IG Publisher
-      env: 
-        DISPLAY: :0.0
-      run: |
-        ./build/_genonce.sh   
+      run: | 
+        cd ./build
+        unset DISPLAY
+        java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
         
     - name: Deploy Implementation Guide
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: master
-        publish_dir: ./public # TODO publish correct folder
+        external_repository: HL7Austria/hl7austria.github.io
+        publish_branch: pages
+        publish_dir: ./build/output
