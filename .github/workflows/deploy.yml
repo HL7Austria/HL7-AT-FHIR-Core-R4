@@ -54,7 +54,7 @@ jobs:
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.DEPLOYMENT_SECRET }}
+        personal_token: ${{ secrets.ROBO_OLIVER }}
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./build/output
