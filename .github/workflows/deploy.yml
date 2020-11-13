@@ -24,3 +24,37 @@ jobs:
       uses: actions/setup-node@v2.1.2
       with:
         check-lastest: true
+        
+    - name: Install Sushi
+      run: sudo npm install -g fsh-sushi
+
+    - name: Install Jekyll
+      run: |
+        sudo apt-get install jekyll
+    - name: Run Sushi
+      env: 
+        DISPLAY: :0.0
+      run: |
+        sushi 
+        
+    - name: Download IG Publisher
+      env: 
+        DISPLAY: :0.0
+      run: |
+        cd ./build
+        ./_updatePublisher.sh --force
+        
+    - name: Run IG Publisher
+      run: | 
+        cd ./build
+        unset DISPLAY
+        java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
+        
+    - name: Deploy Implementation Guide
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        external_repository: HL7Austria/hl7austria.github.io
+        publish_branch: pages
+        publish_dir: ./build/output
