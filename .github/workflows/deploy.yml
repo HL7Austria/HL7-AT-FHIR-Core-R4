@@ -38,15 +38,15 @@ jobs:
         sushi 
         
     - name: Download IG Publisher
-      env: 
-        DISPLAY: :0.0
-      run: |
-        cd ./build
-        ./_updatePublisher.sh --force
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-ig-publisher
+        tag: '1.1.41'
+        path: ./input-cache
+        file: publisher.jar
         
     - name: Run IG Publisher
       run: | 
-        cd ./build
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
         
