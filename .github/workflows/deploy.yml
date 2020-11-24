@@ -37,20 +37,18 @@ jobs:
       run: |
         sushi 
         
-    - name: Create Correct Folder
-      run: | 
-        mkdir input-cache
-        
     - name: Download IG Publisher
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: HL7/fhir-ig-publisher
         tag: '1.1.41'
-        path: ./input-cache
+        path: .
         file: publisher.jar
         
     - name: Run IG Publisher
       run: | 
+        mkdir input-cache
+        mv publisher.jar ./input-cache/publisher.jar
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
         
@@ -61,4 +59,4 @@ jobs:
         personal_token: ${{ secrets.ROBO_OLIVER }}
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
-        publish_dir: ./build/output
+        publish_dir: ./output
