@@ -37,6 +37,10 @@ jobs:
       run: |
         sushi 
         
+    - name: Create Correct Folder
+      run: | 
+        mkdir input-cache
+        
     - name: Download IG Publisher
       uses: Legion2/download-release-action@v2.1.0
       with:
