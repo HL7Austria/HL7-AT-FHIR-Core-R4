@@ -31,11 +31,6 @@ jobs:
     - name: Install Jekyll
       run: |
         sudo apt-get install jekyll
-    - name: Run Sushi
-      env: 
-        DISPLAY: :0.0
-      run: |
-        sushi 
         
     - name: Download IG Publisher
       uses: Legion2/download-release-action@v2.1.0
