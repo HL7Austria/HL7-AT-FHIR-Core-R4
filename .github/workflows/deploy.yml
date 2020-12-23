@@ -55,15 +55,6 @@ jobs:
         publish_branch: pages
         publish_dir: ./output
         destination_dir: ./r4-core-master
-        
-    - name: Deploy Second Version Guide
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.ROBO_OLIVER }}
-        external_repository: HL7Austria/hl7austria.github.io
-        publish_branch: pages
-        publish_dir: ./output
-        destination_dir: ./r4-core-ballot
     
     - name: Get current date
       id: date
@@ -85,4 +76,4 @@ jobs:
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./input/landing_page
-        keep_files: true
+
