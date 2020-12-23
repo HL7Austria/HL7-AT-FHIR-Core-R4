@@ -46,12 +46,34 @@ jobs:
         mv publisher.jar ./input-cache/publisher.jar
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
-        
+    
     - name: Deploy Implementation Guide
-      if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.ROBO_OLIVER }}
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./output
+        destination_dir: ./r4-core-master
+    
+    - name: Get current date
+      id: date
+      run: echo "DATE=$(date +'%d.%m.%Y')" >> $GITHUB_ENV
+    
+    - name: Find and Replace
+      if: success()
+      uses: jacobtomlinson/gha-find-replace@master
+      with:
+          find: "@@publish_date@@"
+          replace: ${{env.DATE}}      
+          include: "input/landing_page/"  
+          
+    - name: Deploy Landing Page
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.ROBO_OLIVER }}
+        external_repository: HL7Austria/hl7austria.github.io
+        publish_branch: pages
+        publish_dir: ./input/landing_page
+        keep_files: true
