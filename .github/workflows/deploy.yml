@@ -76,4 +76,5 @@ jobs:
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./input/landing_page
+        keep_files: true
 
