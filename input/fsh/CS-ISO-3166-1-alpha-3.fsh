@@ -1,4 +1,4 @@
-Instance: CS-ISO-3166-1-alpha-3
+Instance: CS-HL7AT-ISO-3166-1-alpha-3
 InstanceOf: CodeSystem
 Usage: #definition
 * title = "ISO 3166-1 alpha 3"
