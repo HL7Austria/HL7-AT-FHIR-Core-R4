@@ -5,7 +5,7 @@ Usage: #definition
 * name = "ISO-3166-1-alpha-3"
 * description = "Country-codes with 3 letters"
 * version = "1.0.0+20160711"
-* url = "HL7.AT:ISO31661alpha3(1.0.3166.1.2.3)"
+* url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/CS-HL7AT-ISO-3166-1-alpha-3"
 * status = #active
 * content = #complete
   

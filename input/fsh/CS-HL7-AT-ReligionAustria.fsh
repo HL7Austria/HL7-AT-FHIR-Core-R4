@@ -1,11 +1,11 @@
-Instance: CS-HL7-AT-ReligionAustria
+Instance: CS-HL7AT-ReligionAustria
 InstanceOf: CodeSystem
 Usage: #definition
 * title = "HL7 AT ReligionAustria"
 * name = "HL7-AT-ReligionAustria"
 * description = "Religions and faith communities in Austria"
 * version = "1.0.0+20131001"
-* url = "HL7.AT:ReligionAustria(2.16.840.1.113883.2.16.1.4.1)"
+* url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/CS-HL7AT-ReligionAustria"
 * status = #active
 * content = #complete
  
