@@ -1,5 +1,5 @@
-- name: HL7-AT-FHIR-Core-R4
+- name: HL7-AT-FHIR-Core-R4 - Ballot 1 - 2021
 - version: 0.2.0-STU1
 - description: FHIR&reg; R4 Implementation Guide for the national FHIR&reg; core profiles provided by HL7 Austria.
 - last_published: 18.02.2021
-- branch: current
+- branch: ballot_2021_01
