@@ -5,9 +5,9 @@ name: PublishIG
 # Run on updates to the master
 on:
   push:
-    branches: [ main ]
+    branches: [ ballot_2021_01 ]
   pull_request:
-    branches: [ main ]
+    branches: [ ballot_2021_01 ]
 
 jobs:
   build:
@@ -60,5 +60,5 @@ jobs:
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./output
-        destination_dir: ./r4-core-master
+        destination_dir: ./r4-core-ballot_2021_01
 
