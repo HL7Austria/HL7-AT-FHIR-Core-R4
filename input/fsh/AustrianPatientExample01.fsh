@@ -12,7 +12,7 @@ Usage:       #example
 * name.given = "Max"
 * name.prefix = "DI"
 * birthDate = 1900-01-01
-* gender = http://hl7.org/fhir/ValueSet/administrative-gender#male 
+* gender = http://hl7.org/fhir/administrative-gender#male 
 
 * identifier[socialSecurityNumber].value = "1234010100"
 * identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1"
@@ -33,11 +33,11 @@ Usage:       #example
 * identifier[localPatientId].type.coding.display = "Patient internal identifier"
 * identifier[localPatientId].assigner.display = "Ein GDA in Österreich"
 
-* telecom[0].use = http://hl7.org/fhir/ValueSet/contact-point-use#work
-* telecom[0].system = http://hl7.org/fhir/ValueSet/contact-point-system#email
+* telecom[0].use = 	http://hl7.org/fhir/contact-point-use#work
+* telecom[0].system = http://hl7.org/fhir/contact-point-system#email
 * telecom[0].value = "office@hl7.at"
-* telecom[1].use = http://hl7.org/fhir/ValueSet/contact-point-use#home
-* telecom[1].system = http://hl7.org/fhir/ValueSet/contact-point-system#phone
+* telecom[1].use = 	http://hl7.org/fhir/contact-point-use#home
+* telecom[1].system = http://hl7.org/fhir/contact-point-system#phone
 * telecom[1].value = "+436501234567890"
  
 * extension[PatientReligion].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#162 "Pastafarianismus"
@@ -49,8 +49,8 @@ Instance:    AustrianAddressExample01
 InstanceOf:  AustrianAddress
 Description: "Example for the usage of the AustrianAddress Profile"
 Usage:       #inline
-* use = http://hl7.org/fhir/ValueSet/address-use#home
-* type = http://hl7.org/fhir/ValueSet/address-type#both
+* use = http://hl7.org/fhir/address-use#home
+* type = http://hl7.org/fhir/address-type#both
 * line = "Landstrasse 1 Stock 9 Tür 42" 
 * line.extension[street].valueString = "Landstrasse"
 * line.extension[streetNumber].valueString = "1"
