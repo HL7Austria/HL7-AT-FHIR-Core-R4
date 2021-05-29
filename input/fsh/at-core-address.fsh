@@ -5,11 +5,11 @@
 # Created by: HL7 Austria, TC FHIR 
 ##############################################################################*/
 
-Profile:        AustrianAddress
+Profile:        HL7ATCoreAddress
 Parent:         Address
-Id:             AustrianRepresentationOfAddress
-Title:          "Austrian Representation of an Address"
-Description:    "HL7 Austria FHIR Core Profile for Address Data in Austria."
+Id:             at-core-address
+Title:          "HL7 AT Core Address Profile"
+Description:    "HL7 Austria FHIR Core Profile for address data in Austria."
 * period 0..0
 * district 0..0
 
@@ -22,14 +22,14 @@ Description:    "HL7 Austria FHIR Core Profile for Address Data in Austria."
 * line ^definition = "This component contains the street name, street number, floor and/or door number or additonal information (e.g. street direction, P.O. Box number, delivery hints, and similar address information). This information can be split into structured values in the line-components each defined by international ISO extensions. If these extensions are used then the information they contain has to be written in a concatenated way in the line element itself as well. This makes the usage easier for systems which don't use address data in a structured way."
 
 //Slice for line extension, order matters, no further definition of the slice necessary since the default value are applied (discriminator=url, slice open, orderd=false)
-* line.extension contains ISOStreetName named street 0..1 and ISOStreetNumber named streetNumber 0..1 and ISOAdditionalLocator named floorDoorNumber 0..1 and AustrianAddressAdditionalInformation named additionalInformation 0..1
+* line.extension contains ISOStreetName named street 0..1 and ISOStreetNumber named streetNumber 0..1 and ISOAdditionalLocator named floorDoorNumber 0..1 and AddressAdditionalInformation named additionalInformation 0..1
 * line.extension[street] ^short = "Name of the street"
 * line.extension[street] ^definition = "Name of the street without the street number"
 * line.extension[streetNumber] ^short = "Number of the street"
 * line.extension[streetNumber] ^definition = "Number of the street without the street name"
 * line.extension[floorDoorNumber] ^short = "Floor and/or door number"
 * line.extension[floorDoorNumber] ^definition = "Floor and/or door number"
-* line.extension[additionalInformation] only AustrianAddressAdditionalInformation
+* line.extension[additionalInformation] only AddressAdditionalInformation
 * line.extension[additionalInformation] ^short = "Additional Information"
 * line.extension[additionalInformation] ^definition = "Additional information about the street address"
 

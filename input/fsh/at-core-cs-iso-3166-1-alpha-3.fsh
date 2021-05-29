@@ -1,11 +1,11 @@
-Instance: CS-HL7AT-ISO-3166-1-alpha-3
+Instance: at-core-cs-iso-3166-1-alpha-3
 InstanceOf: CodeSystem
 Usage: #definition
-* title = "ISO 3166-1 alpha 3"
-* name = "ISO-3166-1-alpha-3"
-* description = "Country-codes with 3 letters"
+* title = "HL7 AT Core ISO 3166-1 alpha 3 Code System"
+* name = "HL7ATCoreCSISO-3166-1-alpha-3"
+* description = "ISO code system for country codes with 3 letters"
 * version = "1.0.0+20160711"
-* url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/CS-HL7AT-ISO-3166-1-alpha-3"
+* url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3"
 * status = #active
 * content = #complete
   

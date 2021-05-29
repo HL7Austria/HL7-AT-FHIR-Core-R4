@@ -35,7 +35,7 @@ There are multiple ways of how one can contribute to the efforts of the TC FHIR 
 
 ### Reporting Bugs
 
-- For reporting bugs the TC FHIR created an issue template for github, it can be found [here] (https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/blob/main/.github/ISSUE_TEMPLATE/hl7-at--bug-report.md) and is available automatically if a new issue is created.
+- For reporting bugs the TC FHIR created an issue template for github, it can be found [here](https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/blob/main/.github/ISSUE_TEMPLATE/hl7-at--bug-report.md) and is available automatically if a new issue is created.
 
 #### Before Submitting A Bug Report
 
@@ -55,7 +55,7 @@ There are multiple ways of how one can contribute to the efforts of the TC FHIR 
 | Expected behavior | A clear and concise description of what you expected to happen. |
 
 ### Request New Profiles/Extensions
-- For requesting new Profiles or Extensions or features in general the TC FHIR created a feature request template for github, it can be found [here] (https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/blob/main/.github/ISSUE_TEMPLATE/hl7-at--feature-request.md) and is available automatically if a new issue is created.
+- For requesting new Profiles or Extensions or features in general the TC FHIR created a feature request template for github, it can be found [here](https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/blob/main/.github/ISSUE_TEMPLATE/hl7-at--feature-request.md) and is available automatically if a new issue is created.
 - Alternatively a new Profile or an Extension can be requested by sending an email to [tc-fhir](mailto:office@hl7.at)
 - Use the issue to describe the intended use case and if applicable state some examples.
 
@@ -94,75 +94,73 @@ A commit message must start with the corresponding ticket number in GitHub (#TIC
 In general the HL7 [FHIR naming conventions](http://wiki.hl7.org/index.php?title=FHIR_Guide_to_Designing_Resources#Naming_Rules_.26_Guidelines) apply. Essentially these conventions ask for **consistency** and **precision** (i.e. minimizing ambiguity, while ensuring the meaning is easily understood) when naming fields, resources or operations.
 
 Most of these guidelines are suggestions, except the following rules that *must* be followed:
--  be lowerCamelCase for elements, UpperCamelCase for resources, be lowercase for operations
+-  be lowerCamelCase for elements, lower case for resources and for operations
 -  be U.S. English (spelled correctly!)
 -  be expressed as a noun, with a preceding adjective where necessary to clarify the semantics and to make unique
 -  not make use of trade-marked terms
 
 #### Profile Naming conventions
 
-A profile follows a prefix pattern, meaning that a name from left to right goes from specific to generic. It uses UpperCamelCase.
+The **StructureDefintion Id** of a profile follows a prefix pattern, meaning that a name from left to right goes from specific to generic. It uses UpperCamelCase.
 
-**ProfileName** = [*Realm*-] *Use* , *ParentProfile*
+**ProfileName** = [*Realm*-], *Use-*, *ParentProfile*
 
 **Realm** = Is this profile supposed to be used in a realm? Then use the **countryCode**[^ISO3166-3]
 
-**Use** = What is this profile used for? **UpperCamelCase**
+**Use** = What is this profile used for? **lower case**
 
-**ParentProfile** =  Which profile does this profile extend from? **UpperCamelCase**
+**ParentProfile** =  Which profile does this profile extend from? **lower case**
 
 [^ISO3166-3]: country codes are [ISO 3166-3](https://www.iso.org/iso-3166-country-codes.html) in the Alpha-2 code format, all lowercase.
 
 Example: Patient used in Austria, for ELGA.
 ```
 Realm = Austria -> at- (country code)
-Use = ELGA -> Elga
-ParentProfile = Patient -> Patient
-at-ElgaPatient
+Use = HL7 Austria FHIR Core -> core-
+ParentProfile = Patient -> patient
+at-core-patient
 ```
 
-Example: Patient minimal information for Patient Summary in any Realm
+Example: Immunization information for ELGA
 ```
-Realm = any -> no prefix
-Use = Patient Summary -> PatientSummary
-ParentProfile = Patient -> Patient
-PatientSummaryPatient
+Realm = Austria -> at-
+Use = ELGA -> elga-
+ParentProfile = Immunization -> immunization
+at-elga-immunization
 ```
 
 #### Extension Naming conventions
 
-An extension follows a suffix pattern, meaning that a name from left to right goes from generic to specific. It uses lowerCamelCase.
+The **StructureDefintion Id** of an extension follows a suffix pattern, meaning that a name from left to right goes from generic to specific.
 
-**ExtensionName** = [*ProfileItIsFor*], {*FieldWithChildrenItIsIn*}, *FieldItAdds*
+**ExtensionName** = [*Realm*-], *Use-*, *ext-* *ProfileItIsFor-*, *FieldItAdds*
 
-**ProfileItIsFor** = Either Base Profile or **Profile** previously defined (optional if extension can occur anywhere -> Ex. NullFlavor), without the Realm.
+**Realm** = Is this profile supposed to be used in a realm? Then use the **countryCode**[^ISO3166-3]
 
-**FieldWithChildrenItIsIn** = Optional and Repeating, represents the **hierarchy** where the extension is to be used (optionally if it can occur anywhere).
+**Use** = What is this profile used for? **lower case**
 
-**FieldItAdds** = **unique naming** for field
+**ext-** = indication that this is an Extension **lower case**
 
-Example: Extra patient field for "Sozialversicherungsnummer"
+**ProfileItIsFor** = Either Base Profile or **Profile** previously defined (optional if extension can occur anywhere -> Ex. NullFlavor), without the Realm. **lower case**
+
+**FieldItAdds** = **unique naming** for field **lowerCamelCase**
+
+Example: Religions for a patient registered in Austria 
 ```
-Profile = at-Patient -> patient
-FieldWithChildrenitIsIn = identifier -> Identifier
-FieldItAdds = Sozialversicherungsnummer -> Ssnr (or SocialSecurityNumber)
-patientIdentifierSsnr
-```
-
-Example: Extra field strength in Composition, for Allergies of a PatientSummary
-```
-Profile = PatientSummaryComposition -> patientSummaryComposition
-FieldWithChildrenitIsIn = Section Patient - Section Allergies  -> SectionPatientSubsectionAllergies (here we clarify which section, instead of writing SectionSection)
-FieldItAdds = Strength -> Strength
-patientSummaryCompositionSectionPatientSectionAllergiesStrength
+Realm = Austria -> at-
+Use = HL7 Austria FHIR Core -> core-
+Profile = Patient -> patient-
+FieldItAdds = Religion -> religion
+at-core-ext-patient-religion
 ```
 
-Example: Field nullFlavor that can be added anywhere
+Example: Extra field in Address
 ```
-Profile = none -> ""
-FieldWithChildrenitIsIn = any -> ""
-FieldItAdds = nullFlavor -> nullFlavor
-nullFlavor
+Realm = Austria -> at-
+Use = HL7 Austria FHIR Core -> core-
+Profile = Address -> address
+FieldItAdds = Additional Information -> additionalInformation
+at-core-ext-address-additionalInformation
 ```
 
 ## Additional Information

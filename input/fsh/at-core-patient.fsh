@@ -4,16 +4,16 @@
 # Created by: HL7 Austria, TC FHIR 
 ##############################################################################*/
 
-Profile:        AustrianPatient
+Profile:        HL7ATCorePatient
 Parent:         Patient
-Id:             austrian-patient
-Title:          "Austrian Patient"
-Description:    "HL7 Austria FHIR Core Profile for Patient Data in Austria."
+Id:             at-core-patient
+Title:          "HL7 AT Core Patient Profile"
+Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 // Define Mandatory Fields
 * name 1..*
 * gender 1..1
 // Address is based on the profile for the Austrian Representation of an Address
-* address only AustrianRepresentationOfAddress
+* address only HL7ATCoreAddress
 
 //Slice for Identifier, order matters
 * identifier ^slicing.rules = #open
