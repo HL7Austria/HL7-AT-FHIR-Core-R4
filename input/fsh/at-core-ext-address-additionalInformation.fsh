@@ -4,10 +4,10 @@
 # Created by: HL7 Austria, TC FHIR 
 ##############################################################################*/
 
-Extension:    AustrianAddressAdditionalInformation
-Id:           AustrianAddressAdditionalInformation
-Title:        "Austrian Address Additional Information" 
-Description:  "Additional Information part of the Austrian Address"
+Extension:    AddressAdditionalInformation
+Id:           at-core-ext-address-additionalInformation
+Title:        "Address Additional Information" 
+Description:  "HL7 Austria FHIR Core Extension for the additional information part of the Austrian address."
 
 * value[x] only string
 * value[x] 1..1

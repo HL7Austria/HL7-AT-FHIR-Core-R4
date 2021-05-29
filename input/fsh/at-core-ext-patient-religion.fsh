@@ -7,9 +7,9 @@
 ##############################################################################*/
 
 Extension:    PatientReligion
-Id:           patientReligion
+Id:           at-core-ext-patient-religion
 Title:        "Patient Religion" 
-Description:  "The Religion (registered in Austria) of a Patient"
+Description:  "HL7 Austria FHIR Core Extension for the religion (registered in Austria) of a patient."
 * value[x] 0..0
 * extension contains 
     code 0..1 and

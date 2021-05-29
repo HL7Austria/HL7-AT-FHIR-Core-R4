@@ -1,12 +1,12 @@
 /*##############################################################################
 # Type:       FSH-File for an FHIR Example
-# About:      Full example for the HL7 Austria FHIR Core Profile for Patient.
+# About:      Example for the HL7 Austria FHIR Core Profile for Patient.
 # Created by: HL7 Austria, TC FHIR 
 ##############################################################################*/
 
-Instance:    AustrianPatientExample01
-InstanceOf:  AustrianPatient
-Description: "Example for the usage of the AustrianPatient Profile"
+Instance:    HL7ATCorePatientExample01
+InstanceOf:  HL7ATCorePatient
+Description: "Example for the usage of the HL7 AT Core Patient Profile"
 Usage:       #example
 * name.family = "Mustermann"
 * name.given = "Max"
@@ -43,11 +43,11 @@ Usage:       #example
 * extension[PatientReligion].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#162 "Pastafarianismus"
 * extension[CitizenshipExtension].extension[code].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"
 
-* address = AustrianAddressExample01
+* address = HL7ATCoreAddressExample01
 
-Instance:    AustrianAddressExample01
-InstanceOf:  AustrianAddress
-Description: "Example for the usage of the AustrianAddress Profile"
+Instance:    HL7ATCoreAddressExample01
+InstanceOf:  HL7ATCoreAddress
+Description: "Example for the usage of the HL7 AT Core Address Profile"
 Usage:       #inline
 * use = http://hl7.org/fhir/address-use#home
 * type = http://hl7.org/fhir/address-type#both
