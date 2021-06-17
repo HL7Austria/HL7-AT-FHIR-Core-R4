@@ -94,10 +94,13 @@ A commit message must start with the corresponding ticket number in GitHub (#TIC
 In general the HL7 [FHIR naming conventions](http://wiki.hl7.org/index.php?title=FHIR_Guide_to_Designing_Resources#Naming_Rules_.26_Guidelines) apply. Essentially these conventions ask for **consistency** and **precision** (i.e. minimizing ambiguity, while ensuring the meaning is easily understood) when naming fields, resources or operations.
 
 Most of these guidelines are suggestions, except the following rules that *must* be followed:
--  be lowerCamelCase for elements, lower case for resources and for operations
 -  be U.S. English (spelled correctly!)
 -  be expressed as a noun, with a preceding adjective where necessary to clarify the semantics and to make unique
 -  not make use of trade-marked terms
+-  case style must be followed:
+   - resources must be lower case - ex. `at-core-patient`, patient resource is all lower case
+   - elements must be lowerCamelCase - ex. `at-core-ext-address-additionalInformation`, the element address.additionalInformation is lowerCamelCase
+   - operations must be lower case - e. `at-core-exampleoperation` example operation is all lower case
 
 #### Profile Naming conventions
 
