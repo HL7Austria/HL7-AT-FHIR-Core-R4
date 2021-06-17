@@ -1,0 +1,61 @@
+# Workflow to deploy with IG Publisher and Shorthand to the hl7austria.github.io repository
+
+name: SecretPublish
+
+# Run on updates to the master
+on:
+  push:
+    branches: [ 10-naming-of-profiles-and-extensions- ]
+  pull_request:
+    branches: [ 10-naming-of-profiles-and-extensions- ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Checkout the implementation guide
+      uses: actions/checkout@v2
+      with:
+        repository: HL7Austria/HL7-AT-FHIR-Core-R4
+        path: .
+
+    - name: Install NPM
+      uses: actions/setup-node@v2.1.2
+      with:
+        check-lastest: true
+        
+    - name: Install Sushi
+      run: sudo npm install -g fsh-sushi
+
+    - name: Install Jekyll
+      run: |
+        sudo apt-get install jekyll
+        
+    - name: Download IG Publisher
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-ig-publisher
+        tag: 'latest'
+        path: .
+        file: publisher.jar
+        
+    - name: Run IG Publisher
+      run: | 
+        mkdir input-cache
+        mv publisher.jar ./input-cache/publisher.jar
+        unset DISPLAY
+        java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
+    - name: Move index file
+      run: |         
+        mv ./input/landing_page/_index.yml ./output/
+    
+    - name: Deploy Implementation Guide
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.ROBO_OLIVER }}
+        external_repository: HL7Austria/hl7austria.github.io
+        publish_branch: pages
+        publish_dir: ./output
+        destination_dir: ./r4-core-master-10
