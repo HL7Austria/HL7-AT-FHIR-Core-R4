@@ -26,6 +26,7 @@ Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS (exactly)
 * identifier[socialSecurityNumber].type.coding.display = "Social Security Number" (exactly)
+* identifier[socialSecurityNumber].system 1..1
 * identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1" (exactly)
 * identifier[socialSecurityNumber].system ^short = "OID for the Social Security Number in Austria"
 //* identifier[socialSecurityNumber].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.1.4.3.1" (exactly)
@@ -33,6 +34,7 @@ Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 * identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[bPK].type.coding.code = HL7V2#NI (exactly)
 * identifier[bPK].type.coding.display = "National unique individual identifier" (exactly)
+* identifier[bPK].system 1..1
 * identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149" (exactly)
 * identifier[bPK].system ^short = "OID for the bPK in Austria"
 //* identifier[bPK].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.2.1.1.149" (exactly)
@@ -40,6 +42,7 @@ Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 * identifier[localPatientId].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
 * identifier[localPatientId].type.coding.display = "Patient internal identifier" (exactly)
+* identifier[localPatientId].system 1..1
                                                 
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
