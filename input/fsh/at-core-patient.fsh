@@ -13,7 +13,9 @@ Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 * name 1..*
 * gender 1..1
 // Address is based on the profile for the Austrian Representation of an Address
+// this applies to the address of the patient as well as the address of contacts
 * address only HL7ATCoreAddress
+* contact.address only HL7ATCoreAddress
 
 //Slice for Identifier, order matters
 * identifier ^slicing.rules = #open
