@@ -1,5 +1,5 @@
 - name: HL7-AT-FHIR-Core-R4
 - version: 0.3.0-STU1
 - description: FHIR&reg; R4 Implementation Guide for the national FHIR&reg; core profiles provided by HL7 Austria.
-- last_published: 29.05.2021
+- last_published: 14.07.2021
 - branch: current
