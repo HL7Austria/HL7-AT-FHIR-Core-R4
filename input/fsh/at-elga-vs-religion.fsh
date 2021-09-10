@@ -3,7 +3,7 @@ InstanceOf: ValueSet
 Usage: #definition
 * title = "ELGA Religion Value Set"
 * name = "ELGAVSReligion"
-* description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L)"
+* description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L). Also accessible on https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=ValueSet&loadName=ELGA_ReligiousAffiliation."
 * version = "2.6.0+20131019"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-religion"
 * status = #active
