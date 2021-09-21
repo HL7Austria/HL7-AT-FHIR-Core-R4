@@ -3,7 +3,7 @@ InstanceOf: CodeSystem
 Usage: #definition
 * title = "HL7 AT Core ISO 3166-1 alpha 3 Code System"
 * name = "HL7ATCoreCSISO-3166-1-alpha-3"
-* description = "ISO code system for country codes with 3 letters. Also accessible on (https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=ISO 3166-1 alpha 3 2016)."
+* description = "ISO code system for country codes with 3 letters. Also accessible on [Termpub - ISO 3166-1 alpha 3](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=ISO 3166-1 alpha 3 2016)."
 * version = "1.0.0+20160711"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3"
 * status = #active
