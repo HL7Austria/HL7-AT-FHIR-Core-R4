@@ -4,6 +4,8 @@ Usage: #definition
 * title = "ELGA Religion Value Set"
 * name = "ELGAVSReligion"
 * description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L)"
+* identifier.use = #official
+* identifier.system = "urn:oid:1.2.40.0.34.10.172"
 * version = "2.6.0+20131019"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-religion"
 * status = #active
