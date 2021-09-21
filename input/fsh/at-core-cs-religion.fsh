@@ -3,7 +3,7 @@ InstanceOf: CodeSystem
 Usage: #definition
 * title = "HL7 AT Core Religion Code System"
 * name = "HL7ATCoreCSReligion"
-* description = "Code system for the religions and faith communities in Austria. Also accessible on https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=HL7.AT:ReligionAustria."
+* description = "Code system for the religions and faith communities in Austria. Also accessible on [Termpub - CodeSystem - HL7 AT ReligionAustria](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=HL7.AT:ReligionAustria)."
 * version = "1.0.0+20131001"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * status = #active
