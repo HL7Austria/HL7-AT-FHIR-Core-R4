@@ -4,6 +4,8 @@ Usage: #definition
 * title = "HL7 AT Core ISO 3166-1 alpha 3 Code System"
 * name = "HL7ATCoreCSISO-3166-1-alpha-3"
 * description = "ISO code system for country codes with 3 letters"
+* identifier.use = #official
+* identifier.system = "urn:oid:1.0.3166.1.2.3"
 * version = "1.0.0+20160711"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3"
 * status = #active

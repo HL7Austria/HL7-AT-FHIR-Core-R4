@@ -4,6 +4,8 @@ Usage: #definition
 * title = "HL7 AT Core Religion Code System"
 * name = "HL7ATCoreCSReligion"
 * description = "Code system for the religions and faith communities in Austria"
+* identifier.use = #official
+* identifier.system = "urn:oid:2.16.840.1.113883.2.16.1.4.1"
 * version = "1.0.0+20131001"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * status = #active
