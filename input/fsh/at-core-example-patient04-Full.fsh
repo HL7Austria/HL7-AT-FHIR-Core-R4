@@ -1,12 +1,13 @@
-Instance: HL7ATCorePatientExample03-FullFhir
+Instance: HL7ATCorePatientExample04-Full
 InstanceOf: HL7ATCorePatient
+Description: "A example with all elements for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * extension[0].extension[0].url = "code"
 * extension[=].extension[=].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"
 * extension[=].extension[+].url = "period"
 * extension[=].extension[=].valuePeriod.start = "2016-07-30T08:30:00+01:00"
 * extension[=].extension[=].valuePeriod.end = "2022-07-30T08:35:00+01:00"
-* extension[=].url = "http://hl7.org/fhir/R4/extension-patient-citizenship.html"
+* extension[=].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * extension[+].url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/patientReligion"
 * extension[=].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#101 "Römisch-Katholisch"
 * identifier[0].use = #official

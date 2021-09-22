@@ -1,5 +1,6 @@
 Instance: HL7ATCorePatientExample02-deceasedTime
 InstanceOf: HL7ATCorePatient
+Description: "Example with deceasedTime for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official
 * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
