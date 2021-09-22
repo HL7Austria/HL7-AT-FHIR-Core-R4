@@ -69,3 +69,4 @@ Usage: #example
 * generalPractitioner = Reference(Organization/POZ-10)
 * managingOrganization = Reference(Organization/POZ-10)
 * link.type = #seealso
+* link.other = Reference(Patient/1507303) 
