@@ -1,5 +1,5 @@
-Instance: GOFSH-GENERATED-ID-2
-InstanceOf: Patient
+Instance: HL7ATCorePatientExample03-FullFhir
+InstanceOf: HL7ATCorePatient
 Usage: #example
 * extension[0].extension[0].url = "code"
 * extension[=].extension[=].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"

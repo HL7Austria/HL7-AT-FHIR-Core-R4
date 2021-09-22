@@ -1,5 +1,5 @@
-Instance: GOFSH-GENERATED-ID-3
-InstanceOf: Patient
+Instance: HL7ATCorePatientExample05-FullElga
+InstanceOf: HL7ATCorePatient
 Usage: #example
 * extension.url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/patientReligion"
 * extension.valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#101 "Römisch-Katholisch"

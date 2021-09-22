@@ -1,5 +1,5 @@
-Instance: GOFSH-GENERATED-ID-1
-InstanceOf: Patient
+Instance: HL7ATCorePatientExample03-deceasedBoolean
+InstanceOf: HL7ATCorePatient
 Usage: #example
 * identifier.use = #usual
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
