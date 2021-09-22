@@ -4,7 +4,7 @@ Usage: #example
 * extension.url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/patientReligion"
 * extension.valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#101 "Römisch-Katholisch"
 * identifier.use = #official
-* identifier.type = $v2-0203#SS "Social Security number"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "1111241261"
 * identifier.assigner.display = "Dachverband der �sterreichischen Sozialversicherungstr�ger"
@@ -29,8 +29,8 @@ Usage: #example
 * address.state = "Burgenland"
 * address.postalCode = "7000"
 * address.country = "AUT"
-* maritalStatus = $v3-MaritalStatus#M "Married"
-* contact.relationship = $v3-RoleCode#DAU "natural daughter"
+* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#DAU "natural daughter"
 * contact.name.family = "Tochter"
 * contact.name.given = "Julia"
 * contact.telecom.system = #phone
