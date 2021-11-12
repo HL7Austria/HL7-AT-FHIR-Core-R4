@@ -3,11 +3,11 @@ InstanceOf: HL7ATCorePatient
 Description: "Example with deceasedBoolean for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier.use = #usual
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "1111241261"
-* identifier.assigner.display = "Dachverband der �sterreichischen Sozialversicherungstr�ger"
-* name.family = "Bauer"
+* identifier.assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
+* name.family = "Bucher"
 * name.given[0] = "Muster"
 * name.given[+] = "Andreas"
 * name.prefix[0] = "Dipl.Ing."

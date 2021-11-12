@@ -3,10 +3,10 @@ InstanceOf: HL7ATCorePatient
 Description: "Example with deceasedTime for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official
-* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
+* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
 * identifier[=].system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier[=].value = "1111241261"
-* identifier[=].assigner.display = "Dachverband der �sterreichischen Sozialversicherungstr�ger"
+* identifier[=].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[+].use = #official
 * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#NI "National unique individual identifier"
 * identifier[=].system = "urn:oid:1.2.40.0.10.2.1.1.149"
