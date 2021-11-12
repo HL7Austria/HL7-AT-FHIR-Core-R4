@@ -2,19 +2,11 @@ Instance: HL7ATCorePatientExample04-Full
 InstanceOf: HL7ATCorePatient
 Description: "A example with all elements for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
-* extension[0].extension[0].url = "code"
-* extension[=].extension[=].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"
-* extension[=].extension[+].url = "period"
-* extension[=].extension[=].valuePeriod.start = "2016-07-30T08:30:00+01:00"
-* extension[=].extension[=].valuePeriod.end = "2022-07-30T08:35:00+01:00"
-* extension[=].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* extension[+].url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/patientReligion"
-* extension[=].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#101 "Römisch-Katholisch"
 * identifier[0].use = #official
-* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
+* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
 * identifier[=].system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier[=].value = "1111241261"
-* identifier[=].assigner.display = "Dachverband der �sterreichischen Sozialversicherungstr�ger"
+* identifier[=].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[+].use = #official
 * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#NI "National unique individual identifier"
 * identifier[=].system = "urn:oid:1.2.40.0.10.2.1.1.149"
@@ -41,17 +33,10 @@ Usage: #example
 * gender = #male
 * birthDate = "1961-12-24"
 * deceasedBoolean = false
-* address.use = #home
-* address.type = #both
-* address.line = "Musterstraße 13a"
-* address.city = "Eisenstadt"
-* address.state = "Burgenland"
-* address.postalCode = "7000"
-* address.country = "AUT"
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * multipleBirthBoolean = false
 * photo.url = "https://image.k.at/images/facebook/3923126/78350011451694692_BLD_Online.jpg"
-* contact.relationship = http://hl7.org/fhir/R4/v2/0131#C "Emergency Contact"
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#C "Emergency Contact"
 * contact.name.family = "Tochter"
 * contact.name.given = "Julia"
 * contact.telecom.system = #phone
@@ -70,4 +55,28 @@ Usage: #example
 * generalPractitioner = Reference(Organization/POZ-10)
 * managingOrganization = Reference(Organization/POZ-10)
 * link.type = #seealso
-* link.other = Reference(Patient/1507303) 
+* link.other = Reference(Patient/HL7ATCorePatientExample03-deceasedBoolean) 
+
+* extension[PatientReligion].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#101 "Römisch-Katholisch"
+* extension[CitizenshipExtension].extension[code].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"
+* extension[CitizenshipExtension].extension[period].valuePeriod.start = "2016-07-30T08:30:00+01:00"
+* extension[CitizenshipExtension].extension[period].valuePeriod.end = "2022-07-30T08:35:00+01:00"
+
+* address = HL7ATCoreAddressExample02
+
+Instance:    HL7ATCoreAddressExample02
+InstanceOf:  HL7ATCoreAddress
+Description: "Example for the usage of the HL7 AT Core Address Profile"
+Usage:       #inline
+* use = http://hl7.org/fhir/address-use#home
+* type = http://hl7.org/fhir/address-type#both
+* line = "Landstrasse 5 Stock 3 Tür 5" 
+* line.extension[street].valueString = "Landstrasse"
+* line.extension[streetNumber].valueString = "5"
+* line.extension[floorDoorNumber].valueString = "Stock 3 Tür 5"
+* line.extension[additionalInformation].valueString = "Lift vorhanden"
+* city = "Wien"
+* state = "Wien"
+* postalCode = "1030"
+* country = "AUT"
+
