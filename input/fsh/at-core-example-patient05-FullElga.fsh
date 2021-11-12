@@ -6,7 +6,7 @@ Usage: #example
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "1111241261"
-* identifier.assigner.display = "Dachverband der Österreichischen Sozialversicherungsträger"
+* identifier.assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * name.family = "Wolfesberger"
 * name.given[0] = "Alexander"
 * name.given[+] = "Robert"
