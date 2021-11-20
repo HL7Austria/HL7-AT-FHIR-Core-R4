@@ -1,3 +1,10 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR® ValueSet
+# About:      ValueSet for the country code of a patient or person based on the 
+#             ValueSet from HL7® Austria for the ELGA country codes.
+# Created by: HL7® Austria, TC FHIR® 
+##############################################################################*/
+
 Instance: at-elga-vs-countryCodes
 InstanceOf: ValueSet
 Usage: #definition

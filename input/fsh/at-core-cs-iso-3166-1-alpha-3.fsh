@@ -1,7 +1,13 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR® CodeSystem
+# About:      CodeSystem for the ISO 3166 Code System the ELGA country codes use.
+# Created by: HL7® Austria, TC FHIR® 
+##############################################################################*/
+
 Instance: at-core-cs-iso-3166-1-alpha-3
 InstanceOf: CodeSystem
 Usage: #definition
-* title = "HL7 AT Core ISO 3166-1 alpha 3 Code System"
+* title = "HL7® AT® Core ISO 3166-1 alpha 3 Code System"
 * name = "HL7ATCoreCSISO-3166-1-alpha-3"
 * description = "ISO code system for country codes with 3 letters. Also accessible on [Termpub - CodeSystem - ISO 3166-1 alpha 3](https://termpub.gesundheit.gv.at/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=ISO%203166-1%20alpha%203%202016)."
 * version = "1.0.0+20160711"

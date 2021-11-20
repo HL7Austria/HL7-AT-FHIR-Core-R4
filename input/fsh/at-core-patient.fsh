@@ -1,14 +1,14 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Profile
-# About:      HL7 Austria FHIR Core Profile for Patient.
-# Created by: HL7 Austria, TC FHIR 
+# Type:       FSH-File for an FHIR® Profile
+# About:      HL7® Austria FHIR® Core Profile for Patient.
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Profile:        HL7ATCorePatient
 Parent:         Patient
 Id:             at-core-patient
-Title:          "HL7 AT Core Patient Profile"
-Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
+Title:          "HL7® AT Core Patient Profile"
+Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 // Define Mandatory Fields
 * name 1..*
 * gender 1..1

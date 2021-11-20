@@ -1,7 +1,7 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Example
-# About:      Example for the HL7 Austria FHIR Core Profile for Patient.
-# Created by: HL7 Austria, TC FHIR 
+# Type:       FSH-File for an FHIR® Example
+# About:      Example for the HL7 Austria FHIR® Core Profile for Patient.
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Instance:    HL7ATCorePatientExample01
