@@ -1,15 +1,15 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Extension
+# Type:       FSH-File for an FHIR® Extension
 # About:      Extension for the religion of a patient or person based on the 
-#             ValueSet from HL7 Austria for officially registered religions in 
+#             ValueSet from HL7® Austria for officially registered religions in 
 #             Austria.
-# Created by: HL7 Austria, TC FHIR 
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Extension:    PatientReligion
 Id:           at-core-ext-patient-religion
 Title:        "Patient Religion" 
-Description:  "HL7 Austria FHIR Core Extension for the religion (registered in Austria) of a patient."
+Description:  "HL7® Austria FHIR® Core Extension for the religion (registered in Austria) of a patient."
 * value[x] 0..0
 * extension contains 
     code 0..1 and

@@ -1,15 +1,15 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Profile
-# About:      HL7 Austria FHIR Core Profile on the FHIR datatype Address to 
+# Type:       FSH-File for an FHIR® Profile
+# About:      HL7® Austria FHIR® Core Profile on the FHIR® datatype Address to 
 #             align with the special requirements for addresses in Austria.
-# Created by: HL7 Austria, TC FHIR 
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Profile:        HL7ATCoreAddress
 Parent:         Address
 Id:             at-core-address
-Title:          "HL7 AT Core Address Profile"
-Description:    "HL7 Austria FHIR Core Profile for address data in Austria."
+Title:          "HL7® AT Core Address Profile"
+Description:    "HL7® Austria FHIR® Core Profile for address data in Austria."
 * period 0..0
 * district 0..0
 
