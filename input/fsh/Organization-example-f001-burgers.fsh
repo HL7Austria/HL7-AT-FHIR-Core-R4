@@ -8,12 +8,12 @@ Usage: #example
 * identifier[+].use = #usual
 * identifier[=].system = "urn:oid:2.16.840.1.113883.2.4.6.1"
 * identifier[=].value = "17-0112278"
-* type[0].system = "urn:oid:2.16.840.1.113883.2.4.15.1060"
-* type[=].code = "V6"
-* type[=].display = "University Medical Hospital"
-* type[+].system = "http://terminology.hl7.org/CodeSystem/organization-type"
-* type[=].code = "prov"
-* type[=].display = "Healthcare Provider"
+* type[0].coding.system = "urn:oid:2.16.840.1.113883.2.4.15.1060"
+* type[=].coding.code = "V6"
+* type[=].coding.display = "University Medical Hospital"
+* type[+].coding.system = "http://terminology.hl7.org/CodeSystem/organization-type"
+* type[=].coding.code = "prov"
+* type[=].coding.display = "Healthcare Provider"
 * name = "Burgers University Medical Center"
 * telecom[0].system = #phone
 * telecom[=].value = "022-655 2300"
