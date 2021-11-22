@@ -1,5 +1,5 @@
 Instance: Organization-example-f001-burgers
-InstanceOf: HL7ATCorePatient
+InstanceOf: HL7ATCoreOrganization
 Description: "Real-world organization example (Burgers MC)"
 Usage: #example
 * identifier[0].use = #official
