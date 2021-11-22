@@ -47,13 +47,13 @@ Usage: #example
 * contact.address.postalCode = "1220"
 * contact.address.country = "AUT"
 * contact.gender = #female
-* contact.organization = Reference(Organization/POZ-10)
+* contact.organization = Reference(Organization/Organization-example-f001-burgers)
 * contact.period.start = "2016-07-30T08:30:00+01:00"
 * contact.period.end = "2019-07-30T08:35:00+01:00"
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true
-* generalPractitioner = Reference(Organization/f001)
-* managingOrganization = Reference(Organization/f001)
+* generalPractitioner = Reference(Organization/Organization-example-f001-burgers)
+* managingOrganization = Reference(Organization/Organization-example-f001-burgers)
 * link.type = #seealso
 * link.other = Reference(Patient/HL7ATCorePatientExample03-deceasedBoolean) 
 

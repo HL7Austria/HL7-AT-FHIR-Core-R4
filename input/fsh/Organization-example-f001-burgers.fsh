@@ -1,6 +1,7 @@
 Instance: Organization-example-f001-burgers
+InstanceOf: HL7ATCorePatient
 Description: "Real-world organization example (Burgers MC)"
-Usage: #f001
+Usage: #example
 * identifier.use[0] = #official
 * identifier.system[=] = "urn:oid:2.16.528.1"
 * identifier.value[=] = "91654"
