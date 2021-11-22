@@ -1,5 +1,4 @@
 Instance: Organization-example-f001-burgers
-InstanceOf: HL7CoreOrganization
 Description: "Real-world organization example (Burgers MC)"
 Usage: #f001
 * identifier.use[0] = #official

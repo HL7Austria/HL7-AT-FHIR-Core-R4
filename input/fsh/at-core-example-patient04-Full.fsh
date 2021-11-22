@@ -52,8 +52,8 @@ Usage: #example
 * contact.period.end = "2019-07-30T08:35:00+01:00"
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true
-* generalPractitioner = Reference(Organization/POZ-10)
-* managingOrganization = Reference(Organization/POZ-10)
+* generalPractitioner = Reference(Organization/f001)
+* managingOrganization = Reference(Organization/f001)
 * link.type = #seealso
 * link.other = Reference(Patient/HL7ATCorePatientExample03-deceasedBoolean) 
 
