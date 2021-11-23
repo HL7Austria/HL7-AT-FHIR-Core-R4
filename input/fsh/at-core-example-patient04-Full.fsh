@@ -1,6 +1,6 @@
 Instance: HL7ATCorePatientExample04-Full
 InstanceOf: HL7ATCorePatient
-Description: "A example with all elements for the usage of the HL7 AT Core Patient Profile"
+Description: "Example with all elements for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official
 * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
