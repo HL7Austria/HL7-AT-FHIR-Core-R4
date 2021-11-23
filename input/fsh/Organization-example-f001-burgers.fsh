@@ -1,6 +1,6 @@
 Instance: Organization-example-f001-burgers
 InstanceOf: Organization
-Description: "Real-world organization example (Burgers MC)"
+Description: "Real-world organization example (Burgers MC) from the HL7 FHIR specification"
 Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "urn:oid:2.16.528.1"
