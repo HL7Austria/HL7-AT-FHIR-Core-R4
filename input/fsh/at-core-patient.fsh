@@ -43,6 +43,8 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
 * identifier[localPatientId].type.coding.display = "Patient internal identifier" (exactly)
 * identifier[localPatientId].system 1..1
+* identifier[localPatientId].system ^short = "Namespace that assigned the localPatientId."
+
                                                 
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
