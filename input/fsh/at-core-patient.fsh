@@ -50,8 +50,8 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 * extension contains CitizenshipExtension named citizenship 0..1
 * extension[citizenship].extension[code].valueCodeableConcept from ELGALaendercodesVS (extensible)
 * extension[citizenship].extension[code].valueCodeableConcept 1..1  //Workaround for sushi issue 596, can be removed when fixed
-* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^fixedUri = "urn:oid:1.0.3166.1.2.3"
-* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^short = "OID for ISO 3166-1 alpha 3 2016"
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^fixedUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^short = "URL for ISO 3166-1 alpha 3 2016"
 
 //Extension for Religion -> HL7 Austria's AustrianReligion Extension
 * extension contains PatientReligion named PatientReligion 0..1
