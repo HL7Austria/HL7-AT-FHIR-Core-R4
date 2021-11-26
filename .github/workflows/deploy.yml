@@ -20,6 +20,25 @@ jobs:
         repository: HL7Austria/HL7-AT-FHIR-Core-R4
         path: .
 
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+    
+    - name: Extract last commit date
+      shell: bash
+      run: echo "##[set-output name=date;]$(git log -1 --format="%at" | xargs -I{} date -d @{} +%d.%m.%Y)"   
+      id: extract_date
+      
+    - uses: bluwy/substitute-string-action@v1
+      id: substitute_index
+      with:
+        _input-file: input/landing_page/_index.yml
+        _format-key: '%%key%%'
+        branch: ${{ steps.extract_branch.outputs.branch }}
+        date: ${{ steps.extract_date.outputs.date }}
+        _output-file: input/landing_page/_index.yml
+
     - name: Install NPM
       uses: actions/setup-node@v2.1.2
       with:
@@ -60,5 +79,5 @@ jobs:
         external_repository: HL7Austria/hl7austria.github.io
         publish_branch: pages
         publish_dir: ./output
-        destination_dir: ./r4-core-master
+        destination_dir: ./r4-core-${{ steps.extract_branch.outputs.branch }}
 
