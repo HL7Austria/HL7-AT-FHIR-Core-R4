@@ -1,9 +1,17 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR® ValueSet
+# About:      ValueSet for the religion of a patient or person based on the 
+#             ValueSet from HL7® Austria for officially registered religions in 
+#             Austria.
+# Created by: HL7® Austria, TC FHIR® 
+##############################################################################*/
+
 Instance: at-elga-vs-religion
 InstanceOf: ValueSet
 Usage: #definition
 * title = "ELGA Religion Value Set"
 * name = "ELGAVSReligion"
-* description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L)"
+* description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L). Also accessible on [Termpub - ValueSet - ELGA ReligiousAffiliation](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=ValueSet&loadName=ELGA_ReligiousAffiliation)."
 * identifier.use = #official
 * identifier.system = "urn:oid:1.2.40.0.34.10.18"
 * version = "2.6.0+20131019"

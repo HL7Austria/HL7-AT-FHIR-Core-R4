@@ -1,7 +1,7 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Example
-# About:      Example for the HL7 Austria FHIR Core Profile for Patient.
-# Created by: HL7 Austria, TC FHIR 
+# Type:       FSH-File for an FHIR® Example
+# About:      Example for the HL7 Austria FHIR® Core Profile for Patient.
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Instance:    HL7ATCorePatientExample01
@@ -40,8 +40,8 @@ Usage:       #example
 * telecom[1].system = http://hl7.org/fhir/contact-point-system#phone
 * telecom[1].value = "+436501234567890"
  
-* extension[PatientReligion].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.16.1.4.1#162 "Pastafarianismus"
-* extension[CitizenshipExtension].extension[code].valueCodeableConcept = urn:oid:1.0.3166.1.2.3#AUT "Österreich"
+* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#162 "Pastafarianismus"
+* extension[CitizenshipExtension].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3#AUT "Österreich"
 
 * address = HL7ATCoreAddressExample01
 

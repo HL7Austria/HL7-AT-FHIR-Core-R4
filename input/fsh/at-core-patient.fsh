@@ -1,14 +1,14 @@
 /*##############################################################################
-# Type:       FSH-File for an FHIR Profile
-# About:      HL7 Austria FHIR Core Profile for Patient.
-# Created by: HL7 Austria, TC FHIR 
+# Type:       FSH-File for an FHIR® Profile
+# About:      HL7® Austria FHIR® Core Profile for Patient.
+# Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
 Profile:        HL7ATCorePatient
 Parent:         Patient
 Id:             at-core-patient
-Title:          "HL7 AT Core Patient Profile"
-Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
+Title:          "HL7® AT Core Patient Profile"
+Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 // Define Mandatory Fields
 * name 1..*
 * gender 1..1
@@ -43,13 +43,15 @@ Description:    "HL7 Austria FHIR Core Profile for patient pata in Austria."
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
 * identifier[localPatientId].type.coding.display = "Patient internal identifier" (exactly)
 * identifier[localPatientId].system 1..1
+* identifier[localPatientId].system ^short = "Namespace that assigned the localPatientId."
+
                                                 
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
 * extension[citizenship].extension[code].valueCodeableConcept from ELGALaendercodesVS (extensible)
 * extension[citizenship].extension[code].valueCodeableConcept 1..1  //Workaround for sushi issue 596, can be removed when fixed
-* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^fixedUri = "urn:oid:1.0.3166.1.2.3"
-* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^short = "OID for ISO 3166-1 alpha 3 2016"
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^fixedUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3"
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system ^short = "URL for ISO 3166-1 alpha 3 2016"
 
 //Extension for Religion -> HL7 Austria's AustrianReligion Extension
 * extension contains PatientReligion named PatientReligion 0..1

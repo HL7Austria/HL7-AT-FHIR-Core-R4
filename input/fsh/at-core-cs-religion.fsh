@@ -1,9 +1,17 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR® CodeSystem
+# About:      CodeSystem for the religion of a patient or person based on the 
+#             ValueSet from HL7® Austria for officially registered religions in 
+#             Austria.
+# Created by: HL7® Austria, TC FHIR® 
+##############################################################################*/
+
 Instance: at-core-cs-religion
 InstanceOf: CodeSystem
 Usage: #definition
 * title = "HL7 AT Core Religion Code System"
 * name = "HL7ATCoreCSReligion"
-* description = "Code system for the religions and faith communities in Austria"
+* description = "Code system for the religions and faith communities in Austria. Also accessible on [Termpub - CodeSystem - HL7 AT ReligionAustria](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=HL7.AT:ReligionAustria)."
 * identifier.use = #official
 * identifier.system = "urn:oid:2.16.840.1.113883.2.16.1.4.1"
 * version = "1.0.0+20131001"

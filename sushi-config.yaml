@@ -14,15 +14,15 @@ id: HL7ATCoreProfiles
 canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
 version: 0.3.0
 name: HL7AustriaImplementationGuide
-title: HL7 Austria FHIR Core Implementation Guide
+title: HL7® Austria FHIR® Core Implementation Guide
 status: active
-publisher: HL7 Austria, TC FHIR
+publisher: HL7® Austria, TC FHIR®
 contact:
-  - name: Technical Committee for FHIR at HL7 Austria
+  - name: Technical Committee for FHIR® at HL7® Austria
     telecom:
       - system: email
         value: mailto:tc-fhir@hl7.at
-description: An Implementation Guide for the HL7 Austria FHIR Core Profiles.
+description: An Implementation Guide for the HL7® Austria FHIR® Core Profiles.
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
