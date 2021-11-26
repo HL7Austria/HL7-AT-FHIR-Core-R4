@@ -21,8 +21,12 @@ jobs:
         path: .
 
     - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      run: |
+        if ["${{ github.event.pull_request.head.ref }}" == ""]; then
+          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        else
+          echo "##[set-output name=branch;]$(echo ${{ github.event.pull_request.head.ref }})"
+        fi
       id: extract_branch
     
     - name: Extract last commit date
