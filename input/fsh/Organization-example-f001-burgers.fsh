@@ -1,6 +1,12 @@
+/*##############################################################################
+# Type:       FSH-File for an FHIR® Example
+# About:      Example for the HL7 Austria FHIR® Core Profiles. No Profile used.
+# Created by: HL7® Austria, TC FHIR® 
+##############################################################################*/
+
 Instance: Organization-example-f001-burgers
 InstanceOf: Organization
-Description: "Real-world organization example (Burgers MC) from the HL7 FHIR specification"
+Description: "Real-world organization example (Burgers MC) from the HL7® FHIR® specification. Note that this resource uses **nothing** from this implementation guide. It just exists to be referenced in the patient example resources."
 Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "urn:oid:2.16.528.1"
