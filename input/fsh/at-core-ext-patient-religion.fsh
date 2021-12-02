@@ -9,7 +9,8 @@
 Extension:    PatientReligion
 Id:           at-core-ext-patient-religion
 Title:        "Patient Religion" 
-Description:  "HL7® Austria FHIR® Core Extension for the religion (registered in Austria) of a patient. The extension is used to encode the religious confession of a patient (only confessions registered in Austria). Furthermore, it uses the official [http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion](HL7 AT CodeSystem) for religion and is therefore aligned with the ELGA ValueSet, respectively."
+Description:  "HL7® Austria FHIR® Core Extension for the religion (registered in Austria) of a patient.
+The extension is used to encode the religious confession of a patient (only confessions registered in Austria). Furthermore, it uses the official [http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion](HL7 AT CodeSystem) for religion and is therefore aligned with the ELGA ValueSet, respectively."
 * value[x] 0..0
 * extension contains 
     code 0..1 and
@@ -25,13 +26,3 @@ Description:  "HL7® Austria FHIR® Core Extension for the religion (registered 
 * extension[period].value[x] only Period
 * extension[period].value[x] 1..1
 * extension[period].extension 0..0
-
-
-
-
-
-
-Codierung des Religionsbekenntnisses des Patienten.
-Zulässige Werte gemäß Value-Set „ELGA_ReligiousAffiliation“
-
-URL for the HL7 AT CodeSystem used by the ELGA ValueSet for religion
