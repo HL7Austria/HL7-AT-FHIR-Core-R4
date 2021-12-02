@@ -9,7 +9,7 @@ Profile:        HL7ATCoreAddress
 Parent:         Address
 Id:             at-core-address
 Title:          "HL7® AT Core Address Profile"
-Description:    "HL7® Austria FHIR® Core Profile for address data in Austria."
+Description:    "HL7® Austria FHIR® Core Profile for address data in Austria. Note, this extension represents the common structure of address information within Austrian information systems. This extension does not restrict the documented information to Austrian adresses. Address information that does not fit into the given structure may be captured by [Address Additional Information](at-core-ext-address-additionalInformation)."
 * period 0..0
 * district 0..0
 
