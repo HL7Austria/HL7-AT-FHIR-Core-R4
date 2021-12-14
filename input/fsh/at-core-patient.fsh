@@ -62,6 +62,6 @@ Mapping:  HL7ATCorePatient2CDA
 Source:   at-core-patient
 Target:   "http://hl7.org/v3/cda"
 Id:       at-core-mapping-patient2cda
-Title:    "Mappings for CDA (R2)"
+Title:    "CDA (R2)"
 * -> "Patient"
 * identifier[socialSecurityNumber] -> ".id[1]"
