@@ -57,10 +57,11 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 * extension contains PatientReligion named PatientReligion 0..1
 
 
-Mapping:  HL7ATCorePatient2CDA
+Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
-Target:   "http://hl7.org/v3/cda"
-Id:       at-core-mapping-patient2cda
-Title:    "CDA (R2)"
-* -> "Patient"
-* identifier[socialSecurityNumber] -> ".id[1]"
+Target:   "https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
+Id:       at-core-mapping-patient2cdaatv3
+Title:    "Allgemeiner Implementierungsleitfaden v3"
+* -> "ClinicalDocument.recordTarget.patientRole"
+* identifier[localPatientId] -> ".id[1]" "Identifikation des Patienten im lokalen System (1..1 M)"
+* identifier[socialSecurityNumber] -> ".id[2]" "Sozialversicherungsnummer des Patienten (1..1 R)"
