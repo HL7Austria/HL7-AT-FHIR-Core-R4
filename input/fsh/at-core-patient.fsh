@@ -55,3 +55,12 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 
 //Extension for Religion -> HL7 Austria's AustrianReligion Extension
 * extension contains PatientReligion named PatientReligion 0..1
+
+
+Mapping:  HL7ATCorePatient2CDA
+Source:   at-core-patient
+Target:   "http://hl7.org/v3/cda"
+Id:       at-core-mapping-patient2cda
+Title:    "Mappings for CDA (R2)"
+* -> "Patient"
+* identifier[socialSecurityNumber] -> ".id[1]"
