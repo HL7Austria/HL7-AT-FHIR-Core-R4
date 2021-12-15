@@ -1,7 +1,7 @@
 /*##############################################################################
 # Type:       FSH-File for an FHIR® Profile
 # About:      HL7® Austria FHIR® Core Profile for Patient.
-# Created by: HL7® Austria, TC FHIR® 
+# Created by: HL7® Austria, TC FHIR®
 ##############################################################################*/
 
 Profile:        HL7ATCorePatient
@@ -45,7 +45,7 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 * identifier[localPatientId].system 1..1
 * identifier[localPatientId].system ^short = "Namespace that assigned the localPatientId."
 
-                                                
+
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
 * extension[citizenship].extension[code].valueCodeableConcept from ELGALaendercodesVS (extensible)
@@ -65,3 +65,6 @@ Title:    "Allgemeiner Implementierungsleitfaden v3"
 * -> "ClinicalDocument.recordTarget.patientRole"
 * identifier[localPatientId] -> ".id[1]" "Identifikation des Patienten im lokalen System (1..1 M)"
 * identifier[socialSecurityNumber] -> ".id[2]" "Sozialversicherungsnummer des Patienten (1..1 R)"
+* identifier[bPK] -> '.id[@root="1.2.40.0.10.2.1.1.149"]' "Bereichsspezifisches Personenkennzeichen"
+* deceasedBoolean -> ".patient.sdtc:deceasedInd"
+* deceasedDateTime -> ".patient.sdtc:deceasedTime"
