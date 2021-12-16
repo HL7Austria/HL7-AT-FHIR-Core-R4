@@ -14,5 +14,5 @@ jobs:
         path: .
     - name: Verify repository
       run: |
-        git status
+        git checkout pages
         
