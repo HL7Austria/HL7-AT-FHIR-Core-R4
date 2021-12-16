@@ -12,6 +12,6 @@ jobs:
         key: ${{ secrets.ROBO_OLIVER }}
         known_hosts: 'empty' #not needed
     - run: |
-        git remote set-url origin https://x-access-token:${{ secrets.ROBO_OLIVER }}@github.com/HL7Austria/hl7austria.github.io.git
+        git clone git@github.com:HL7Austria/hl7austria.github.io.git
         git checkout pages
         git status
