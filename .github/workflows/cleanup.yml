@@ -9,10 +9,10 @@ jobs:
     - name: Checkout the hl7austria.github.io
       uses: actions/checkout@v2
       with:
-        ptoken: ${{ secrets.ROBO_OLIVER }}
+        token: ${{ secrets.ROBO_OLIVER }}
         repository: HL7Austria/hl7austria.github.io
         path: .
     - name: Verify repository
       run: |
-        ls
+        git status
         
