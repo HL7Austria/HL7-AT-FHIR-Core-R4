@@ -13,6 +13,6 @@ jobs:
         repository: HL7Austria/hl7austria.github.io
         path: .
     - name: Verify repository
-    - run: |
+      run: |
         git checkout pages
         git status
