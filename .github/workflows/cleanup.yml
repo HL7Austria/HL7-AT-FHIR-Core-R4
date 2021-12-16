@@ -10,6 +10,5 @@ jobs:
       uses: shimataro/ssh-key-action@v2
       with:
          key: ${{ secrets.ROBO_OLIVER }}
-         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - run: |
         echo "./r4-core-${{ github.event.ref }}"
