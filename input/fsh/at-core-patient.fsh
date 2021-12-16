@@ -1,14 +1,15 @@
 /*##############################################################################
 # Type:       FSH-File for an FHIR® Profile
 # About:      HL7® Austria FHIR® Core Profile for Patient.
-# Created by: HL7® Austria, TC FHIR® 
+# Created by: HL7® Austria, TC FHIR®
 ##############################################################################*/
 
 Profile:        HL7ATCorePatient
 Parent:         Patient
 Id:             at-core-patient
 Title:          "HL7® AT Core Patient Profile"
-Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
+Description:    "HL7® Austria FHIR® Core Profile for patient data in Austria.
+The HL7 AT Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Austria. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile."
 // Define Mandatory Fields
 * name 1..*
 * gender 1..1
@@ -45,7 +46,7 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 * identifier[localPatientId].system 1..1
 * identifier[localPatientId].system ^short = "Namespace that assigned the localPatientId."
 
-                                                
+
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
 * extension[citizenship].extension[code].valueCodeableConcept from ELGALaendercodesVS (extensible)
