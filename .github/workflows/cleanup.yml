@@ -1,0 +1,15 @@
+# Github Actions HL7 - remove deployment folder after branch deletion in hl7austria.github.io
+name: clean deployment
+on: delete
+jobs:
+  delete:
+    if: github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+         key: ${{ secrets.ROBO_OLIVER }}
+         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - run: |
+        echo "./r4-core-${{ github.event.ref }}"
