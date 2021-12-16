@@ -13,7 +13,8 @@ Usage: #definition
 * name = "HL7ATCoreCSReligion"
 * description = "Code system for the religions and faith communities in Austria. Also accessible on [Termpub - CodeSystem - HL7 AT ReligionAustria](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=HL7.AT:ReligionAustria)."
 * identifier.use = #official
-* identifier.system = "urn:oid:2.16.840.1.113883.2.16.1.4.1"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:2.16.840.1.113883.2.16.1.4.1"
 * version = "1.0.0+20131001"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * status = #active
