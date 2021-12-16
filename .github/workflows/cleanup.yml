@@ -12,6 +12,7 @@ jobs:
         ptoken: ${{ secrets.ROBO_OLIVER }}
         repository: HL7Austria/hl7austria.github.io
         path: .
+    - name: Verify repository
     - run: |
       git checkout pages
       git status
