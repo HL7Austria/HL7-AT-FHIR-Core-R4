@@ -5,22 +5,8 @@ This is the implementation guide for the **Core Profiles (v0.2.0: [STU](https://
 ### HL7® Austria & TC FHIR®
 
 HL7® Austria is an official Affiliate of HL7® International. Within HL7® Austria the technical committee for FHIR® (TC FHIR®) is responsible to promote and disseminate the new upcoming standard HL7® FHIR®.
-The TC FHIR® deals with the standard-compliant and coordinated usage of HL7® FHIR® based communication solutions. 
+The TC FHIR® deals with the standard-compliant and coordinated usage of HL7® FHIR® based communication solutions.
 It coordinates and describes necessary localizations and offers concrete help for FHIR®-compliant interfaces.
-
-### FHIR® Shorthand Resources
-
-For the creation of this implementation guide FHIR® Shorthand was used.
-
-[HL7® Confluence site](https://confluence.hl7.org/display/FHIRI/FHIR+Shorthand)
-
-[FHIR® Shorthand Documentation](https://build.fhir.org/ig/HL7/fhir-shorthand) 
-
-[FHIR® Shorthand documentation code repository](https://github.com/HL7/fhir-shorthand)
-
-[SUSHI code repository](https://github.com/FHIR/sushi)
-
-Zulip (chat.fhir.org) channel: #shorthand
 
 ### License and Legal Terms
 HL7®, HEALTH LEVEL SEVEN® and FHIR® are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.
