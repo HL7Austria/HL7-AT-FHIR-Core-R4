@@ -6,12 +6,12 @@ jobs:
     if: github.event.ref_type == 'branch'
     runs-on: ubuntu-latest
     steps:
-    - name: Install SSH Key
-      uses: shimataro/ssh-key-action@v2
+    - name: Checkout the hl7austria.github.io
+      uses: actions/checkout@v2
       with:
-        key: ${{ secrets.ROBO_OLIVER }}
-        known_hosts: 'empty' #not needed
+        ptoken: ${{ secrets.ROBO_OLIVER }}
+        repository: HL7Austria/hl7austria.github.io
+        path: .
     - run: |
-        git clone git@github.com:HL7Austria/hl7austria.github.io.git
-        git checkout pages
-        git status
+      git checkout pages
+      git status
