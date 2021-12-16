@@ -12,7 +12,8 @@ Usage: #definition
 * name = "ELGAVSCountryCodes"
 * description = "Value Set for ISO 3166-1 alpha 3 used in ELGA. Also accessible on [Termpub - ValueSet - ELGA Ländercodes](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=ValueSet&loadName=ELGA_Laendercodes)."
 * identifier.use = #official
-* identifier.system = "urn:oid:1.2.40.0.34.10.172"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:1.2.40.0.34.10.172"
 * version = "4.0.0+2016124"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-countryCodes"
 * status = #active

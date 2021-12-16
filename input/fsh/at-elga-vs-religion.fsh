@@ -13,7 +13,8 @@ Usage: #definition
 * name = "ELGAVSReligion"
 * description = "Set of religious affiliations to be used in ELGA. It is preferred to use entries of the first level hierachy (1-L). Also accessible on [Termpub - ValueSet - ELGA ReligiousAffiliation](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=ValueSet&loadName=ELGA_ReligiousAffiliation)."
 * identifier.use = #official
-* identifier.system = "urn:oid:1.2.40.0.34.10.18"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:oid:1.2.40.0.34.10.18"
 * version = "2.6.0+20131019"
 * url = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-religion"
 * status = #active
