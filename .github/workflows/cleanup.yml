@@ -6,14 +6,14 @@ jobs:
     if: github.event.ref_type == 'branch'
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the hl7austria.github.io
+    - name: checkout the hl7austria.github.io
       uses: actions/checkout@v2
       with:
         token: ${{ secrets.ROBO_OLIVER }}
         repository: HL7Austria/hl7austria.github.io
         path: .
         ref: pages
-    - name: Verify repository
+    - name: remove folder for deleted branch
       run: |
         git status
         
