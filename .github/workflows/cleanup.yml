@@ -9,9 +9,9 @@ jobs:
     - name: Install SSH Key
       uses: shimataro/ssh-key-action@v2
       with:
-         key: ${{ secrets.ROBO_OLIVER }}
-         known_hosts: 'empty' #not needed
+        key: ${{ secrets.ROBO_OLIVER }}
+        known_hosts: 'empty' #not needed
     - run: |
-      git remote add hl7austria.io git@github.com:HL7Austria/hl7austria.github.io.git
-      git checkout pages
-      git status
+        git remote add hl7austria.io git@github.com:HL7Austria/hl7austria.github.io.git
+        git checkout pages
+        git status
