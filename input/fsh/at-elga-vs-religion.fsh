@@ -20,6 +20,145 @@ Usage: #definition
 * status = #active
 
 * compose.include.system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
+* compose.include.system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
+* compose.include.concept[0].code = #100
+* compose.include.concept[0].display = "Katholische Kirche (o.n.A.)"
+* compose.include.concept[1].code = #110
+* compose.include.concept[1].display = "Griechisch-Orientalische Kirchen"
+* compose.include.concept[2].code = #119
+* compose.include.concept[2].display = "Orientalisch-Orthodoxe Kirchen"
+* compose.include.concept[3].code = #126
+* compose.include.concept[3].display = "Evangelische Kirchen Österreich"
+* compose.include.concept[4].code = #130
+* compose.include.concept[4].display = "Andere Christliche Kirchen"
+* compose.include.concept[5].code = #134
+* compose.include.concept[5].display = "Sonstige Christliche Gemeinschaften"
+* compose.include.concept[6].code = #148
+* compose.include.concept[6].display = "Nicht-christliche Gemeinschaften"
+* compose.include.concept[7].code = #159
+* compose.include.concept[7].display = "Konfessionslos, ohne Angabe"
+
+
+* compose.include.concept[8].code = #101
+* compose.include.concept[8].display = "Römisch-Katholisch"
+* compose.include.concept[9].code = #102
+* compose.include.concept[9].display = "Griechisch-Katholische Kirche"
+* compose.include.concept[10].code = #103
+* compose.include.concept[10].display = "Armenisch-Katholische Kirche"
+* compose.include.concept[11].code = #104
+* compose.include.concept[11].display = "Bulgarisch-Katholische Kirche"
+* compose.include.concept[12].code = #105
+* compose.include.concept[12].display = "Rumänische griechisch-katholische Kirche"
+* compose.include.concept[13].code = #106
+* compose.include.concept[13].display = "Russisch-Katholische Kirche"
+* compose.include.concept[14].code = #107
+* compose.include.concept[14].display = "Syrisch-Katholische Kirche"
+* compose.include.concept[15].code = #108
+* compose.include.concept[15].display = "Ukrainische Griechisch-Katholische Kirche"
+* compose.include.concept[16].code = #109
+* compose.include.concept[16].display = "Katholische Ostkirche (ohne nähere Angabe)"
+
+* compose.include.concept[17].code = #111
+* compose.include.concept[17].display = "Orthodoxe Kirchen (o.n.A.)"
+* compose.include.concept[18].code = #112
+* compose.include.concept[18].display = "Griechisch-Orthodoxe Kirche (Hl.Dreifaltigkeit)"
+* compose.include.concept[19].code = #113
+* compose.include.concept[19].display = "Griechisch-Orthodoxe Kirche (Hl.Georg)"
+* compose.include.concept[20].code = #114
+* compose.include.concept[20].display = "Bulgarisch-Orthodoxe Kirche"
+* compose.include.concept[21].code = #115
+* compose.include.concept[21].display = "Rumänisch-griechisch-orientalische Kirche"
+* compose.include.concept[22].code = #116
+* compose.include.concept[22].display = "Russisch-Orthodoxe Kirche"
+* compose.include.concept[23].code = #117
+* compose.include.concept[23].display = "Serbisch-griechisch-Orthodoxe Kirche"
+* compose.include.concept[24].code = #118
+* compose.include.concept[24].display = "Ukrainisch-Orthodoxe Kirche"
+
+* compose.include.concept[25].code = #120
+* compose.include.concept[25].display = "Armenisch-apostolische Kirche"
+* compose.include.concept[26].code = #121
+* compose.include.concept[26].display = "Syrisch-orthodoxe Kirche"
+* compose.include.concept[27].code = #122
+* compose.include.concept[27].display = "Syrisch-orthodoxe Kirche"
+* compose.include.concept[28].code = #123
+* compose.include.concept[28].display = "Koptisch-orthodoxe Kirche"
+* compose.include.concept[29].code = #124
+* compose.include.concept[29].display = "Armenisch-apostolische Kirche"
+* compose.include.concept[30].code = #125
+* compose.include.concept[30].display = "Äthiopisch-Orthodoxe Kirche"
+
+* compose.include.concept[31].code = #127
+* compose.include.concept[31].display = "Evangelische Kirche (o.n.A.)"
+* compose.include.concept[32].code = #128
+* compose.include.concept[32].display = "Evangelische Kirche A.B."
+* compose.include.concept[33].code = #129
+* compose.include.concept[33].display = "Evangelische Kirche H.B."
+
+* compose.include.concept[34].code = #131
+* compose.include.concept[34].display = "Altkatholische Kirche Österreichs"
+* compose.include.concept[35].code = #132
+* compose.include.concept[35].display = "Anglikanische Kirche"
+* compose.include.concept[36].code = #133
+* compose.include.concept[36].display = "Evangelisch-methodistische Kirche (EmK)"
+
+* compose.include.concept[37].code = #135
+* compose.include.concept[37].display = "Baptisten"
+* compose.include.concept[38].code = #136
+* compose.include.concept[38].display = "Bund evangelikaler Gemeinden in Österreich"
+* compose.include.concept[39].code = #137
+* compose.include.concept[39].display = "Freie Christengemeinde/Pfingstgemeinde"
+* compose.include.concept[40].code = #138
+* compose.include.concept[40].display = "Mennonitische Freikirche"
+* compose.include.concept[41].code = #139
+* compose.include.concept[41].display = "Kirche der Siebenten-Tags-Adventisten"
+* compose.include.concept[42].code = #140
+* compose.include.concept[42].display = "Christengemeinschaft"
+* compose.include.concept[43].code = #141
+* compose.include.concept[43].display = "Jehovas Zeugen"
+* compose.include.concept[44].code = #142
+* compose.include.concept[44].display = "Neuapostolische Kirche"
+* compose.include.concept[45].code = #143
+* compose.include.concept[45].display = "Mormonen"
+* compose.include.concept[46].code = #144
+* compose.include.concept[46].display = "Sonstige Christliche Gemeinschaften (O.n.A.)"
+* compose.include.concept[47].code = #145
+* compose.include.concept[47].display = "ELAIA Christengemeinden"
+* compose.include.concept[48].code = #146
+* compose.include.concept[48].display = "Pfingstkirche Gemeinde Gottes"
+
+* compose.include.concept[49].code = #149
+* compose.include.concept[49].display = "Israelitische Religionsgesellschaft"
+* compose.include.concept[50].code = #150
+* compose.include.concept[50].display = "Islamische Glaubensgemeinschaft"
+* compose.include.concept[51].code = #151
+* compose.include.concept[51].display = "Alevitische Religionsgesellschaft"
+* compose.include.concept[52].code = #152
+* compose.include.concept[52].display = "Buddhistische Religionsgesellschaft"
+* compose.include.concept[53].code = #153
+* compose.include.concept[53].display = "Baha` i"
+* compose.include.concept[54].code = #154
+* compose.include.concept[54].display = "Hinduistische Religionsgesellschaft"
+* compose.include.concept[55].code = #155
+* compose.include.concept[55].display = "Sikh"
+* compose.include.concept[56].code = #156
+* compose.include.concept[56].display = "Shintoismus"
+* compose.include.concept[57].code = #157
+* compose.include.concept[57].display = "Vereinigungskirche"
+* compose.include.concept[58].code = #162
+* compose.include.concept[58].display = "Pastafarianismus"
+* compose.include.concept[59].code = #158
+* compose.include.concept[59].display = "Andere religiöse Bekenntnisgemeinschaften"
+
+* compose.include.concept[60].code = #160
+* compose.include.concept[60].display = "Konfessionslos"
+* compose.include.concept[60].designation[0].use.system = "http://snomed.info/sct"
+* compose.include.concept[60].designation[0].use.code = #900000000000003001
+* compose.include.concept[60].designation[0].value = "mgl"
+* compose.include.concept[61].code = #161
+* compose.include.concept[61].display = "Ohne Angabe"
+
+
 
 * compose.include.extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-expand-rules"
 * compose.include.extension[0].valueCode = #groups-only
