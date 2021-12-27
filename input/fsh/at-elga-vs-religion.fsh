@@ -344,7 +344,8 @@ Usage: #definition
 * expansion.contains[7].contains[0].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[7].contains[0].code = #160
 * expansion.contains[7].contains[0].display = "Konfessionslos"
-* expansion.contains[7].contains[0].designation.use = #900000000000003001
+* expansion.contains[7].contains[0].designation.use.system = "http://snomed.info/sct"
+* expansion.contains[7].contains[0].designation.use.code = #900000000000003001
 * expansion.contains[7].contains[0].designation.value = "mg/l"
 * expansion.contains[7].contains[1].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[7].contains[1].code = #161
