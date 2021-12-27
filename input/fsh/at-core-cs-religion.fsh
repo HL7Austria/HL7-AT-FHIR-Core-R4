@@ -365,6 +365,9 @@ Usage: #definition
 * concept[60].display = "Konfessionslos"
 * concept[60].property.code = #parent
 * concept[60].property.valueCode = #159
+* concept[60].designation[0].use.system = "http://snomed.info/sct"
+* concept[60].designation[0].use.code = #900000000000003001
+* concept[60].designation[0].value = "mgl"
 * concept[61].code = #161
 * concept[61].display = "Ohne Angabe"
 * concept[61].property.code = #parent
