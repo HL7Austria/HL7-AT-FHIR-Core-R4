@@ -23,6 +23,9 @@ Usage: #definition
 
 * compose.include.concept[0].code = #159
 * compose.include.concept[0].display = "Konfessionslos, ohne Angabe"
+* compose.include.concept[0].designation[0].use.system = "http://snomed.info/sct"
+* compose.include.concept[0].designation[0].use.code = #900000000000003001
+* compose.include.concept[0].designation[0].value = "mg"
 
 * compose.include.concept[1].code = #160
 * compose.include.concept[1].display = "Konfessionslos"
@@ -31,7 +34,9 @@ Usage: #definition
 * compose.include.concept[1].designation[0].value = "mgl"
 * compose.include.concept[2].code = #161
 * compose.include.concept[2].display = "Ohne Angabe"
-
+* compose.include.concept[2].designation[0].use.system = "http://snomed.info/sct"
+* compose.include.concept[2].designation[0].use.code = #900000000000003001
+* compose.include.concept[2].designation[0].value = "mgmol"
 
 
 * compose.include.extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-expand-rules"
@@ -53,6 +58,9 @@ Usage: #definition
 * expansion.contains[0].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[0].code = #159
 * expansion.contains[0].display = "Konfessionslos, ohne Angabe"
+* expansion.contains[0].designation[0].use.system = "http://snomed.info/sct"
+* expansion.contains[0].designation[0].use.code = #900000000000003001
+* expansion.contains[0].designation[0].value = "mg"
 * expansion.contains[0].contains[0].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[0].contains[0].code = #160
 * expansion.contains[0].contains[0].display = "Konfessionslos"
@@ -62,3 +70,6 @@ Usage: #definition
 * expansion.contains[0].contains[1].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[0].contains[1].code = #161
 * expansion.contains[0].contains[1].display = "Ohne Angabe"
+* expansion.contains[0].contains[1].designation[0].use.system = "http://snomed.info/sct"
+* expansion.contains[0].contains[1].designation[0].use.code = #900000000000003001
+* expansion.contains[0].contains[1].designation[0].value = "mgmol"
