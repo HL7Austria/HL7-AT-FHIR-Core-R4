@@ -21,21 +21,21 @@ Usage: #definition
 
 * compose.include.system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 
-* compose.include.concept[7].code = #159
-* compose.include.concept[7].display = "Konfessionslos, ohne Angabe"
+* compose.include.concept[0].code = #159
+* compose.include.concept[0].display = "Konfessionslos, ohne Angabe"
 
-* compose.include.concept[8].code = #160
-* compose.include.concept[8].display = "Konfessionslos"
-* compose.include.concept[8].designation[0].use.system = "http://snomed.info/sct"
-* compose.include.concept[8].designation[0].use.code = #900000000000003001
-* compose.include.concept[8].designation[0].value = "mgl"
-* compose.include.concept[9].code = #161
-* compose.include.concept[9].display = "Ohne Angabe"
+* compose.include.concept[1].code = #160
+* compose.include.concept[1].display = "Konfessionslos"
+* compose.include.concept[1].designation[0].use.system = "http://snomed.info/sct"
+* compose.include.concept[1].designation[0].use.code = #900000000000003001
+* compose.include.concept[1].designation[0].value = "mgl"
+* compose.include.concept[2].code = #161
+* compose.include.concept[2].display = "Ohne Angabe"
 
 
 
 * compose.include.extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-expand-rules"
-* compose.include.extension[0].valueCode = #groups-only
+* compose.include.extension[0].valueCode = #all-codes
 
 * compose.include.extension[1].url = "http://hl7.org/fhir/StructureDefinition/valueset-expand-group"
 * compose.include.extension[1].extension[0].url = "code"
@@ -50,6 +50,7 @@ Usage: #definition
 * expansion.parameter.valueUri = "false"
 * expansion.timestamp = "2021-01-28T10:00:00.0000Z"
 
+* expansion.contains[0].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
 * expansion.contains[0].code = #159
 * expansion.contains[0].display = "Konfessionslos, ohne Angabe"
 * expansion.contains[0].contains[0].system = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
