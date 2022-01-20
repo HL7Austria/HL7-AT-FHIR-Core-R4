@@ -60,7 +60,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
-Target:   "http://wiki.hl7.at/"
+Target:   "https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
 Id:       at-core-mapping-patient2cdaatv3
 Title:    "Allgemeiner Implementierungsleitfaden v3"
 * -> "ClinicalDocument.recordTarget.patientRole"
