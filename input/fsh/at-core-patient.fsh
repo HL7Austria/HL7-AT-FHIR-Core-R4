@@ -60,12 +60,86 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
-Target:   "<a href=\"https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)\">HL7 Allgemeiner Implementierungsleitfaden CDA</a>"
+Target:   "https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
 Id:       at-core-mapping-patient2cdaatv3
 Title:    "Allgemeiner Implementierungsleitfaden v3"
 * -> "ClinicalDocument.recordTarget.patientRole"
-* identifier[localPatientId] -> ".id[1]" "Identifikation des Patienten im lokalen System (1..1 M)"
-* identifier[socialSecurityNumber] -> ".id[2]" "Sozialversicherungsnummer des Patienten (1..1 R)"
-* identifier[bPK] -> ".id.where(root='1.2.40.0.10.2.1.1.149')" "Bereichsspezifisches Personenkennzeichen"
+
+* identifier:localPatientId.system -> ".id[1].root"
+* identifier:localPatientId.value -> ".id[1].extension"
+* identifier:socialSecurityNumber.system -> ".id[2].root"
+* identifier:socialSecurityNumber.value -> ".id[2].extension"
+* identifier:bPK.system -> ".id.where(root='1.2.40.0.10.2.1.1.149').root"
+* identifier:bPK.value -> ".id.where(root='1.2.40.0.10.2.1.1.149').extension"
+
+* active -> "n/a"
+
+* name -> ".patient.name"
+* name.family -> ".patient.name.family.dataString"
+* name.given -> ".patient.name.given.dataString"
+* name.prefix -> ".patient.name.prefix.dataString"
+* name.suffix -> ".patient.name.suffix.dataString"
+
+* telecom.system -> ".telecom.value"
+* telecom.value -> ".telecom.value"
+* telecom.use -> ".telecom.use"
+
+* gender -> ".patient.administrativeGenderCode.displayName"
+* birthDate -> ".patient.birthTime.value"
+
 * deceasedBoolean -> ".patient.deceasedInd"
 * deceasedDateTime -> ".patient.deceasedTime"
+
+* address.use -> ".addr.use"
+* address.text -> ".addr.select(streetAddressLine.dataString + ' ' + postalCode.dataString + ' ' + city.dataString + ' ' + country.dataString")
+* address.line:iso21090-ADXP-streetName -> ".addr.streetAddressLine"
+* address.line:iso21090-ADXP-houseNumber -> ".addr.streetAddressLine"
+* address.line:iso21090-ADXP-additionalLocator -> ".addr.streetAddressLine"
+* address.line:at-core-ext-address-additionalInformation	 -> ".addr.streetAddressLine"
+* address.city -> ".addr.city.dataString"
+* address.state -> ".addr.state.dataString"
+* address.postalCode -> ".addr.postalCode.dataString"
+* address.country -> ".addr.country.dataString"
+
+* maritalStatus.coding.code -> ".patient.maritalStatusCode.code"
+* maritalStatus.coding.display -> ".patient.maritalStatusCode.displayName"
+* maritalStatus.coding.system -> ".patient.maritalStatusCode.codeSystem"
+
+* multipleBirthBoolean -> "n/a"
+* multipleBirthInteger -> "n/a"
+// birth-params are not existent in HL7 CDA Austria
+//* multipleBirthBoolean -> ".patient.multipleBirthInd.value"
+//* multipleBirthInteger -> ".patient.multipleBirthOrderNumber.value"
+
+* photo -> "n/a"
+
+* contact.relationship.coding.code -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.code.code"
+* contact.relationship.coding.display -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.code.displayName"
+* contact.relationship.coding.system -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.code.codeSystem"
+* contact.name.family -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.associatedPerson.name.family"
+* contact.name.given -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.associatedPerson.name.given"
+* contact.telecom.system -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.telecom.system"
+* contact.telecom.value -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.telecom.value"
+* contact.telecom.use -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.telecom.use"
+* contact.address.use -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.use"
+* contact.address.text -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.select(streetAddressLine.dataString + ' ' + postalCode.dataString + ' ' + city.dataString + ' ' + country.dataString")
+* contact.address.line:iso21090-ADXP-streetName -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.streetAddressLine"
+* contact.address.line:iso21090-ADXP-houseNumber -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.streetAddressLine"
+* contact.address.line:iso21090-ADXP-additionalLocator -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.streetAddressLine"
+* contact.address.line:at-core-ext-address-additionalInformation	 -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.streetAddressLine"
+* contact.address.city -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.city.dataString"
+* contact.address.state -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.state.dataString"
+* contact.address.postalCode -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.postalCode.dataString"
+* contact.address.country -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.addr.country.dataString"
+* contact.gender -> "n/a"
+* contact.organization -> "ClinicalDocument.participant.where(associatedEntity.classCode='ECON').associatedEntity.scopingOrganization.id[0]"
+* contact.period ->  "n/a"
+
+* communication.language -> ".patient.languageCommunication.languageCode.code"
+* communication.preferred -> ".patient.languageCommunication.preferenceInd.value"
+
+* generalPractitioner -> "ClinicalDocument.participant.where(functionCode='PCP').associatedEntity.id"
+* managingOrganization -> "ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.id"
+
+* link.other -> "n/a"
+* link.type -> "n/a"
