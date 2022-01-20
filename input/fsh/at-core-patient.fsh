@@ -59,7 +59,7 @@ Description:    "HL7® Austria FHIR® Core Profile for patient pata in Austria."
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
-Target:   "https://wiki.hl7.at/index.php%3Ftitle%3DILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
+Target:   "https://wiki.hl7.at/index.php%3Ftitle%3DILF%3AAllgemeiner_Implementierungsleitfaden_(Version_3)"
 Id:       at-core-mapping-patient2cdaatv3
 Title:    "Allgemeiner Implementierungsleitfaden v3"
 * -> "ClinicalDocument.recordTarget.patientRole"
