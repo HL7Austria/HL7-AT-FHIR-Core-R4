@@ -60,12 +60,12 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
-Target:   "https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
+Target:   "<a href=\"https://wiki.hl7.at/index.php%3ftitle=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)\">HL7 Allgemeiner Implementierungsleitfaden CDA</a>"
 Id:       at-core-mapping-patient2cdaatv3
 Title:    "Allgemeiner Implementierungsleitfaden v3"
 * -> "ClinicalDocument.recordTarget.patientRole"
 * identifier[localPatientId] -> ".id[1]" "Identifikation des Patienten im lokalen System (1..1 M)"
 * identifier[socialSecurityNumber] -> ".id[2]" "Sozialversicherungsnummer des Patienten (1..1 R)"
-* identifier[bPK] -> ".id[@root=\"1.2.40.0.10.2.1.1.149\"]" "Bereichsspezifisches Personenkennzeichen"
+* identifier[bPK] -> ".id.where(root='1.2.40.0.10.2.1.1.149')" "Bereichsspezifisches Personenkennzeichen"
 * deceasedBoolean -> ".patient.sdtc:deceasedInd"
 * deceasedDateTime -> ".patient.sdtc:deceasedTime"
