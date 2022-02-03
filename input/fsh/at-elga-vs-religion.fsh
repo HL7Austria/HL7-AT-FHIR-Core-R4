@@ -43,12 +43,16 @@ Usage: #definition
 * compose.include.extension[0].valueCode = #all-codes
 
 * compose.include.extension[1].url = "http://hl7.org/fhir/StructureDefinition/valueset-expand-group"
-* compose.include.extension[1].extension[0].url = "code"
-* compose.include.extension[1].extension[0].valueCode = #159
-* compose.include.extension[1].extension[1].url = "member"
-* compose.include.extension[1].extension[1].valueCode = #160
-* compose.include.extension[1].extension[2].url = "member"
-* compose.include.extension[1].extension[2].valueCode = #161
+* compose.include.extension[1].code = #159
+* compose.include.extension[1].member[0] = #160
+* compose.include.extension[1].member[1] = #161
+
+# * compose.include.extension[1].extension[0].url = "code"
+
+# * compose.include.extension[1].extension[1].url = "member"
+# * compose.include.extension[1].extension[1].valueCode = #160
+# * compose.include.extension[1].extension[2].url = "member"
+# * compose.include.extension[1].extension[2].valueCode = #161
 
 
 * expansion.parameter.name = "excludeNotForUI"
