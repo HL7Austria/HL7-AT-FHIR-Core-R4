@@ -50,17 +50,6 @@ Usage: #definition
 * compose.include.extension[1].extension[2].url = "member"
 * compose.include.extension[1].extension[2].valueCode = #161
 
-# * compose.include.extension[1].member[0] = #160
-# * compose.include.extension[1].member[1] = #161
-
-# * compose.include.extension[1].extension[0].url = "code"
-
-# * compose.include.extension[1].extension[1].url = "member"
-# * compose.include.extension[1].extension[1].valueCode = #160
-# * compose.include.extension[1].extension[2].url = "member"
-# * compose.include.extension[1].extension[2].valueCode = #161
-
-
 * expansion.parameter.name = "excludeNotForUI"
 * expansion.parameter.valueUri = "false"
 * expansion.timestamp = "2021-01-28T10:00:00.0000Z"
