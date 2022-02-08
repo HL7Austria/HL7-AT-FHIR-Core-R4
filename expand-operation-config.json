@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [
+     {
+     "includeDesignations" : "true",
+     }
+   }
+  ]
+}
