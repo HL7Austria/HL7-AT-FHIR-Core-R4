@@ -27,6 +27,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
+  path-expansion-params: ./expand-operation-config.json
 copyrightYear: 2020+
 releaseLabel: STU1
 
