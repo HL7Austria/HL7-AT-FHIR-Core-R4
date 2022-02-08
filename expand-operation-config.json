@@ -2,7 +2,7 @@
   "resourceType" : "Parameters",
   "parameter" : [
      {
-     "includeDesignations" : "true",
+     "includeDesignations" : "true"
      }
    
   ]
