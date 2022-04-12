@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: HL7ATCoreProfiles
 canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
-version: 0.3.0
+version: 1.0.0
 name: HL7AustriaImplementationGuide
 title: HL7® Austria FHIR® Core Implementation Guide
 status: active
