@@ -7,11 +7,15 @@
 
 Alias: HL7V2 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: CitizenshipExtension = http://hl7.org/fhir/StructureDefinition/patient-citizenship
-Alias: ELGALaendercodesVS = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-countryCodes
-Alias: HL7AustriaReligionVS = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-religion
+Alias: ELGALaendercodesVS = https://termgit.elga.gv.at/ValueSet-elga-laendercodes
+Alias: HL7AustriaReligionVS = https://termgit.elga.gv.at/ValueSet-elga-religiousaffiliation
 Alias: ISOStreetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
 Alias: ISOStreetNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: ISOAdditionalLocator = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator
+
+// outdated aliases used in previous versions:
+//Alias: ELGALaendercodesVS = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-countryCodes
+//Alias: HL7AustriaReligionVS = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ValueSet/at-elga-vs-religion
 
 // outdated aliases used in previous versions:
 //Alias: ELGALaendercodesVS = https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=ValueSet&loadName=ELGA_Laendercodes 
