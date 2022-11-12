@@ -36,6 +36,7 @@ Usage: #example
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * multipleBirthBoolean = false
 * photo.url = "https://image.k.at/images/facebook/3923126/78350011451694692_BLD_Online.jpg"
+* photo.contentType = #image/jpeg
 * contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#C "Emergency Contact"
 * contact.name.family = "Tochter"
 * contact.name.given = "Julia"
