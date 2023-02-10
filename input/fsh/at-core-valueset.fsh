@@ -17,5 +17,7 @@ The HL7® AT Core ValueSet is based upon the core FHIR® ValueSet Resource and d
 // extension contains CodeSystemOID named CodeSystemOID 0..1
 * compose.include.extension contains CodeSystemOID named CodeSystemOID 0..1
 * compose.include.extension[CodeSystemOID] ^short = "OID of the CodeSystem"
+* compose.include.extension[CodeSystemOID] ^definition = "Alternate representation of the CodeSystem as OID."
 * expansion.contains.extension contains CodeSystemOID named CodeSystemOID 0..1
 * expansion.contains.extension[CodeSystemOID] ^short = "OID of the CodeSystem" 
+* expansion.contains.extension[CodeSystemOID] ^definition = "Alternate representation of the CodeSystem as OID."
