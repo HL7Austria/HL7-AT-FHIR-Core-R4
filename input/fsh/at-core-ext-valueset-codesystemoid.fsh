@@ -10,10 +10,10 @@ Title:        "CodeSystem OID"
 Description:  "HL7® Austria FHIR® Core Extension for the capturing of OID in ValueSets to reference the CodeSystem they come from.
 The extension is used to document the OID of the CodeSystem for a code referenced in a ValueSet, to align FHIR with the HL7 Austria CDA documents."
 
-# Open: Extension must be restricted to the following locations
-# ^compose.include.codeSystemOID
-# ^expansion.contains.codeSystemOID
+// Open: Extension must be restricted to the following locations
+// ^compose.include.codeSystemOID
+// ^expansion.contains.codeSystemOID
 
-* value[x] 0..0
-* extension contains 
-    oid 1..1 named codeSystemOID
+* value[x] only oid
+* value[x] 1..1
+* extension 0..0
