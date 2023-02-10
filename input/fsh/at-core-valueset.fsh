@@ -14,6 +14,6 @@ The HL7® AT Core ValueSet is based upon the core FHIR® ValueSet Resource and d
 
 //Extension for OID -> HL7 Austria's
 
- CodeSystemOID Extension
-* ^compose.include.extension contains CodeSystemOID 0..1
-* ^expansion.contains.extension contains CodeSystemOID 0..1
+// extension contains CodeSystemOID named CodeSystemOID 0..1
+* ^compose.include.extension contains CodeSystemOID named CodeSystemOID 0..1
+* ^expansion.contains.extension contains CodeSystemOID named CodeSystemOID 0..1
