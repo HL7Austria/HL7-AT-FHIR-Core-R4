@@ -12,12 +12,9 @@ Description:    "HL7® Austria FHIR® Core Profile for valuesets in Austria.
 The HL7® AT Core ValueSet is based upon the core FHIR® ValueSet Resource and defines the use of the OID extension."
 
 
-//Extension for OID -> HL7 Austria's
-
-// extension contains CodeSystemOID named CodeSystemOID 0..1
-* compose.include.extension contains CodeSystemOID named CodeSystemOID 0..1
-* compose.include.extension[CodeSystemOID] ^short = "OID of the CodeSystem"
-* compose.include.extension[CodeSystemOID] ^definition = "Alternate representation of the CodeSystem as OID."
-* expansion.contains.extension contains CodeSystemOID named CodeSystemOID 0..1
-* expansion.contains.extension[CodeSystemOID] ^short = "OID of the CodeSystem" 
-* expansion.contains.extension[CodeSystemOID] ^definition = "Alternate representation of the CodeSystem as OID."
+* compose.include.extension contains CodeSystemOID named systemOID 0..1
+* compose.include.extension[systemOID] ^short = "OID of the system"
+* compose.include.extension[systemOID] ^definition = "Alternate representation of the system of a code as OID."
+* expansion.contains.extension contains CodeSystemOID named systemOID 0..1
+* expansion.contains.extension[systemOID] ^short = "OID of the system" 
+* expansion.contains.extension[systemOID] ^definition = "Alternate representation of the system of a code as OID."
