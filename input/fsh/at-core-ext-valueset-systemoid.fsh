@@ -5,7 +5,7 @@
 ##############################################################################*/
 
 Extension:    SystemOID
-Id:           at-core-ext-valueset-codesystemoid
+Id:           at-core-ext-valueset-systemoid
 Title:        "System OID" 
 Description:  "HL7® Austria FHIR® Core Extension for the capturing of OID in ValueSets to reference the CodeSystem they come from.
 The extension is used to document the OID of the system of a code referenced in a ValueSet, to align FHIR with the HL7 Austria CDA document guidelines."
