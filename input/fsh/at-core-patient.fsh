@@ -35,7 +35,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[socialSecurityNumber].system ^short = "OID for the Social Security Number in Austria"
 //* identifier[socialSecurityNumber].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.1.4.3.1" (exactly)
 * identifier[socialSecurityNumber].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
-* identifier[bPK].type from https://termgit.elga.gv.at/ValueSet/elga-patientidentifier (extensible)
+* identifier[bPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 * identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[bPK].type.coding.code = HL7V2#NI (exactly)
 * identifier[bPK].type.coding.display = "National unique individual identifier" (exactly)
