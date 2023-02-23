@@ -44,7 +44,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[bPK].system ^short = "OID for the bPK in Austria"
 //* identifier[bPK].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.2.1.1.149" (exactly)
 * identifier[bPK].assigner.display = "Bundesministerium für Inneres" (exactly)
-* identifier[localPatientId].type from https://termgit.elga.gv.at/ValueSet/elga-patientidentifier (extensible)
+* identifier[localPatientId].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 * identifier[localPatientId].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
 * identifier[localPatientId].type.coding.display = "Patient internal identifier" (exactly)
