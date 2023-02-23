@@ -26,7 +26,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.ordered = false
 * identifier contains socialSecurityNumber 0..1 and bPK 0..* and localPatientId 0..1
-* identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/elga-patientidentifier (extensible)
+* identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS (exactly)
 * identifier[socialSecurityNumber].type.coding.display = "Social Security Number" (exactly)
