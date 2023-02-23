@@ -19,7 +19,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * contact.address only HL7ATCoreAddress
 
 // Changing the ValueSet binding for the type of identifiers
-* identifier.type from https://termgit.elga.gv.at/ValueSet/elga-patientidentifier (extensible)
+* identifier.type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 //Slice for Identifier, order matters
 * identifier ^slicing.rules = #open
 * identifier ^slicing.discriminator.type = #value
