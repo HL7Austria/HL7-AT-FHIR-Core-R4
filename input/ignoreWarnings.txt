@@ -3,4 +3,3 @@
 # ==== These are known issues with using our local terminology service - there is no timeline for their resolution ===
 The valueSet reference https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier on element Patient.identifier.type could not be resolved
 ValueSet https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier not found
-ValueSet https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier not found
