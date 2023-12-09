@@ -39,5 +39,4 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[VKZ].system ^short = "OID for the Verwaltungskennzeichen (VKZ) in Austria"
 * identifier[VKZ].assigner.display = "Bundesministerium für XY" (exactly)
 
-// ToDo: Since the valueSet "ELGA Rollen" is not fitting (it mixes the codes for Organization and Practitioner), we will use a specific valueSet for Organization.type as soon as it is provided by the TC Terminology
-// * type from https://termgit.elga.gv.at/ValueSet/elga-rollen (extensible)
+* type from https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype (extensible)
