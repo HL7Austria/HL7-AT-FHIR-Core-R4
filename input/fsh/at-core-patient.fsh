@@ -13,7 +13,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 // Define Mandatory Fields
 * name 1..*
 * gender 1..1
-* gender.extension contains PatientAdministrativeGenderAddition named AdministrativeGenderAddition 0..1
+* gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 // Address is based on the profile for the Austrian Representation of an Address
 // this applies to the address of the patient as well as the address of contacts
 * address only HL7ATCoreAddress
@@ -63,6 +63,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 //Extension for Religion -> HL7 Austria's AustrianReligion Extension
 * extension contains PatientReligion named PatientReligion 0..1
 
+* contact.gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient
