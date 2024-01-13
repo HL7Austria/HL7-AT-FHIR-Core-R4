@@ -1,16 +1,16 @@
 /*##############################################################################
 # Type:       FSH-File for an FHIR® Extension
-# About:      Extension for the administrative gender of a patient to add the 
-#             missing codes that are required in Austra.
+# About:      Extension for the administrative gender of a person (Patient, Practitioner, ...)
+#             to add the missing codes that are required in Austria.
 # Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
-Extension:    PatientAdministrativeGenderAddition
-Id:           at-core-ext-patient-administrativeGenderAddition
-Title:        "Patient Administrative Gender Addition" 
-Description:  "HL7® Austria FHIR® Core Extension for the administrative gender of a patient. 
+Extension:    AdministrativeGenderAddition
+Id:           at-core-ext-gender-administrativeGenderAddition
+Title:        "Administrative Gender Addition" 
+Description:  "HL7® Austria FHIR® Core Extension for the administrative gender of a person (Patient, Practitioner, ...). 
 The extension is used to add the missing codes and is applied in case the code for administrative gender itself is set to 'other'."
-Context: 	  HL7ATCorePatient.gender
+Context: 	  Patient.gender, Patient.contact.gender, Practitioner.gender, RelatedPerson.gender, Person.gender, HL7ATCorePatient.gender, HL7ATCorePatient.contact.gender 
 
 * value[x] only Coding
 * value[x] 1..1
