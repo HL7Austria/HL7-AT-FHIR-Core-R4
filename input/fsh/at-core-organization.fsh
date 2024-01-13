@@ -32,7 +32,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[VPNR].system 1..1
 * identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2" (exactly)
 * identifier[VPNR].system ^short = "OID for the Vertragspartnernummer (VPNR) in Austria"
-* identifier[VPNR].assigner.display = "Bundesministerium für XY" (exactly)
+* identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
 * identifier[VKZ].value 1..1
 * identifier[VKZ].system 1..1
 * identifier[VKZ].system = "urn:oid:1.2.40.0.10.2.1.1.71" (exactly)
