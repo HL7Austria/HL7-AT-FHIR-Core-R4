@@ -12,7 +12,7 @@ Usage:       #example
 * name = "Amadeus Spital"
 * type = https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype#300 "Allgemeine Krankenanstalt"
 
-* identifier[GDA-OID].value = "1.2.40.0.34.99.4613.3"
+* identifier[GDA-OID].value = "urn:oid:1.2.40.0.34.99.4613.3"
 * identifier[GDA-OID].system = "urn:ietf:rfc:3986"
 * identifier[GDA-OID].assigner.display = "Bundesministerium für XY"
 * identifier[VPNR].value = "123456789"
@@ -32,7 +32,7 @@ Instance:    HL7ATCoreAddressExample10
 InstanceOf:  HL7ATCoreAddress
 Description: "Example for the usage of the HL7 AT Core Address Profile"
 Usage:       #inline
-* use = http://hl7.org/fhir/address-use#home
+* use = http://hl7.org/fhir/address-use#work
 * type = http://hl7.org/fhir/address-type#both
 * line = "Mozartgasse 1-7 Haupteingang" 
 * line.extension[street].valueString = "Mozartgasse"
