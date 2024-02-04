@@ -11,7 +11,7 @@ Usage:       #example
 
 * identifier[GDA-OID].value = "urn:oid:1.2.40.0.34.99.4613.4"
 * identifier[GDA-OID].system = "urn:ietf:rfc:3986"
-* identifier[GDA-OID].assigner.display = "Bundesministerium für XY"
+* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit"
 * identifier[VPNR].value = "987654321"
 * identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2"
 * identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
