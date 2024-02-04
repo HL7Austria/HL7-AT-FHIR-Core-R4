@@ -20,5 +20,5 @@ Context: 	  Patient.gender, Patient.contact.gender, Practitioner.gender, Related
 
 Invariant:    at-ext-gender-1
 Description:  "The extension for the additional administrative gender codes is only applied if the administrative gender itself is set to 'other'"
-Expression:   "%resource.where(gender='other').exists()"
+Expression:   "%resource.where(gender='other').exists() or %resource.contact.where(gender='other').exists()"
 Severity:     #error
