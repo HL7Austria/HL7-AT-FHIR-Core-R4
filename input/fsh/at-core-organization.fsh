@@ -27,7 +27,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[GDA-OID].system 1..1
 * identifier[GDA-OID].system = "urn:ietf:rfc:3986" (exactly)
 * identifier[GDA-OID].system ^short = "A GDA in Austria is represented via an URI (OID)"
-* identifier[GDA-OID].assigner.display = "Bundesministerium für XY" (exactly)
+* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit" (exactly)
 * identifier[VPNR].value 1..1
 * identifier[VPNR].system 1..1
 * identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2" (exactly)
@@ -37,6 +37,6 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[VKZ].system 1..1
 * identifier[VKZ].system = "urn:oid:1.2.40.0.10.2.1.1.71" (exactly)
 * identifier[VKZ].system ^short = "OID for the Verwaltungskennzeichen (VKZ) in Austria"
-* identifier[VKZ].assigner.display = "Bundesministerium für XY" (exactly)
+* identifier[VKZ].assigner.display = "Bundesministerium für Finanzen" (exactly)
 
 * type from https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype (extensible)
