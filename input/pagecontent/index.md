@@ -15,6 +15,11 @@ This implementation guide contains only those profiles and extension where adapt
 
 Currently, the Austrian EHR (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
 
+### Dependencies
+This guide is based on the <a href="{{site.data.fhir.path}}">FHIR R4</a> specification.  In addition, this guide also relies on a number of parent implementation guides:
+
+{% include dependency-table-short.xhtml %}
+
 ### Governance
 
 HL7® Austria is an official Affiliate of HL7® International. Within HL7® Austria the technical committee for FHIR® (TC FHIR®) is responsible to promote and disseminate the new upcoming standard HL7® FHIR®.
