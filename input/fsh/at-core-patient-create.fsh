@@ -22,7 +22,7 @@ Usage: #definition
 * fixture.id = "patient-create"
 * fixture.autocreate = false
 * fixture.autodelete = false
-* fixture.resource = Reference(Patient-HL7ATCorePatientExample04-Full.html)
+* fixture.resource = Reference(Patient-HL7ATCorePatientCreateTestExample.html)
 * profile.id = "at-core-patient-profile"
 * profile = Reference(http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-patient)
 * variable.name = "patientResourceId"
