@@ -11,6 +11,7 @@ Title:          "HL7® AT Core Practitioner Profile"
 Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Austria."
 // Address is based on the profile for the Austrian Representation of an Address
 * address only HL7ATCoreAddress
+* gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 
 // Changing the ValueSet binding for the type of identifiers
 * identifier.type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
