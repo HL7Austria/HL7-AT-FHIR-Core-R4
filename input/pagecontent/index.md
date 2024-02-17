@@ -11,6 +11,8 @@ This guide is a working specification. We anticipate that it will be implemented
 
 This implementation guide contains only those profiles and extension where adaptions for Austria were necessary.
 
+**Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+
 ### Relation to Austrian EHR (ELGA)
 
 Currently, the Austrian EHR (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
