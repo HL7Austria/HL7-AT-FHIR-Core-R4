@@ -41,7 +41,7 @@ Usage:       #example
 * telecom[1].system = http://hl7.org/fhir/contact-point-system#phone
 * telecom[1].value = "+436500987654321"
  
-* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#160 "Konfessionslos"
+* extension[PatientReligion].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#160 "Konfessionslos"
 * extension[CitizenshipExtension].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3#AUT "Österreich"
 
 * address = HL7ATCoreAddressExample06
