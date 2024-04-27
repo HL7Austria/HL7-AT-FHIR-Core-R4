@@ -18,9 +18,6 @@ The extension is used to encode the religious confession of a patient (only conf
 * extension[code].value[x] only CodeableConcept
 * extension[code] ^short = "Religion code of the Patient"
 * extension[code].value[x] from ELGAAustriaReligionVS (extensible)
-//* extension[code].value[x] ^binding.valueSetUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
-* extension[code].value[x].coding.system ^fixedUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
-* extension[code].value[x].coding.system ^short = "URL for the HL7 AT CodeSystem used by the ELGA ValueSet for religion"
 * extension[code].extension 0..0
 * extension[period] ^short = "Time period of the Religion"
 * extension[period].value[x] only Period
