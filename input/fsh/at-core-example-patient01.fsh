@@ -18,7 +18,7 @@ Usage:       #example
 * identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS
-* identifier[socialSecurityNumber].type.coding.display = "Social Security Number"
+* identifier[socialSecurityNumber].type.coding.display = "Social Security number"
 * identifier[socialSecurityNumber].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[bPK].value = "GH:oeLdSEb0l+8kSdJWjOYyYmnYki0="
 * identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149"
