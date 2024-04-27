@@ -41,7 +41,7 @@ Usage:       #example
 * telecom[1].value = "+436501234567890"
  
 * extension[PatientReligion].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#162 "Pastafarianismus"
-* extension[CitizenshipExtension].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3#AUT "Österreich"
+* extension[CitizenshipExtension].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3#AUT "Österreich"
 
 * address = HL7ATCoreAddressExample01
 
