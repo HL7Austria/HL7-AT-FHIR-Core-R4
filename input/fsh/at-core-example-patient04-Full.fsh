@@ -58,8 +58,8 @@ Usage: #example
 * link.type = #seealso
 * link.other = Reference(Patient/HL7ATCorePatientExample03-deceasedBoolean) 
 
-* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#101 "Römisch-Katholisch"
-* extension[CitizenshipExtension].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3#AUT "Österreich"
+* extension[PatientReligion].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#101 "Römisch-Katholisch"
+* extension[CitizenshipExtension].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3#AUT "Österreich"
 * extension[CitizenshipExtension].extension[period].valuePeriod.start = "2016-07-30T08:30:00+01:00"
 * extension[CitizenshipExtension].extension[period].valuePeriod.end = "2022-07-30T08:35:00+01:00"
 

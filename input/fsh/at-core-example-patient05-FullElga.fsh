@@ -35,7 +35,8 @@ Usage: #example
 * contact.address.country = "AUT"
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true
-* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#101 "Römisch-Katholisch"
+
+* extension[PatientReligion].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#101 "Römisch-Katholisch"
 
 * address = HL7ATCoreAddressExample03
 
