@@ -5,17 +5,27 @@
 This implementation guide is provided to support the use of FHIR® in Austria.
 
 This guide is a working specification. We anticipate that it will be implemented and tested by FHIR® system producers whose feedback will help improve its content. With this standard for trial use, we are looking for feedback on whether the following goals have been met:
-- The guide provides guidance on the [HL7® AT Core Patient Profile](StructureDefinition-at-core-patient.html).
+- The HL7 Austria FHIR Core Implementation Guide (IG) covers administrative Resources, like Patient, Organization, Practitioner, etc. that can be used on their own with no specific functional requirements for usage or it can be used for other more functional FHIR IGs in Austria via dependencies. It contains only those Profiles and Extension where adaptions for Austria were necessary.
+- This guide defines the minimum constraints on the FHIR resources to create the Austrian Core Profiles. 
+- It contains guidance on the [HL7® AT Core Patient Profile](StructureDefinition-at-core-patient.html).
   - Along with the Patient profile the representation of the common structure of address information within Austrian information systems ([HL7® AT Core Address Profile](StructureDefinition-at-core-address.html)) and the extension to encode the religious confession of a patient (only confessions registered in Austria) ([Patient Religion](StructureDefinition-at-core-ext-patient-religion.html)) has been specified.
-- This guide provides a set of sample Code Systems and ValueSets based on FSH files. Note, that Code Systems and ValueSets will generally be made available in a separate IG based on [TerminoloGit](https://gitlab.com/elga-gmbh/termgit).
-
-This implementation guide contains only those profiles and extension where adaptions for Austria were necessary.
+- Furthermore the codes for gender were extended to allow the usage of all official genders in Austria.
+- It defines the requirements for Organization, Practitioner or PractitionerRole to carry Austrian specific information (e.g. identifiers).
+- This guide contains no Code Systems or Value Sets on its own. Note, that Code Systems and Value Sets that are used in the various Profiles or Extensions of this guide will generally be made available via a separate IG on the [Austrian Terminology Server](https://termgit.elga.gv.at/) based on [TerminoloGit](https://gitlab.com/elga-gmbh/termgit).
+  - It does however contain an Extension and a Profile for the Value Set Resource, that allows to add the OID of Code System that is used within the Value Set, not just the URL reference.
+  - This profile is already used by the Austrian Terminology Server.
 
 **Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
-### Relation to Austrian EHR (ELGA)
+### Relation to Austrian EHR System (ELGA)
 
-Currently, the Austrian EHR (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
+Currently, the Austrian EHR system (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
+Furthermore ELGA is using the HL7 Austria FHIR Core IG as a basis for their FHIR® Implementation guides.
+
+### Dependencies
+This guide is based on the <a href="{{site.data.fhir.path}}">FHIR R4</a> specification.  In addition, this guide also relies on a number of parent implementation guides:
+
+{% include dependency-table-short.xhtml %}
 
 ### Governance
 
