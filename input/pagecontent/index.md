@@ -14,7 +14,7 @@ This guide is a working specification. We anticipate that it will be implemented
 
 - Furthermore the codes for gender were extended to allow the usage of all official genders in Austria.
 - It defines the requirements for Organization, Practitioner or PractitionerRole to carry information specific to Austria (e.g. identifiers).
-- This guide contains no Code Systems or Value Sets on its own. Note, that Code Systems and Value Sets that are used in the various Profiles or Extensions of this guide will generally be made available via a separate IG on the [Austrian Terminology Server](https://termgit.elga.gv.at/) based on [TerminoloGit](https://gitlab.com/elga-gmbh/termgit).
+- This guide contains no code systems or value sets on its own. Note, that code systems and value sets that are used in the various Profiles or Extensions of this guide will generally be made available via a separate IG on the [Austrian Terminology Server](https://termgit.elga.gv.at/) based on [TerminoloGit](https://gitlab.com/elga-gmbh/termgit).
   - It does contain an Extension and a Profile for the ValueSet resource, that allows to add the OID of code systems that are referenced within the ValueSet, not just the URL reference.
 
   - This profile is already used by the Austrian Terminology Server.
