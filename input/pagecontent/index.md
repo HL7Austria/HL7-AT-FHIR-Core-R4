@@ -5,7 +5,8 @@
 This implementation guide is provided to support the use of FHIR® in Austria.
 
 This guide is a working specification. We anticipate that it will be implemented and tested by FHIR® system producers whose feedback will help improve its content. With this standard for trial use, we are looking for feedback on whether the following goals have been met:
-- The HL7 Austria FHIR Core Implementation Guide (IG) covers administrative Resources, like Patient, Organization, Practitioner, etc. that can be used on their own with no specific functional requirements for usage or it can be used for other more functional FHIR IGs in Austria via dependencies. It contains only those Profiles and Extension where adaptions for Austria are necessary.
+- The HL7® Austria FHIR® Core Implementation Guide (IG) covers administrative resources, like Patient, Organization, Practitioner, etc. that can be used on their own with no specific functional requirements for usage or they can be used for other more functional FHIR® IGs in Austria via dependencies. It contains only those Profiles and Extension where adaptions for Austria are necessary.
+
 - This guide defines the minimum constraints on the FHIR resources to create the Austrian Core Profiles. 
 - It contains guidance on the [HL7® AT Core Patient Profile](StructureDefinition-at-core-patient.html).
   - Along with the Patient profile the representation of the common structure of address information within Austrian information systems ([HL7® AT Core Address Profile](StructureDefinition-at-core-address.html)) and the extension to encode the religious confession of a patient (only confessions registered in Austria) ([Patient Religion](StructureDefinition-at-core-ext-patient-religion.html)) has been specified.
