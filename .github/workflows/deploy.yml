@@ -5,9 +5,9 @@ name: PublishIG
 # Run on updates to the master
 on:
   push:
-    branches: [ main ]
+    branches: [ ballot_2024_stu2 ]
   pull_request:
-    branches: [ main ]
+    branches: [ ballot_2024_stu2 ]
 
 jobs:
   build:
