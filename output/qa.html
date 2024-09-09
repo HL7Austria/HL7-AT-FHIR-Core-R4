@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 1, errors = 0, warn = 33, info = 10-->
+<head>
+  <title>HL7AustriaImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HL7AustriaImplementationGuide</h1>
+ <p>Generated Mon Sep 09 20:47:24 CEST 2024, FHIR version 4.0.1 for hl7.at.fhir.core.r4#1.1.0 (canonical = <a href="http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1">http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1</a> (<a href="http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.22</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.at.fhir.core.r4, Canonical = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Error fetching package-list from http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1: Not Found <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">2 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.at.fhir.core.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="background-color: #ffcccc">HL7 Packages must have an id that starts with hl7.cda., hl7.fhir., or hl7.v2.</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.at.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.2.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (21 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (20 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1 (Problem #1 with package-list.json at http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 33, info = 10, broken links = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_ImplementationGuide-hl7.at.fhir.core.r4"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/ImplementationGuide-hl7.at.fhir.core.r4</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Organization-HL7ATCoreOrganizationExample01"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Organization-HL7ATCoreOrganizationExample01</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample01"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample01</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample02-deceasedTime"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample03-deceasedBoolean"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample03-deceasedBoolean</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample04-Full"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample05-FullElga"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample06-GenderExtension"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Practitioner-HL7ATCorePractitionerExample01"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Practitioner-HL7ATCorePractitionerExample01</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_PractitionerRole-HL7ATCorePractitionerRoleExample01"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/PractitionerRole-HL7ATCorePractitionerRoleExample01</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-address"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-address</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-address-additionalInformation"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-address-additionalInformation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-address-municipalityCode"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-address-municipalityCode</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-gender-administrativeGenderAddition"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-gender-administrativeGenderAddition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-patient-religion"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-patient-religion</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-valueset-systemoid"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-valueset-systemoid</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-organization"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-organization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-patient"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-patient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-practitioner"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-practitionerRole"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-practitionerRole</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-valueset"><b>/Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-valueset</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l394">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 193, column 253</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki' for &quot;Mappings for Allgemeiner Implementierungsleitfaden v3&quot; cannot be resolved (valid targets: [publish-box, segment-post-footer, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, segment-footer, segment-content, w5, loinc, cda, mappings-for-cda-r2-http-hl7-orgv3cda, segment-header, bottom, mappings-for-loinc-code-for-the-element-http-loinc-org, ig-status, at-core-mapping-patient2cdaatv3, mappings-for-hl7-v2-mapping-http-hl7-orgv2, mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki-hl7-atindex-php-title-ilf-allgemeiner_implementierungsleitfaden_-version_3, resource-profile-hl7atcorepatient-mappings, header-logo, segment-navbar, v2, segment-breadcrumb, mappings-for-rim-mapping-http-hl7-orgv3])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_ImplementationGuide-hl7.at.fhir.core.r4"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.at.fhir.core.r4.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.at.fhir.core.r4: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Organization-HL7ATCoreOrganizationExample01"> </a>
+<h2><a href="Organization-HL7ATCoreOrganizationExample01.html">fsh-generated/resources/Organization-HL7ATCoreOrganizationExample01.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-at-core-organization.html">HL7® AT Core Organization Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[0] (l27/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization&#8203;.type[0]&#8203;.coding[0]&#8203;.system (l27&#8203;/c6)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample01"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l64&#8203;/c12)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l64&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l81&#8203;/c12)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l81&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l12/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[1].type (l28/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[2].type (l43/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample02-deceasedTime"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample02-deceasedTime.html">fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l12/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[1].type (l29/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[2].type (l46/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample03-deceasedBoolean"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample03-deceasedBoolean.html">fsh-generated/resources/Patient-HL7ATCorePatientExample03-deceasedBoolean.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l12/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample04-Full"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l14&#8203;/c12)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l14&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l31&#8203;/c12)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l31&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l55/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[1].type (l72/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[2].type (l89/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample05-FullElga"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample05-FullElga.html">fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l14&#8203;/c12)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l14&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l31/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Patient-HL7ATCorePatientExample06-GenderExtension"> </a>
+<h2><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-at-core-patient.html">HL7® AT Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l64&#8203;/c12)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l64&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l81&#8203;/c12)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.extension[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l81&#8203;/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type (l12/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[1].type (l28/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[2].type (l43/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient&#8203;.gender&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l112&#8203;/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient&#8203;.gender&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l112&#8203;/c10)</b></td><td><b>information</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-administrativegender-ergaenzung' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_Practitioner-HL7ATCorePractitionerExample01"> </a>
+<h2><a href="Practitioner-HL7ATCorePractitionerExample01.html">fsh-generated/resources/Practitioner-HL7ATCorePractitionerExample01.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-at-core-practitioner.html">HL7® AT Core Practitioner Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_PractitionerRole-HL7ATCorePractitionerRoleExample01"> </a>
+<h2><a href="PractitionerRole-HL7ATCorePractitionerRoleExample01.html">fsh-generated/resources/PractitionerRole-HL7ATCorePractitionerRoleExample01.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>PractitionerRole: Validated against <i>this.</i><a href="StructureDefinition-at-core-practitionerRole.html">HL7® AT Core PractitionerRole Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.code[0] (l11/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>PractitionerRole&#8203;.code[0]&#8203;.coding[0]&#8203;.system (l11&#8203;/c6)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-address"> </a>
+<h2><a href="StructureDefinition-at-core-address.html">fsh-generated/resources/StructureDefinition-at-core-address.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-address-additionalInformation"> </a>
+<h2><a href="StructureDefinition-at-core-ext-address-additionalInformation.html">fsh-generated/resources/StructureDefinition-at-core-ext-address-additionalInformation.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for at-core-ext-address-additionalInformation: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-address-municipalityCode"> </a>
+<h2><a href="StructureDefinition-at-core-ext-address-municipalityCode.html">fsh-generated/resources/StructureDefinition-at-core-ext-address-municipalityCode.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.at&#8203;/fhir&#8203;/HL7ATCoreProfiles&#8203;/4&#8203;.0&#8203;.1&#8203;/StructureDefinition&#8203;/at-core-ext-address-municipalityCode')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-gender-administrativeGenderAddition"> </a>
+<h2><a href="StructureDefinition-at-core-ext-gender-administrativeGenderAddition.html">fsh-generated/resources/StructureDefinition-at-core-ext-gender-administrativeGenderAddition.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-patient-religion"> </a>
+<h2><a href="StructureDefinition-at-core-ext-patient-religion.html">fsh-generated/resources/StructureDefinition-at-core-ext-patient-religion.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for at-core-ext-patient-religion: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-ext-valueset-systemoid"> </a>
+<h2><a href="StructureDefinition-at-core-ext-valueset-systemoid.html">fsh-generated/resources/StructureDefinition-at-core-ext-valueset-systemoid.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for at-core-ext-valueset-systemoid: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.at&#8203;/fhir&#8203;/HL7ATCoreProfiles&#8203;/4&#8203;.0&#8203;.1&#8203;/StructureDefinition&#8203;/at-core-ext-valueset-systemoid')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-organization"> </a>
+<h2><a href="StructureDefinition-at-core-organization.html">fsh-generated/resources/StructureDefinition-at-core-organization.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-patient"> </a>
+<h2><a href="StructureDefinition-at-core-patient.html">fsh-generated/resources/StructureDefinition-at-core-patient.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-practitioner"> </a>
+<h2><a href="StructureDefinition-at-core-practitioner.html">fsh-generated/resources/StructureDefinition-at-core-practitioner.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-practitionerRole"> </a>
+<h2><a href="StructureDefinition-at-core-practitionerRole.html">fsh-generated/resources/StructureDefinition-at-core-practitionerRole.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_anna_Documents_MBI_Forschung_HL7AustriaProfiles_HL7-AT-FHIR-Core-R4_fsh-generated_resources_StructureDefinition-at-core-valueset"> </a>
+<h2><a href="StructureDefinition-at-core-valueset.html">fsh-generated/resources/StructureDefinition-at-core-valueset.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.at&#8203;/fhir&#8203;/HL7ATCoreProfiles&#8203;/4&#8203;.0&#8203;.1&#8203;/StructureDefinition&#8203;/at-core-valueset')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>==== These are known issues with using our local terminology service - there is no timeline for their resolution ===</b></p><ul>
+ <li>The valueSet reference https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier on element Patient.identifier.type could not be resolved <span style="color: maroon">(0 uses)<span></li>
+ <li>ValueSet https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier not found <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Organization-HL7ATCoreOrganizationExample01.html">fsh-generated/resources/Organization-HL7ATCoreOrganizationExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample01.html">fsh-generated/resources/Patient-HL7ATCorePatientExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample02-deceasedTime.html">fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample02-deceasedTime.html">fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample02-deceasedTime.html">fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample03-deceasedBoolean.html">fsh-generated/resources/Patient-HL7ATCorePatientExample03-deceasedBoolean.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample04-Full.html">fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample05-FullElga.html">fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample05-FullElga.html">fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-HL7ATCorePractitionerRoleExample01.html">fsh-generated/resources/PractitionerRole-HL7ATCorePractitionerRoleExample01.json</a></td><td><b>ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole' not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="UNKNOWN_CODESYSTEM"> </a>
+<h2>UNKNOWN_CODESYSTEM</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-HL7ATCorePatientExample06-GenderExtension.html">fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json</a></td><td><b>A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-administrativegender-ergaenzung' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='at-core-ext-address-municipalityCode' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 4" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='at-core-ext-address-municipalityCode' active='definition' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: AddressMunicipalityCode - Detailed Descriptions</h2>
+{% include fragment-simpletable.html %}
+
+<p>Definitions for the at-core-ext-address-municipalityCode {{modelType | downcase}}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='at-core-ext-address-municipalityCode' %}
+
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-diff">Differential Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Elements Table</a>
+      </li>
+    </ul>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      {%include StructureDefinition-at-core-ext-address-municipalityCode-dict-diff.xhtml%}
+    </div>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      {%include StructureDefinition-at-core-ext-address-municipalityCode-dict-key.xhtml%}
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      {%include StructureDefinition-at-core-ext-address-municipalityCode-dict.xhtml%}
+    </div>
+  </div>
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='at-core-ext-address-municipalityCode' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

@@ -1,0 +1,95 @@
+HL7AustriaImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 33, info = 10
+$--
+Generated $--. FHIR version $-- for hl7.at.fhir.core.r4#$-- (canonical = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1)
+ Build Errors : 1 / 3 / 0
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/ImplementationGuide-hl7.at.fhir.core.r4 : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Organization-HL7ATCoreOrganizationExample01 : 0 / 1 / 2
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample01 : 0 / 5 / 3
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime : 0 / 3 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample03-deceasedBoolean : 0 / 1 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full : 0 / 5 / 3
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga : 0 / 2 / 2
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension : 0 / 6 / 4
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/Practitioner-HL7ATCorePractitionerExample01 : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/PractitionerRole-HL7ATCorePractitionerRoleExample01 : 0 / 1 / 2
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-address : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-address-additionalInformation : 0 / 1 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-address-municipalityCode : 0 / 1 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-gender-administrativeGenderAddition : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-patient-religion : 0 / 1 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-ext-valueset-systemoid : 0 / 2 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-organization : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-patient : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-practitioner : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-practitionerRole : 0 / 0 / 1
+ /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/fsh-generated/resources/StructureDefinition-at-core-valueset : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /Users/anna/Documents/MBI/Forschung/HL7AustriaProfiles/HL7-AT-FHIR-Core-R4/output/index.html#/html/body/div/div/div/div/div/p/a at Line 193, column 253: The link 'StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki' for "Mappings for Allgemeiner Implementierungsleitfaden v3" cannot be resolved (valid targets: [publish-box, segment-post-footer, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, segment-footer, segment-content, w5, loinc, cda, mappings-for-cda-r2-http-hl7-orgv3cda, segment-header, bottom, mappings-for-loinc-code-for-the-element-http-loinc-org, ig-status, at-core-mapping-patient2cdaatv3, mappings-for-hl7-v2-mapping-http-hl7-orgv2, mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki-hl7-atindex-php-title-ilf-allgemeiner_implementierungsleitfaden_-version_3, resource-profile-hl7atcorepatient-mappings, header-logo, segment-navbar, v2, segment-breadcrumb, mappings-for-rim-mapping-http-hl7-orgv3])
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.at.fhir.core.r4.json ==
+== fsh-generated/resources/Organization-HL7ATCoreOrganizationExample01.json ==
+WARNING: Organization/HL7ATCoreOrganizationExample01: Organization.type[0]: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype' not found
+INFORMATION: Organization/HL7ATCoreOrganizationExample01: Organization.type[0].coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype' could not be found, so the code cannot be validated
+== fsh-generated/resources/Patient-HL7ATCorePatientExample01.json ==
+INFORMATION: Patient/HL7ATCorePatientExample01: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample01: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found
+INFORMATION: Patient/HL7ATCorePatientExample01: Patient.extension[1].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample01: Patient.extension[1].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found
+WARNING: Patient/HL7ATCorePatientExample01: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample01: Patient.identifier[1].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample01: Patient.identifier[2].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+== fsh-generated/resources/Patient-HL7ATCorePatientExample02-deceasedTime.json ==
+WARNING: Patient/HL7ATCorePatientExample02-deceasedTime: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample02-deceasedTime: Patient.identifier[1].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample02-deceasedTime: Patient.identifier[2].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+== fsh-generated/resources/Patient-HL7ATCorePatientExample03-deceasedBoolean.json ==
+WARNING: Patient/HL7ATCorePatientExample03-deceasedBoolean: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+== fsh-generated/resources/Patient-HL7ATCorePatientExample04-Full.json ==
+INFORMATION: Patient/HL7ATCorePatientExample04-Full: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample04-Full: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found
+INFORMATION: Patient/HL7ATCorePatientExample04-Full: Patient.extension[1].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample04-Full: Patient.extension[1].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found
+WARNING: Patient/HL7ATCorePatientExample04-Full: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample04-Full: Patient.identifier[1].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample04-Full: Patient.identifier[2].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+== fsh-generated/resources/Patient-HL7ATCorePatientExample05-FullElga.json ==
+INFORMATION: Patient/HL7ATCorePatientExample05-FullElga: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample05-FullElga: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found
+WARNING: Patient/HL7ATCorePatientExample05-FullElga: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+== fsh-generated/resources/Patient-HL7ATCorePatientExample06-GenderExtension.json ==
+INFORMATION: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-religiousaffiliation' not found
+INFORMATION: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.extension[1].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3' could not be found, so the code cannot be validated
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.extension[1].extension[0].value.ofType(CodeableConcept): ValueSet 'https://termgit.elga.gv.at/ValueSet/elga-laendercodes' not found
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.identifier[0].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.identifier[1].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.identifier[2].type: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier' not found
+WARNING: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.gender.extension[0].value.ofType(Coding): ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension' not found
+INFORMATION: Patient/HL7ATCorePatientExample06-GenderExtension: Patient.gender.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://termgit.elga.gv.at/CodeSystem/hl7-at-administrativegender-ergaenzung' could not be found, so the code cannot be validated
+== fsh-generated/resources/Practitioner-HL7ATCorePractitionerExample01.json ==
+== fsh-generated/resources/PractitionerRole-HL7ATCorePractitionerRoleExample01.json ==
+WARNING: PractitionerRole/HL7ATCorePractitionerRoleExample01: PractitionerRole.code[0]: ValueSet 'https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole' not found
+INFORMATION: PractitionerRole/HL7ATCorePractitionerRoleExample01: PractitionerRole.code[0].coding[0].system: A definition for CodeSystem 'https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole' could not be found, so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-at-core-address.json ==
+== fsh-generated/resources/StructureDefinition-at-core-ext-address-additionalInformation.json ==
+WARNING: StructureDefinition/at-core-ext-address-additionalInformation: StructureDefinition.context[0]: Review the extension type for at-core-ext-address-additionalInformation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-at-core-ext-address-municipalityCode.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-address-municipalityCode'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-at-core-ext-gender-administrativeGenderAddition.json ==
+== fsh-generated/resources/StructureDefinition-at-core-ext-patient-religion.json ==
+WARNING: StructureDefinition/at-core-ext-patient-religion: StructureDefinition.context[0]: Review the extension type for at-core-ext-patient-religion: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-at-core-ext-valueset-systemoid.json ==
+WARNING: StructureDefinition/at-core-ext-valueset-systemoid: StructureDefinition.context[0]: Review the extension type for at-core-ext-valueset-systemoid: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-valueset-systemoid'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-at-core-organization.json ==
+== fsh-generated/resources/StructureDefinition-at-core-patient.json ==
+== fsh-generated/resources/StructureDefinition-at-core-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-at-core-practitionerRole.json ==
+== fsh-generated/resources/StructureDefinition-at-core-valueset.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-valueset'): The Implementation Guide contains no examples for this profile
