@@ -10,13 +10,15 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: HL7ATCoreProfiles
+id: hl7.at.fhir.core.r4
 canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
 version: 1.1.0
 name: HL7AustriaImplementationGuide
 title: HL7® Austria FHIR® Core Implementation Guide
 status: active
-publisher: HL7® Austria, TC FHIR®
+publisher: 
+    name: HL7® Austria, TC FHIR®
+    url: https://hl7.at/technische-komitees/tc-fhir/
 contact:
   - name: Technical Committee for FHIR® at HL7® Austria
     telecom:
