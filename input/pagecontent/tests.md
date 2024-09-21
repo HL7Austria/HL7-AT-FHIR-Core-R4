@@ -11,4 +11,4 @@ The following table outlines the available Testscripts covered by this Implement
 |  [HL7® AT Core Test Script Update](TestScript-testscript-patient-update-at-core.html)  |  This test script covers the creation of a new HL7® Austria FHIR® Core Patient resource.  |
 
 ### Disclaimer
-The Test Script resources presented here were created in cooperation with [Aegis.net Inc.](https://www.aegis.net/) and can readily be used in [Touchstone](https://touchstone.com/) for testing the resources defined within this Implementation Guide.
+The Test Script resources presented here were created in cooperation with [AEGIS.net Inc.](https://www.aegis.net/) and can readily be used in [Touchstone](https://touchstone.com/) for testing the resources defined within this Implementation Guide.
