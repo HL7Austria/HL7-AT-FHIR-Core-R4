@@ -18,6 +18,11 @@ Usage:       #example
 * identifier[VPNR].value = "123456789"
 * identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2"
 * identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
+* identifier[KANR].value = "K101+"
+* identifier[KANR].system = "urn:oid:1.2.40.0.34.3.1.1"
+* identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit"
+
+
 
 * contact.telecom[0].use = 	http://hl7.org/fhir/contact-point-use#work
 * contact.telecom[0].system = http://hl7.org/fhir/contact-point-system#email

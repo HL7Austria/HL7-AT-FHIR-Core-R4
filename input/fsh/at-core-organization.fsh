@@ -21,7 +21,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.ordered = false
-* identifier contains GDA-OID 0..1 and VPNR 0..1 and VKZ 0..1
+* identifier contains GDA-OID 0..1 and VPNR 0..1 and VKZ 0..1 and KANR 0..1
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the GDA in Austria"
 * identifier[GDA-OID].system 1..1
@@ -38,5 +38,10 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[VKZ].system = "urn:oid:1.2.40.0.10.2.1.1.71" (exactly)
 * identifier[VKZ].system ^short = "OID for the Verwaltungskennzeichen (VKZ) in Austria"
 * identifier[VKZ].assigner.display = "Bundesministerium für Finanzen" (exactly)
-
+* identifier[KANR].value 1..1
+* identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KANRs are suffixed with '+' (e.g. 'K101+')"
+* identifier[KANR].system 1..1
+* identifier[KANR].system = "urn:oid:1.2.40.0.34.3.1.1" (exactly)
+* identifier[KANR].system ^short = "OID for the Austrian Federal Ministry of Health"
+* identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit" (exactly)
 * type from https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype (extensible)
