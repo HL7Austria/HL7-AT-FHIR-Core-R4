@@ -29,7 +29,7 @@ Usage: #example
 * telecom[=].value = "+43.664.1234567"
 * telecom[=].use = #mobile
 * telecom[+].system = #email
-* telecom[=].value = "herberthannes.mustermann@provider.at"
+* telecom[=].value = "bucher.andreas@provider.at"
 * gender = #male
 * birthDate = "1961-12-24"
 * deceasedBoolean = false
