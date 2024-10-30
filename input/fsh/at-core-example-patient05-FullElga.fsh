@@ -19,7 +19,7 @@ Usage: #example
 * telecom[=].value = "+43.664.1234567"
 * telecom[=].use = #mobile
 * telecom[+].system = #email
-* telecom[=].value = "herberthannes.mustermann@provider.at"
+* telecom[=].value = "alexander.wolfesberger@provider.at"
 * gender = #male
 * birthDate = "1961-12-24"
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
