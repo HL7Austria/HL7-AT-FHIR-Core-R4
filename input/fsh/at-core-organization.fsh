@@ -14,8 +14,6 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * address only HL7ATCoreAddress
 * contact.address only HL7ATCoreAddress
 
-// Changing the ValueSet binding for the type of identifiers in case identifier types will be used in the future
-* identifier.type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 //Slice for Identifier:
 * identifier ^slicing.rules = #open
 * identifier ^slicing.discriminator.type = #value

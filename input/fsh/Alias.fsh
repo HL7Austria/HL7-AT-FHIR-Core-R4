@@ -12,3 +12,4 @@ Alias: ELGAAustriaReligionVS = https://termgit.elga.gv.at/ValueSet/elga-religiou
 Alias: ISOStreetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
 Alias: ISOStreetNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: ISOAdditionalLocator = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator
+Alias: PatientBirthPlaceExtension = http://hl7.org/fhir/StructureDefinition/patient-birthPlace

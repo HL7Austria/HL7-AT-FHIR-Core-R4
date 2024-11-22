@@ -58,6 +58,10 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 //Extension for Religion -> HL7 Austria's AustrianReligion Extension
 * extension contains PatientReligion named PatientReligion 0..1
 
+//Extension for birth place -> official HL7 Int Extension
+* extension contains PatientBirthPlaceExtension named birthPlace 0..1
+* extension[birthPlace].value[x] only HL7ATCoreAddress
+
 * contact.gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 
 Mapping:  HL7ATCorePatient2CdaATv3
