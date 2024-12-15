@@ -20,7 +20,7 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.ordered = false
-* identifier contains GDA-OID 0..1 and VPNR 0..1 and vbPK 0..1
+* identifier contains GDA-OID 0..1 and VPNR 0..* and vbPK 0..1
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the GDA in Austria"
 * identifier[GDA-OID].system 1..1
