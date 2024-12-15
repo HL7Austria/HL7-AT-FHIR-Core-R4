@@ -39,7 +39,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[KANR].value 1..1
 * identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KANRs are suffixed with '+' (e.g. 'K101+')"
 * identifier[KANR].system 1..1
-* identifier[KANR].system = "urn:oid:1.2.40.0.34.3.1.1" (exactly)
-* identifier[KANR].system ^short = "OID for the Austrian Federal Ministry of Health"
+* identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10" (exactly)
+* identifier[KANR].system ^short = "OID for the Krankenanstaltennummer (KA-Nr) in Austria"
 * identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit" (exactly)
 * type from https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype (extensible)

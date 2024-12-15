@@ -16,7 +16,7 @@ Usage:       #example
 * identifier[GDA-OID].system = "urn:ietf:rfc:3986"
 * identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit"
 * identifier[KANR].value = "K101+"
-* identifier[KANR].system = "urn:oid:1.2.40.0.34.3.1.1"
+* identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10"
 * identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit"
 * identifier[VPNR][0].value = "123456789"
 * identifier[VPNR][0].system = "urn:oid:1.2.40.0.10.1.4.3.2"
