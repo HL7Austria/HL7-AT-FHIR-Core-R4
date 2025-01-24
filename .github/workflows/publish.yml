@@ -1,0 +1,126 @@
+# Workflow to deploy with IG Publisher and Shorthand to the hl7austria.github.io repository
+
+name: PublishIGWithHL7International
+
+# Run on updates to the master
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      # see https://github.com/stefanzweifel/git-auto-commit-action
+      contents: write
+
+    steps:
+
+    - name: Checkout the implementation guide
+      uses: actions/checkout@v2
+      with:
+        repository: HL7Austria/HL7-AT-FHIR-Core-R5
+        path: .
+
+    - name: Checkout github io project
+      uses: actions/checkout@v2
+      with:
+        repository: HL7Austria/hl7austria.github.io
+        path: ./web
+        ref: pages
+        token: ${{ secrets.ROBO_OLIVER }}
+
+    - name: Checkout FHIR IG Web Templates
+      uses: actions/checkout@v2
+      with:
+        repository: HL7/fhir-web-templates
+        path: ./fhir-web-templates
+
+    - name: Checkout FHIR IG History Templates
+      uses: actions/checkout@v2
+      with:
+        repository: HL7/fhir-ig-history-template
+        path: ./fhir-ig-history-templates
+
+    - name: Checkout FHIR IG Registry
+      uses: actions/checkout@v2
+      with:
+        repository: HL7Austria/ig-registry
+        path: ./fhir-ig-registry
+        ref: hl7at-add-publication
+        token: ${{ secrets.ROBO_OLIVER }}
+
+    - name: Extract last commit date
+      shell: bash
+      run: echo "##[set-output name=date;]$(git log -1 --format="%at" | xargs -I{} date -d @{} +%d.%m.%Y)"
+      id: extract_date
+
+    - uses: bluwy/substitute-string-action@v1
+      id: substitute_index
+      with:
+        _input-file: input/landing_page/_index.yml
+        _format-key: '%%key%%'
+        branch: ${{ github.event.repository.name }}
+        date: ${{ steps.extract_date.outputs.date }}
+        _output-file: input/landing_page/_index.yml
+
+    - name: Install NPM
+      uses: actions/setup-node@v2.1.2
+      with:
+        check-lastest: true
+
+    - name: Install Sushi
+      run: sudo npm install -g fsh-sushi
+
+    - name: Install Jekyll
+      run: |
+        sudo apt-get install jekyll
+
+    - name: Download IG Publisher
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-ig-publisher
+        tag: 'latest'
+        path: .
+        file: publisher.jar
+
+    - name: Run IG Publisher
+      run: |
+        mkdir input-cache
+        mv publisher.jar ./input-cache/publisher.jar
+        unset DISPLAY
+        java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
+
+    - name: Run IG Publisher Go Publish
+      run: |
+        unset DISPLAY
+        java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -go-publish -source ${{github.workspace}} -web ${{github.workspace}}/web -registry ${{github.workspace}}/fhir-ig-registry/fhir-ig-list.json -history ${{github.workspace}}/fhir-ig-history-templates -templates ${{github.workspace}}/fhir-web-templates -temp ${{github.workspace}}/buildtmp
+
+    - name: Move index file
+      run: |
+        mv ./input/landing_page/_index.yml ./web/${{ github.event.repository.name }}
+
+    - name: Remove ig build zip directory
+      run: |
+        rm -rvf ./web/ig-build-zips/
+
+    - name: Deploy publication
+      if: success()
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Publish IG
+        branch: pages
+        repository: ./web
+
+    - name: Deploy updated FHIR IG List.json
+      if: success()
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: HL7AT - Update IG list
+        branch: hl7at-add-publication
+        create_branch: true
+        repository: ./fhir-ig-registry
+
+

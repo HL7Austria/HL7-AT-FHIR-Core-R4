@@ -1,12 +1,12 @@
 ### Introduction
 
-> This is the implementation guide for the **Core Profiles (v1.1.0: [STU](https://www.hl7.org/fhir/versions.html) 2)** based on HL7® FHIR® R4. It is a **ballot** implementation guide that is hosted on the [HL7® Austria github project](https://github.com/HL7Austria). The most recent version of this implementation guide can be found at the [HL7® Austria FHIR® Website](http://fhir.at).
+> This is the implementation guide for the **Core Profiles (v2.0.0: [STU](https://www.hl7.org/fhir/versions.html) 2)** based on HL7® FHIR® R4. It is a **official** implementation guide that is hosted on the [HL7® Austria github project](https://github.com/HL7Austria). The most recent version of this implementation guide can be found at the [HL7® Austria FHIR® Website](http://fhir.at).
 
 This implementation guide is provided to support the use of FHIR® in Austria.
 
 This guide is a working specification. We anticipate that it will be implemented and tested by FHIR® system producers whose feedback will help improve its content. With this standard for trial use, we are looking for feedback on whether the following goals have been met:
 - The HL7® Austria FHIR® Core Implementation Guide (IG) covers administrative resources, like Patient, Organization, Practitioner, etc. that can be used on their own with no specific functional requirements for usage or they can be used for other more functional FHIR® IGs in Austria via dependencies. It contains only those Profiles and Extension where adaptions for Austria are necessary.
-- This guide defines the minimum constraints on the FHIR® resources to create the Austrian Core Profiles. 
+- This guide defines the minimum constraints on the FHIR® resources to create the Austrian Core Profiles.
 - It contains guidance on the [HL7® AT Core Patient Profile](StructureDefinition-at-core-patient.html).
   - Along with the Patient profile the representation of the common structure of address information within Austrian information systems ([HL7® AT Core Address Profile](StructureDefinition-at-core-address.html)) and the extension to encode the religious confession of a patient (only confessions registered in Austria) ([Patient Religion](StructureDefinition-at-core-ext-patient-religion.html)) have been specified.
 - Furthermore the codes for gender were extended to allow the usage of all official administrative genders in Austria.
