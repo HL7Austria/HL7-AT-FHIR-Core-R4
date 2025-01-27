@@ -21,7 +21,7 @@ jobs:
     - name: Checkout the implementation guide
       uses: actions/checkout@v2
       with:
-        repository: HL7Austria/HL7-AT-FHIR-Core-R5
+        repository: HL7Austria/HL7-AT-FHIR-Core-R4
         path: .
 
     - name: Checkout github io project
