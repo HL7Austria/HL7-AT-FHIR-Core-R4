@@ -1,6 +1,6 @@
 ### Introduction
 
-> This is the implementation guide for the **Core Profiles (v2.0.0: [STU](https://www.hl7.org/fhir/versions.html) 2)** based on HL7® FHIR® R4. It is a **official** implementation guide that is hosted on the [HL7® Austria github project](https://github.com/HL7Austria). The most recent version of this implementation guide can be found at the [HL7® Austria FHIR® Website](http://fhir.at).
+> This is the implementation guide for the **Core Profiles (v2.1.0: [STU](https://www.hl7.org/fhir/versions.html) 3)** based on HL7® FHIR® R4. It is a **ballot** implementation guide that is hosted on the [HL7® Austria github project](https://github.com/HL7Austria). The most recent version of this implementation guide can be found at the [HL7® Austria FHIR® Website](http://fhir.at).
 
 This implementation guide is provided to support the use of FHIR® in Austria.
 
