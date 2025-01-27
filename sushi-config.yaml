@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.at.fhir.core.r4
 canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
-version: 2.0.0
+version: 2.1.0
 name: HL7AustriaImplementationGuide
 title: HL7® Austria FHIR® Core Implementation Guide
 status: active
@@ -30,7 +30,7 @@ fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: STU2
+releaseLabel: STU3
 
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To control the ig.ini using this config, uncomment and set the "template" property.           │
