@@ -14,6 +14,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * name 1..*
 * gender 1..1
 * gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
+* birthDate.extension contains PatientBirthTimeExtension named birthTime 0..1
 // Address is based on the profile for the Austrian Representation of an Address
 // this applies to the address of the patient as well as the address of contacts
 * address only HL7ATCoreAddress

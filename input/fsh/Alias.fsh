@@ -13,3 +13,4 @@ Alias: ISOStreetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-str
 Alias: ISOStreetNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: ISOAdditionalLocator = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator
 Alias: PatientBirthPlaceExtension = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: PatientBirthTimeExtension = http://hl7.org/fhir/StructureDefinition/patient-birthTime
