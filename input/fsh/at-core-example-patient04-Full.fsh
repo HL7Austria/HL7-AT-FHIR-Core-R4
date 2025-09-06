@@ -32,6 +32,7 @@ Usage: #example
 * telecom[=].value = "bucher.andreas@provider.at"
 * gender = #male
 * birthDate = "1961-12-24"
+* birthDate.extension[birthTime].valueDateTime = 1961-12-24T08:28:17+01:00
 * deceasedBoolean = false
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * multipleBirthBoolean = false
