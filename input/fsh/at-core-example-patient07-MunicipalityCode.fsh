@@ -61,3 +61,4 @@ Usage:       #inline
 * postalCode = "4020"
 * country = "AUT"
 * extension[AddressMunicipalityCode].valueString = "40101"
+* extension[AddressMunicipalityKey].valueString = "40101"
