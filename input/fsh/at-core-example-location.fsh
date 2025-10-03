@@ -1,17 +1,3 @@
-/*##############################################################################
-# Example Organization + Locations with KA-Nr and Geolocation
-##############################################################################*/
-
-Instance:    HL7ATCoreOrganizationAmadeus
-InstanceOf:  HL7ATCoreOrganization
-Usage:       #example
-Description: "Organization with 4-character KA-Nr"
-
-* name = "Amadeus Spital"
-* identifier[KANR].value = "K101"
-* identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10"
-* identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit"
-
 // ---------------- Location Graz ----------------
 Instance:    HL7ATCoreLocationGraz
 InstanceOf:  HL7ATCoreLocation
