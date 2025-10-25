@@ -8,12 +8,14 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    
+
     - name: Checkout the implementation guide
       uses: actions/checkout@v2
       with:
@@ -28,12 +30,12 @@ jobs:
           echo "##[set-output name=branch;]$(echo ${{ github.event.pull_request.head.ref }})"
         fi
       id: extract_branch
-    
+
     - name: Extract last commit date
       shell: bash
-      run: echo "##[set-output name=date;]$(git log -1 --format="%at" | xargs -I{} date -d @{} +%d.%m.%Y)"   
+      run: echo "##[set-output name=date;]$(git log -1 --format="%at" | xargs -I{} date -d @{} +%d.%m.%Y)"
       id: extract_date
-      
+
     - uses: bluwy/substitute-string-action@v1
       id: substitute_index
       with:
@@ -47,14 +49,14 @@ jobs:
       uses: actions/setup-node@v2.1.2
       with:
         check-lastest: true
-        
+
     - name: Install Sushi
       run: sudo npm install -g fsh-sushi
 
     - name: Install Jekyll
       run: |
         sudo apt-get install jekyll
-        
+
     - name: Download IG Publisher
       uses: Legion2/download-release-action@v2.1.0
       with:
@@ -62,19 +64,19 @@ jobs:
         tag: 'latest'
         path: .
         file: publisher.jar
-        
+
     - name: Run IG Publisher
-      run: | 
+      run: |
         mkdir input-cache
         mv publisher.jar ./input-cache/publisher.jar
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
 
     - name: Move index file
-      run: |         
+      run: |
         mv ./input/landing_page/_index.yml ./output/
 
-    
+
     - name: Deploy Implementation Guide
       if: success()
       uses: peaceiris/actions-gh-pages@v3
