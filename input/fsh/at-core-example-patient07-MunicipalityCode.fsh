@@ -40,7 +40,7 @@ Usage:       #example
 * telecom[1].system = http://hl7.org/fhir/contact-point-system#phone
 * telecom[1].value = "+436501234567890"
 
-* extension[PatientReligion].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#162 "Pastafarianismus"
+* extension[PatientReligion].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#162 "Pastafarianismus"
 * extension[CitizenshipExtension].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3#AUT "Österreich"
 
 * address = HL7ATCoreAddressExample07-MunicipalityCode
