@@ -56,8 +56,9 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * extension[citizenship].extension[code].valueCodeableConcept from ELGALaendercodesVS (extensible)
 * extension[citizenship].extension[code].valueCodeableConcept 1..1  //Workaround for sushi issue 596, can be removed when fixed
 
-//Extension for Religion -> HL7 Austria's AustrianReligion Extension
-* extension contains PatientReligion named PatientReligion 0..1
+//Extension for Religion
+* extension contains http://hl7.org/fhir/StructureDefinition/patient-religion named PatientReligion 0..1
+* extension[PatientReligion].value[x] from ELGAAustriaReligionVS (extensible)
 
 //Extension for birth place -> official HL7 Int Extension
 * extension contains PatientBirthPlaceExtension named birthPlace 0..1
