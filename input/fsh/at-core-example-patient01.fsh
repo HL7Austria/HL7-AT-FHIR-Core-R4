@@ -27,7 +27,7 @@ Usage:       #example
 * identifier[bPK].type.coding.display = "National unique individual identifier"
 * identifier[bPK].assigner.display = "Bundesministerium für Inneres"
 * identifier[vbPK].value = "R0g6b2VMZFNFYjBsKzhrU2RKV2pPWXlZbW5Za2kwPQ=="
-* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.5"
+* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.1"
 * identifier[vbPK].type = HL7V2#ANON "Anonymous identifier"
 * identifier[localPatientId].value = "0815"
 * identifier[localPatientId].system = "urn:oid:1.2.3.4.5"
