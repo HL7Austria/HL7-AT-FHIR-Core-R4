@@ -27,7 +27,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.ordered = false
-* identifier contains socialSecurityNumber 0..1 and bPK 0..1 and localPatientId 0..1
+* identifier contains socialSecurityNumber 0..1 and bPK 0..1 and vbPK 0..* and localPatientId 0..1
 * identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS (exactly)
@@ -44,6 +44,12 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[bPK].system ^short = "OID for the bPK in Austria"
 //* identifier[bPK].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.2.1.1.149" (exactly)
 * identifier[bPK].assigner.display = "Bundesministerium für Inneres" (exactly)
+* identifier[vbPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
+* identifier[vbPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
+* identifier[vbPK].type.coding.code = #ANON (exactly)
+* identifier[vbPK].system 1..1
+* identifier[vbPK].system from HL7ATCoreVBPK (required)
+* identifier[vbPK].system ^short = "OID for the specific vbPK in Austria"
 * identifier[localPatientId].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
 * identifier[localPatientId].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
