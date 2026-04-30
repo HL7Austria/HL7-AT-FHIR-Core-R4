@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.at.fhir.core.r4
-canonical: http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1
+canonical: https://fhir.hl7.at/core/r4
 version: 2.1.0
 name: HL7AustriaImplementationGuide
 title: HL7® Austria FHIR® Core Implementation Guide
