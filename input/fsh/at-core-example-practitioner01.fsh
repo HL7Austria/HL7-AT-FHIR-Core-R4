@@ -17,7 +17,6 @@ Usage:       #example
 * identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[vbPK].value = "AXg6b2VMZFNFYjBsKzhrU2RKV2pPWXlZbW5Za2kwPQ=="
 * identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.1"
-* identifier[vbPK].type = HL7V2#ANON "Anonymous identifier"
 
 * name.family = "Musterärztin"
 * name.given = "Melanie"
