@@ -48,6 +48,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[vbPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
 * identifier[vbPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[vbPK].type.coding.code = HL7V2#NI (exactly)
+* identifier[vbPK].value 1..1
 * identifier[vbPK].system 1..1
 * identifier[vbPK].system from HL7ATCoreValueSetvbPK
 * identifier[vbPK].system ^short = "OID for the vbPK in Austria"
