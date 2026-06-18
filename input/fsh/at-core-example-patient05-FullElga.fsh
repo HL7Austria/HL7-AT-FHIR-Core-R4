@@ -1,5 +1,5 @@
 Instance: HL7ATCorePatientExample05-FullElga
-InstanceOf: HL7ATCorePatient
+InstanceOf: HL7ATCorePatientPrimary
 Description: "Example with all ELGA header elements in the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier.use = #official

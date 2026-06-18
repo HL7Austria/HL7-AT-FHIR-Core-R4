@@ -5,7 +5,7 @@
 ##############################################################################*/
 
 Instance:    HL7ATCorePatientExample07-MunicipalityCode
-InstanceOf:  HL7ATCorePatient
+InstanceOf:  HL7ATCorePatientPrimary
 Description: "Example for the usage of the HL7 AT Core Patient Profile that includes a municipality code"
 Usage:       #example
 * name.family = "Mustermann"

@@ -1,5 +1,5 @@
 Instance: HL7ATCorePatientExample04-Full
-InstanceOf: HL7ATCorePatient
+InstanceOf: HL7ATCorePatientPrimary
 Description: "Example with all elements for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official

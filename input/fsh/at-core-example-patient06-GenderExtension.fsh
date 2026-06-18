@@ -5,7 +5,7 @@
 ##############################################################################*/
 
 Instance:    HL7ATCorePatientExample06-GenderExtension
-InstanceOf:  HL7ATCorePatient
+InstanceOf:  HL7ATCorePatientPrimary
 Description: "Example for the usage of the HL7 AT Core Patient Profile"
 Usage:       #example
 * name.family = "Musterperson"
