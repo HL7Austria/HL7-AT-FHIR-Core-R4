@@ -1,5 +1,5 @@
 Instance: HL7ATCorePatientExample03-deceasedBoolean
-InstanceOf: HL7ATCorePatient
+InstanceOf: HL7ATCorePatientPrimary
 Description: "Example with deceasedBoolean for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier.use = #usual

@@ -1,5 +1,5 @@
 Instance: HL7ATCorePatientExample02-deceasedTime
-InstanceOf: HL7ATCorePatient
+InstanceOf: HL7ATCorePatientPrimary
 Description: "Example with deceasedTime for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official
