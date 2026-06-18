@@ -7,7 +7,7 @@
 Profile:        HL7ATCorePatientSecondary
 Parent:         HL7ATCorePatientBase
 Id:             at-core-patient-secondary
-Title:          "HL7® AT Core Patient Profile for Primary Use"
+Title:          "HL7® AT Core Patient Profile for Secondary Use"
 Description:    "HL7® Austria FHIR® Core Profile for patient data for secondary use in Austria."
 // Define Mandatory Fields
 
