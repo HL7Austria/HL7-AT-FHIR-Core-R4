@@ -68,7 +68,7 @@ Description:    "HL7® Austria FHIR® Core Base Profile for patient data in Aust
 * contact.gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 
 Mapping:  HL7ATCorePatient2CdaATv3
-Source:   at-core-patient
+Source:   at-core-patient-base
 Target:   "https://wiki.hl7.at/index.php?title=ILF:Allgemeiner_Implementierungsleitfaden_(Version_3)"
 Id:       at-core-mapping-patient2cdaatv3
 Title:    "Allgemeiner Implementierungsleitfaden v3"
