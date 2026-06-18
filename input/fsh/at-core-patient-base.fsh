@@ -1,18 +1,14 @@
 /*##############################################################################
 # Type:       FSH-File for an FHIR® Profile
-# About:      HL7® Austria FHIR® Core Profile for Patient.
+# About:      HL7® Austria FHIR® Core Base-Profile for Patient.
 # Created by: HL7® Austria, TC FHIR®
 ##############################################################################*/
 
-Profile:        HL7ATCorePatient
+Profile:        HL7ATCorePatientBase
 Parent:         Patient
-Id:             at-core-patient
-Title:          "HL7® AT Core Patient Profile"
-Description:    "HL7® Austria FHIR® Core Profile for patient data in Austria.
-The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and designed to meet the applicable patient demographic data elements in Austria. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. Note, this extension represents the common structure of Patient information within Austrian information systems."
-// Define Mandatory Fields
-* name 1..*
-* gender 1..1
+Id:             at-core-patient-base
+Title:          "HL7® AT Core Base Patient Profile"
+Description:    "HL7® Austria FHIR® Core Base Profile for patient data in Austria."
 * gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 * birthDate.extension contains PatientBirthTimeExtension named birthTime 0..1
 // Address is based on the profile for the Austrian Representation of an Address
@@ -27,7 +23,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.ordered = false
-* identifier contains socialSecurityNumber 0..1 and bPK 0..* and localPatientId 0..1
+* identifier contains socialSecurityNumber 0..1 and bPK 0..1 and vbPK 0..* and localPatientId 0..1
 * identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS (exactly)
@@ -49,7 +45,12 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[localPatientId].type.coding.code = HL7V2#PI (exactly)
 * identifier[localPatientId].system 1..1
 * identifier[localPatientId].system ^short = "Namespace that assigned the localPatientId."
-
+* identifier[vbPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
+* identifier[vbPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
+* identifier[vbPK].type.coding.code = #ANON (exactly)
+* identifier[vbPK].system 1..1
+* identifier[vbPK].system from HL7ATCoreVBPK (required)
+* identifier[vbPK].system ^short = "OID for the specific vbPK in Austria"
 
 //Extension for Citizenship -> official HL7 Int Extension with ValueSet Bindung of HL7 Austria
 * extension contains CitizenshipExtension named citizenship 0..1
@@ -142,3 +143,13 @@ Title:    "Allgemeiner Implementierungsleitfaden v3"
 
 * link.other -> "n/a"
 * link.type -> "n/a"
+
+
+ValueSet: HL7ATCoreVBPK
+Id: at-core-vbpk
+Title: "HL7AT Core vbPK"
+Description: "This value set contains the OIDs for the vbPK (Verschlüsseltes bereichsspezifisches Personenkennzeichen) in Austria according to [E-Government-Bereichsabgrenzungsverordnung – E-Gov-BerAbgrV](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003476)."
+* ^experimental = false
+* urn:ietf:rfc:3986#urn:oid:1.2.40.0.34.4.22.1 "vbPK GH"
+* urn:ietf:rfc:3986#urn:oid:1.2.40.0.34.4.22.2 "vbPK SV"
+* urn:ietf:rfc:3986#urn:oid:1.2.40.0.34.4.22.3 "vbPK AS"
