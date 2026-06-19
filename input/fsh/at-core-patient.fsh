@@ -10,9 +10,6 @@ Id:             at-core-patient
 Title:          "HL7® AT Core Patient Profile"
 Description:    "HL7® Austria FHIR® Core Profile for patient data in Austria.
 The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and designed to meet the applicable patient demographic data elements in Austria. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. Note, this extension represents the common structure of Patient information within Austrian information systems."
-// Define Mandatory Fields
-* name 1..*
-* gender 1..1
 * gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
 * birthDate.extension contains PatientBirthTimeExtension named birthTime 0..1
 // Address is based on the profile for the Austrian Representation of an Address
