@@ -14,12 +14,6 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 // * identifier
 
 // * identifier[vbPK] contains vbPKGH 1..1 and vbPKSV 1..1
-* identifier ^slicing.rules = #open
-* identifier ^slicing.discriminator[+].type = #value
-* identifier ^slicing.discriminator[=].path = "type.coding.code"
-* identifier ^slicing.discriminator[+].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.ordered = false
 * identifier contains vbPKGH 1..1 and vbPKSV 1..1
 // * identifier[vbPK][vbPKGH] 1..1
 // * identifier[vbPK][vbPKSV] 1..1
