@@ -12,6 +12,8 @@ Description:  "HL7® Austria FHIR® Core Extension for the administrative gender
 The extension is used to add the missing codes and is applied in case the code for administrative gender itself is set to 'other'."
 Context: 	  Patient.gender, Patient.contact.gender, Practitioner.gender, RelatedPerson.gender, Person.gender, HL7ATCorePatient.gender, HL7ATCorePatient.contact.gender, HL7ATCorePractitioner.gender 
 
+* . ^short = "Additional administrative gender (Geschlecht, Ergänzung zu 'other')"
+* . ^definition = "Additional administrative gender code (Geschlecht) required in Austria that is not covered by the FHIR administrative gender codes. The extension is only applied in case the administrative gender itself is set to 'other'."
 * value[x] only Coding
 * value[x] 1..1
 * value[x] from https://termgit.elga.gv.at/ValueSet/hl7-at-administrativegender-fhir-extension (required)
