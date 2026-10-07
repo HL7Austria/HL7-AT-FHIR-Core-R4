@@ -22,6 +22,8 @@ Description:    "HL7® Austria FHIR® Core Profile for location data in Austria.
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.ordered = false
 * identifier contains KANR 0..1
+* identifier[KANR] ^short = "Krankenanstaltennummer (KA-Nr)"
+* identifier[KANR] ^definition = "The hospital identification number (Krankenanstaltennummer, KA-Nr) of the hospital site in the more fine-grained 6-character format ('K' + 3 digits + '.' + 1 digit, e.g. 'K460.1'), assigned by the Federal Ministry of Health (Bundesministerium für Gesundheit). The 4-character KA-Nr remains an identifier on the Organization resource only. The first 4 characters of the Location KA-Nr SHALL match the Organization KA-Nr."
 * identifier[KANR].value 1..1
 * identifier[KANR].value ^short = "Krankenanstaltennummer (hospital identification number) in the more fine-grained 6-character format, used to represent a hospital site. The 4-character hospital identification number remains an identifier on the Organization resource only. The first 4 characters of the Location KANR SHALL match the Organization KANR.“"
 * identifier[KANR].system 1..1
