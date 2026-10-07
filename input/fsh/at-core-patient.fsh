@@ -11,6 +11,8 @@ Title:          "HL7® AT Core Patient Profile"
 Description:    "HL7® Austria FHIR® Core Profile for patient data in Austria.
 The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and designed to meet the applicable patient demographic data elements in Austria. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. Note, this extension represents the common structure of Patient information within Austrian information systems."
 * gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
+* gender.extension[AdministrativeGenderAddition] ^short = "Additional administrative gender (Geschlecht, Ergänzung zu 'other')"
+* gender.extension[AdministrativeGenderAddition] ^definition = "Additional administrative gender code (Geschlecht) required in Austria that is not covered by the FHIR administrative gender codes. The extension is only applied in case the administrative gender itself is set to 'other'."
 * birthDate.extension contains PatientBirthTimeExtension named birthTime 0..1
 // Address is based on the profile for the Austrian Representation of an Address
 // this applies to the address of the patient as well as the address of contacts
@@ -68,6 +70,8 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * extension[birthPlace].value[x] only HL7ATCoreAddress
 
 * contact.gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
+* contact.gender.extension[AdministrativeGenderAddition] ^short = "Additional administrative gender (Geschlecht, Ergänzung zu 'other')"
+* contact.gender.extension[AdministrativeGenderAddition] ^definition = "Additional administrative gender code (Geschlecht) required in Austria that is not covered by the FHIR administrative gender codes. The extension is only applied in case the administrative gender itself is set to 'other'."
 
 Mapping:  HL7ATCorePatient2CdaATv3
 Source:   at-core-patient

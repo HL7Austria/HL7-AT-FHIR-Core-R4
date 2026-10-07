@@ -12,6 +12,8 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 // Address is based on the profile for the Austrian Representation of an Address
 * address only HL7ATCoreAddress
 * gender.extension contains AdministrativeGenderAddition named AdministrativeGenderAddition 0..1
+* gender.extension[AdministrativeGenderAddition] ^short = "Additional administrative gender (Geschlecht, Ergänzung zu 'other')"
+* gender.extension[AdministrativeGenderAddition] ^definition = "Additional administrative gender code (Geschlecht) required in Austria that is not covered by the FHIR administrative gender codes. The extension is only applied in case the administrative gender itself is set to 'other'."
 
 // Changing the ValueSet binding for the type of identifiers
 * identifier.type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)

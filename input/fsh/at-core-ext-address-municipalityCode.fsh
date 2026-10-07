@@ -9,6 +9,8 @@ Id:           at-core-ext-address-municipalityCode
 Title:        "Address Municipality Code" 
 Description:  "HL7® Austria FHIR® Core Extension for the municipality code part of the Austrian address"
 Context:      Address, HL7ATCoreAddress
+* . ^short = "Municipality code (Gemeindekennziffer)"
+* . ^definition = "The municipality code (Gemeindekennziffer) of the Austrian municipality the address belongs to, as assigned by Statistics Austria (Statistik Austria)."
 
 * value[x] only string
 * value[x] 1..1
