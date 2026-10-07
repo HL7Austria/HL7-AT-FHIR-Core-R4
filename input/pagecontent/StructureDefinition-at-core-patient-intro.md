@@ -1,5 +1,5 @@
 The goal of this profile is to represent the demographic data of patients in the Austrian healthcare domain.
-Organizations and persons providing healthcare services in Austria are commonly called “Gesundheitsdienstleistungsanbieter (GDA)” (in English: Healthcare Service Provider). This German abbreviation is therefore used throughout this profile where it is relevant.
+Organizations and persons providing healthcare services in Austria are commonly called “Gesundheitsdiensteanbieter (GDA)” (in English: Healthcare Service Provider). This German abbreviation is therefore used throughout this profile where it is relevant.
 Austrian patients are usually identified with one or more of the following identifiers:
 - The “Sozialversicherungsnummer (SVNR)” which is the Austrian social security number provided by the Federation of Austrian Social Insurances (Dachverband der österreichischen Sozialversicherungsträger).
 - A “Bereichsspezifisches Personenkennzeichen (bPK)” which is a sector-specific personal identifier used in Austrian e-Government processes and provided by the Federal Ministry of the Interior (Bundesministerium für Inneres).
