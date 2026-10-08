@@ -27,11 +27,6 @@ This guide is based on the <a href="{{site.data.fhir.path}}">FHIR® R4</a> speci
 
 {% include dependency-table-short.xhtml %}
 
-### Dependencies
-This guide is based on the <a href="{{site.data.fhir.path}}">FHIR R4</a> specification.  In addition, this guide also relies on a number of parent implementation guides:
-
-{% include dependency-table-short.xhtml %}
-
 ### Governance
 
 HL7® Austria is an official Affiliate of HL7® International. Within HL7® Austria the technical committee for FHIR® (TC FHIR®) is responsible to promote and disseminate the new upcoming standard HL7® FHIR®.
