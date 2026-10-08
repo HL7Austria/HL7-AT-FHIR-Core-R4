@@ -4,9 +4,9 @@
 # Created by: HL7® Austria, TC FHIR® 
 ##############################################################################*/
 
-Instance:    HL7ATCorePatientExample01
+Instance:    HL7ATCorePatientExample07-MunicipalityCode
 InstanceOf:  HL7ATCorePatient
-Description: "Example for the usage of the HL7 AT Core Patient Profile"
+Description: "Example for the usage of the HL7 AT Core Patient Profile that includes a municipality code"
 Usage:       #example
 * name.family = "Mustermann"
 * name.given = "Max"
@@ -39,13 +39,13 @@ Usage:       #example
 * telecom[1].use = 	http://hl7.org/fhir/contact-point-use#home
 * telecom[1].system = http://hl7.org/fhir/contact-point-system#phone
 * telecom[1].value = "+436501234567890"
- 
+
 * extension[PatientReligion].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#162 "Pastafarianismus"
 * extension[CitizenshipExtension].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3#AUT "Österreich"
 
-* address = HL7ATCoreAddressExample01
+* address = HL7ATCoreAddressExample07-MunicipalityCode
 
-Instance:    HL7ATCoreAddressExample01
+Instance:    HL7ATCoreAddressExample07-MunicipalityCode
 InstanceOf:  HL7ATCoreAddress
 Description: "Example for the usage of the HL7 AT Core Address Profile"
 Usage:       #inline
@@ -60,3 +60,4 @@ Usage:       #inline
 * state = "Oberösterreich"
 * postalCode = "4020"
 * country = "AUT"
+* extension[AddressMunicipalityCode].valueString = "40101"

@@ -9,8 +9,15 @@
 Extension:    PatientReligion
 Id:           at-core-ext-patient-religion
 Title:        "Patient Religion" 
-Description:  "HL7® Austria FHIR® Core Extension for the religion (registered in Austria) of a patient.
+Description:  "**DEPRECATED** HL7® Austria FHIR® Core Extension for the religion (registered in Austria) of a patient.
 The extension is used to encode the religious confession of a patient (only confessions registered in Austria). Furthermore, it uses the official [HL7 AT CodeSystem](https://termpub.gesundheit.gv.at:443/TermBrowser/gui/main/main.zul?loadType=CodeSystem&loadName=HL7 AT ReligionAustria) for religion and is therefore aligned with the ELGA ValueSet, respectively."
+Context:      Patient, HL7ATCorePatient
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #deprecated
+* ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason"
+* ^extension[=].valueCode.extension.valueMarkdown = "This extension is deprecated since the [HL7® International extension for Patient Religion](http://hl7.org/fhir/StructureDefinition/patient-religion) shall be used instead."
+* ^status = #retired
+
 * value[x] 0..0
 * extension contains 
     code 0..1 and
@@ -18,9 +25,6 @@ The extension is used to encode the religious confession of a patient (only conf
 * extension[code].value[x] only CodeableConcept
 * extension[code] ^short = "Religion code of the Patient"
 * extension[code].value[x] from ELGAAustriaReligionVS (extensible)
-//* extension[code].value[x] ^binding.valueSetUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
-* extension[code].value[x].coding.system ^fixedUri = "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion"
-* extension[code].value[x].coding.system ^short = "URL for the HL7 AT CodeSystem used by the ELGA ValueSet for religion"
 * extension[code].extension 0..0
 * extension[period] ^short = "Time period of the Religion"
 * extension[period].value[x] only Period

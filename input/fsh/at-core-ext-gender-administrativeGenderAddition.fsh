@@ -10,7 +10,7 @@ Id:           at-core-ext-gender-administrativeGenderAddition
 Title:        "Administrative Gender Addition" 
 Description:  "HL7® Austria FHIR® Core Extension for the administrative gender of a person (Patient, Practitioner, ...). 
 The extension is used to add the missing codes and is applied in case the code for administrative gender itself is set to 'other'."
-Context: 	  Patient.gender, Patient.contact.gender, Practitioner.gender, RelatedPerson.gender, Person.gender, HL7ATCorePatient.gender, HL7ATCorePatient.contact.gender 
+Context: 	  Patient.gender, Patient.contact.gender, Practitioner.gender, RelatedPerson.gender, Person.gender, HL7ATCorePatient.gender, HL7ATCorePatient.contact.gender, HL7ATCorePractitioner.gender 
 
 * value[x] only Coding
 * value[x] 1..1

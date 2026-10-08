@@ -3,7 +3,7 @@ InstanceOf: HL7ATCorePatient
 Description: "Example with all ELGA header elements in the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier.use = #official
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
 * identifier.system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier.value = "1111241261"
 * identifier.assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
@@ -19,7 +19,7 @@ Usage: #example
 * telecom[=].value = "+43.664.1234567"
 * telecom[=].use = #mobile
 * telecom[+].system = #email
-* telecom[=].value = "herberthannes.mustermann@provider.at"
+* telecom[=].value = "alexander.wolfesberger@provider.at"
 * gender = #male
 * birthDate = "1961-12-24"
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
@@ -35,7 +35,8 @@ Usage: #example
 * contact.address.country = "AUT"
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true
-* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#101 "Römisch-Katholisch"
+
+* extension[PatientReligion].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#101 "Römisch-Katholisch"
 
 * address = HL7ATCoreAddressExample03
 

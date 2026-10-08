@@ -3,7 +3,7 @@ InstanceOf: HL7ATCorePatient
 Description: "Example with all elements for the usage of the HL7 AT Core Patient Profile"
 Usage: #example
 * identifier[0].use = #official
-* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security Number"
+* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS "Social Security number"
 * identifier[=].system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier[=].value = "1111241261"
 * identifier[=].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
@@ -29,9 +29,10 @@ Usage: #example
 * telecom[=].value = "+43.664.1234567"
 * telecom[=].use = #mobile
 * telecom[+].system = #email
-* telecom[=].value = "herberthannes.mustermann@provider.at"
+* telecom[=].value = "bucher.andreas@provider.at"
 * gender = #male
 * birthDate = "1961-12-24"
+* birthDate.extension[birthTime].valueDateTime = 1961-12-24T08:28:17+01:00
 * deceasedBoolean = false
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * multipleBirthBoolean = false
@@ -48,18 +49,18 @@ Usage: #example
 * contact.address.postalCode = "1220"
 * contact.address.country = "AUT"
 * contact.gender = #female
-* contact.organization = Reference(Organization/Organization-example-f001-burgers)
+* contact.organization = Reference(Organization/HL7ATCoreOrganizationExample01)
 * contact.period.start = "2016-07-30T08:30:00+01:00"
 * contact.period.end = "2019-07-30T08:35:00+01:00"
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true
-* generalPractitioner = Reference(Organization/Organization-example-f001-burgers)
-* managingOrganization = Reference(Organization/Organization-example-f001-burgers)
+* generalPractitioner = Reference(Practitioner/HL7ATCorePractitionerExample01)
+* managingOrganization = Reference(Organization/HL7ATCoreOrganizationExample01)
 * link.type = #seealso
 * link.other = Reference(Patient/HL7ATCorePatientExample03-deceasedBoolean) 
 
-* extension[PatientReligion].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-religion#101 "Römisch-Katholisch"
-* extension[CitizenshipExtension].extension[code].valueCodeableConcept = http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/CodeSystem/at-core-cs-iso-3166-1-alpha-3#AUT "Österreich"
+* extension[PatientReligion].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#101 "Römisch-Katholisch"
+* extension[CitizenshipExtension].extension[code].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/iso-3166-1-alpha-3#AUT "Österreich"
 * extension[CitizenshipExtension].extension[period].valuePeriod.start = "2016-07-30T08:30:00+01:00"
 * extension[CitizenshipExtension].extension[period].valuePeriod.end = "2022-07-30T08:35:00+01:00"
 
