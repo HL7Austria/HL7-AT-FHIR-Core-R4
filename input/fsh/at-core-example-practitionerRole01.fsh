@@ -10,7 +10,7 @@ Description: "Example for the usage of the HL7 AT Core PractitionerRole Profile"
 Usage:       #example
 
 * active = true
-* code = https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole#100 "Ärztin/Arzt für Allgemeinmedizin"
+* code = https://termgit.elga.gv.at/CodeSystem/elga-gtelvogdarollen#100 "Ärztin/Arzt für Allgemeinmedizin"
 * practitioner = Reference(Practitioner/HL7ATCorePractitionerExample01)
 * specialty[0] = http://snomed.info/sct#419772000 "Family practice"
 * specialty[1] = http://snomed.info/sct#410005002 "Dive medicine"
