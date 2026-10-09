@@ -1,2 +1,9 @@
 
 build/
+template/
+output/
+input-cache/
+temp/
+fsh-generated/
+.DS_Store
+.vscode/
