@@ -15,6 +15,8 @@ Usage:       #example
 * identifier[VPNR].value = "987654321"
 * identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2"
 * identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
+* identifier[vbPK].value = "AXg6b2VMZFNFYjBsKzhrU2RKV2pPWXlZbW5Za2kwPQ=="
+* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.1"
 
 * name.family = "Musterärztin"
 * name.given = "Melanie"
