@@ -10,7 +10,7 @@ Description: "Example for the usage of the HL7 AT Core Organization Profile with
 Usage:       #example
 
 * name = "Landeskrankenhaus Hall in Tirol"
-* type = https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype#300 "Allgemeine Krankenanstalt"
+* type = https://termgit.elga.gv.at/CodeSystem/elga-gtelvogdarollen#300 "Allgemeine Krankenanstalt"
 
 * identifier[GDA-OID].value = "urn:oid:1.2.40.0.34.3.1.1061"
 * identifier[GDA-OID].system = "urn:ietf:rfc:3986"
