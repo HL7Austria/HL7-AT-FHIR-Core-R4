@@ -33,8 +33,9 @@ Description:    "HL7® Austria FHIR® Core Profile for address data in Austria. 
 * line.extension[additionalInformation] ^short = "Additional Information"
 * line.extension[additionalInformation] ^definition = "Additional information about the street address"
 
-//Extension for municipality code -> HL7 Austria's AddressMunicipalityCode Extension
+//Extension for municipality code and key -> HL7 Austria's AddressMunicipalityCode and AddressMunicipalityKey Extension
 * extension contains AddressMunicipalityCode named municipalityCode 0..1
+* extension contains AddressMunicipalityKey named municipalityKey 0..1
 
 //Definition of invariants for address
 Invariant:    at-addr-1
