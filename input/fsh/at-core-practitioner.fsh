@@ -22,7 +22,7 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.ordered = false
-* identifier contains GDA-OID 0..1 and VPNR 0..* and vbPK 0..1
+* identifier contains GDA-OID 0..1 and VPNR 0..* and vbPK 0..*
 * identifier[GDA-OID] ^short = "Gesundheitsdiensteanbieter-OID (GDA-OID)"
 * identifier[GDA-OID] ^definition = "The OID of the healthcare service provider (Gesundheitsdiensteanbieter, GDA) as registered in the Austrian GDA-Index, maintained by the Federal Ministry of Health (Bundesministerium für Gesundheit)."
 * identifier[GDA-OID].value 1..1
@@ -42,6 +42,5 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier[vbPK] ^definition = "The encrypted sector-specific personal identifier (Verschlüsseltes bereichsspezifisches Personenkennzeichen, vbPK) of the practitioner, used in Austrian e-Government processes and assigned by the Federal Ministry of the Interior (Bundesministerium für Inneres)."
 * identifier[vbPK].value 1..1
 * identifier[vbPK].system 1..1
-* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22" (exactly)
-* identifier[vbPK].system ^short = "OID for the Verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK) in Austria"
-* identifier[vbPK].assigner.display = "Bundesministerium für Inneres" (exactly)
+* identifier[vbPK].system from HL7ATCoreVBPK (required)
+* identifier[vbPK].system ^short = "OID for the specific Verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK) in Austria"

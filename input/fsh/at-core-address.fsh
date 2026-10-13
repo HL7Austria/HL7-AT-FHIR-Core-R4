@@ -33,8 +33,9 @@ Description:    "HL7® Austria FHIR® Core Profile for address data in Austria. 
 * line.extension[additionalInformation] ^short = "Additional address information (Adresszusatz)"
 * line.extension[additionalInformation] ^definition = "Additional information about the street address (Adresszusatz), e.g. street direction, P.O. Box number or delivery hints."
 
-//Extension for municipality code -> HL7 Austria's AddressMunicipalityCode Extension
+//Extension for municipality code and key -> HL7 Austria's AddressMunicipalityCode and AddressMunicipalityKey Extension
 * extension contains AddressMunicipalityCode named municipalityCode 0..1
+* extension contains AddressMunicipalityKey named municipalityKey 0..1
 * extension[municipalityCode] ^short = "Municipality code (Gemeindekennziffer)"
 * extension[municipalityCode] ^definition = "The municipality code (Gemeindekennziffer) of the Austrian municipality the address belongs to, as assigned by Statistics Austria (Statistik Austria)."
 

@@ -23,10 +23,12 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier.type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (extensible)
 //Slice for Identifier, order matters
 * identifier ^slicing.rules = #open
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type.coding.code"
+* identifier ^slicing.discriminator[+].type = #value
+* identifier ^slicing.discriminator[=].path = "type.coding.code"
+* identifier ^slicing.discriminator[+].type = #value
+* identifier ^slicing.discriminator[=].path = "system"
 * identifier ^slicing.ordered = false
-* identifier contains socialSecurityNumber 0..1 and bPK 0..* and localPatientId 0..1
+* identifier contains socialSecurityNumber 0..1 and bPK 0..1 and vbPK 0..* and localPatientId 0..1
 * identifier[socialSecurityNumber] ^short = "Sozialversicherungsnummer (SVNR)"
 * identifier[socialSecurityNumber] ^definition = "The Austrian social security number (Sozialversicherungsnummer, SVNR) of the patient, assigned by the Federation of Austrian Social Insurances (Dachverband der österreichischen Sozialversicherungsträger)."
 * identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
@@ -47,6 +49,12 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[bPK].system ^short = "OID for the Bereichsspezifisches Personenkennzeichen (bPK) in Austria"
 //* identifier[bPK].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.2.1.1.149" (exactly)
 * identifier[bPK].assigner.display = "Bundesministerium für Inneres" (exactly)
+* identifier[vbPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
+* identifier[vbPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
+* identifier[vbPK].type.coding.code = #ANON (exactly)
+* identifier[vbPK].system 1..1
+* identifier[vbPK].system from HL7ATCoreVBPK (required)
+* identifier[vbPK].system ^short = "OID for the specific vbPK in Austria"
 * identifier[localPatientId] ^short = "Local patient identifier (lokale Patientenkennung)"
 * identifier[localPatientId] ^definition = "A local patient identifier (lokale Patientenkennung) assigned by a healthcare service provider (Gesundheitsdiensteanbieter, GDA), e.g. the patient ID of a hospital information system. It is only unique within the namespace of the assigning GDA."
 * identifier[localPatientId].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
