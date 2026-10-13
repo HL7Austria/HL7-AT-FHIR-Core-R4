@@ -36,8 +36,10 @@ Description:    "HL7® Austria FHIR® Core Profile for address data in Austria. 
 //Extension for municipality code and key -> HL7 Austria's AddressMunicipalityCode and AddressMunicipalityKey Extension
 * extension contains AddressMunicipalityCode named municipalityCode 0..1
 * extension contains AddressMunicipalityKey named municipalityKey 0..1
-* extension[municipalityCode] ^short = "Municipality code (Gemeindekennziffer)"
-* extension[municipalityCode] ^definition = "The municipality code (Gemeindekennziffer) of the Austrian municipality the address belongs to, as assigned by Statistics Austria (Statistik Austria)."
+* extension[municipalityCode] ^short = "Municipality code (Gemeindecode)"
+* extension[municipalityCode] ^definition = "The municipality code (Gemeindecode) of the Austrian municipality the address belongs to, as published by Statistics Austria (Statistik Austria). It is generally identical to the municipality key (Gemeindekennziffer), except in Vienna, where the Gemeindecode varies by district while the Gemeindekennziffer is 90001 for the whole city."
+* extension[municipalityKey] ^short = "Municipality key (Gemeindekennziffer)"
+* extension[municipalityKey] ^definition = "The municipality key (Gemeindekennziffer) of the Austrian municipality the address belongs to, as published by Statistics Austria (Statistik Austria). It is generally identical to the municipality code (Gemeindecode), except in Vienna, where the Gemeindekennziffer is 90001 for the whole city while the Gemeindecode varies by district."
 
 //Definition of invariants for address
 Invariant:    at-addr-1
