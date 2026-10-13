@@ -39,8 +39,8 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier[VPNR].system ^short = "OID for the Vertragspartnernummer (VPNR) in Austria"
 * identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
 * identifier[vbPK] ^short = "Verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK)"
-* identifier[vbPK] ^definition = "The encrypted sector-specific personal identifier (Verschlüsseltes bereichsspezifisches Personenkennzeichen, vbPK) of the practitioner, used in Austrian e-Government processes and assigned by the Federal Ministry of the Interior (Bundesministerium für Inneres)."
+* identifier[vbPK] ^definition = "The encrypted sector-specific personal identifier (Verschlüsseltes bereichsspezifisches Personenkennzeichen, vbPK) of the practitioner, used in Austrian e-Government processes. The OID of the system identifies the sector (e.g. GH for Gesundheit, SV for Sozialversicherung, AS for Amtliche Statistik) according to the E-Government-Bereichsabgrenzungsverordnung (E-Gov-BerAbgrV)."
 * identifier[vbPK].value 1..1
 * identifier[vbPK].system 1..1
 * identifier[vbPK].system from HL7ATCoreVBPK (required)
-* identifier[vbPK].system ^short = "OID for the specific Verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK) in Austria"
+* identifier[vbPK].system ^short = "OID for the specific verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK) in Austria"
