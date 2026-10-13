@@ -20,7 +20,7 @@ Usage:       #example
 * identifier[VKZ].assigner.display = "Bundesministerium für Finanzen"
 
 // Organization type
-* type[+] = http://terminology.hl7.org/CodeSystem/organization-type#govt "Government or Public Sector"
+* type[+] = http://terminology.hl7.org/CodeSystem/organization-type#govt "Government"
 * type[=].text = "Gemeindeverwaltung"
 
 // Name and alias

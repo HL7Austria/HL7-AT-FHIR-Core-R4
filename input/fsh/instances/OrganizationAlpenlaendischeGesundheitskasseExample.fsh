@@ -22,7 +22,7 @@ Usage:       #example
 
 // Organization type
 //TODO: Abgrenzung zu 408 Gesundheitsversicherung
-* type = https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype#406 "Sozialversicherung"
+* type = https://termgit.elga.gv.at/CodeSystem/elga-gtelvogdarollen#406 "Sozialversicherung"
 * type[=].text = "Gesetzlicher Krankenversicherungsträger"
 
 // Name and alias
