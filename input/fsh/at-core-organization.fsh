@@ -45,7 +45,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[KANR] ^short = "Krankenanstaltennummer (KA-Nr)"
 * identifier[KANR] ^definition = "The hospital identification number (Krankenanstaltennummer, KA-Nr) of the organization according to the Austrian hospital register (Krankenanstaltenkataster), assigned by the Federal Ministry of Health (Österreichisches Bundesministerium für Gesundheit). Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')."
 * identifier[KANR].value 1..1
-* identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KANRs are suffixed with '+' (e.g. 'K101+')"
+* identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')"
 * identifier[KANR].system 1..1
 * identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10" (exactly)
 * identifier[KANR].system ^short = "OID for the Krankenanstaltennummer (KA-Nr) in Austria"
