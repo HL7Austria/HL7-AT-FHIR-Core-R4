@@ -24,7 +24,7 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier ^slicing.ordered = false
 * identifier contains GDA-OID 0..1 and VPNR 0..* and vbPK 0..*
 * identifier[GDA-OID] ^short = "Gesundheitsdiensteanbieter-OID (GDA-OID)"
-* identifier[GDA-OID] ^definition = "The OID of the healthcare service provider (Gesundheitsdiensteanbieter, GDA) as registered in the Austrian GDA-Index, maintained by the Federal Ministry of Health (Bundesministerium für Gesundheit)."
+* identifier[GDA-OID] ^definition = "The OID of the healthcare service provider (Gesundheitsdiensteanbieter, GDA) as registered in the Austrian GDA-Index. The OID is assigned by the Federal Ministry of Health (Bundesministerium für Gesundheit)."
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the Gesundheitsdiensteanbieter (GDA) in Austria"
 * identifier[GDA-OID].system 1..1

@@ -46,7 +46,7 @@ The HL7® AT Core Patient is based upon the core FHIR® Patient Resource and des
 * identifier[bPK].type.coding.code = HL7V2#NI (exactly)
 * identifier[bPK].system 1..1
 * identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149" (exactly)
-* identifier[bPK].system ^short = "OID for the Bereichsspezifisches Personenkennzeichen (bPK) in Austria"
+* identifier[bPK].system ^short = "OID for the bereichsspezifisches Personenkennzeichen (bPK) in Austria"
 //* identifier[bPK].assigner.reference = "https://www.gesundheit.gv.at/OID_Frontend/oiddetail.htm?smallView=true&actualOid=1.2.40.0.10.2.1.1.149" (exactly)
 * identifier[bPK].assigner.display = "Bundesministerium für Inneres" (exactly)
 * identifier[vbPK] ^short = "Verschlüsseltes bereichsspezifisches Personenkennzeichen (vbPK)"

@@ -21,7 +21,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier ^slicing.ordered = false
 * identifier contains GDA-OID 0..1 and VPNR 0..* and VKZ 0..1 and KANR 0..1
 * identifier[GDA-OID] ^short = "Gesundheitsdiensteanbieter-OID (GDA-OID)"
-* identifier[GDA-OID] ^definition = "The OID of the healthcare service provider (Gesundheitsdiensteanbieter, GDA) as registered in the Austrian GDA-Index, maintained by the Federal Ministry of Health (Bundesministerium für Gesundheit)."
+* identifier[GDA-OID] ^definition = "The OID of the healthcare service provider (Gesundheitsdiensteanbieter, GDA) as registered in the Austrian GDA-Index. The OID is assigned by the Federal Ministry of Health (Bundesministerium für Gesundheit)."
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the Gesundheitsdiensteanbieter (GDA) in Austria"
 * identifier[GDA-OID].system 1..1
@@ -43,7 +43,7 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[VKZ].system ^short = "OID for the Verwaltungskennzeichen (VKZ) in Austria"
 * identifier[VKZ].assigner.display = "Bundesministerium für Finanzen" (exactly)
 * identifier[KANR] ^short = "Krankenanstaltennummer (KA-Nr)"
-* identifier[KANR] ^definition = "The hospital identification number (Krankenanstaltennummer, KA-Nr) of the organization according to the Austrian hospital register (Krankenanstaltenkataster), assigned by the Federal Ministry of Health (Bundesministerium für Gesundheit). Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')."
+* identifier[KANR] ^definition = "The hospital identification number (Krankenanstaltennummer, KA-Nr) of the organization according to the Austrian hospital register (Krankenanstaltenkataster), assigned by the Federal Ministry of Health (Österreichisches Bundesministerium für Gesundheit). Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')."
 * identifier[KANR].value 1..1
 * identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KANRs are suffixed with '+' (e.g. 'K101+')"
 * identifier[KANR].system 1..1
