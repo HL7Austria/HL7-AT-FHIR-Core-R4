@@ -26,7 +26,7 @@ Usage: #definition
 * fixture.autodelete = false
 * fixture.resource = Reference(HL7ATCorePatientUpdateTestExample)
 * profile.id = "at-core-patient-profile"
-* profile = Reference(http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-patient)
+* profile = Reference(https://fhir.hl7.at/core/r4/StructureDefinition/at-core-patient)
 // FHIR R4 update: the body's Patient.id SHALL equal the [id] in the URL, otherwise the
 // server returns HTTP 400. The default therefore matches Patient.id of the fixture.
 * variable.name = "patientResourceId"
