@@ -26,7 +26,7 @@ Usage: #definition
 * fixture.autodelete = false
 * fixture.resource = Reference(HL7ATCorePatientCreateTestExample)
 * profile.id = "at-core-patient-profile"
-* profile = Reference(http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-patient)
+* profile = Reference(https://fhir.hl7.at/core/r4/StructureDefinition/at-core-patient)
 * variable.name = "patientResourceId"
 * variable.description = "The server-assigned logical id of the Patient created by this test script. It is read from the create response body, which is why the operation asks for 'Prefer: return=representation'."
 * variable.expression = "Patient.id"
