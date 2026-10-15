@@ -1,8 +1,7 @@
 Instance: HL7ATCorePatientUpdateTestExample
 InstanceOf: HL7ATCorePatient
 Usage: #example
-* extension[0].extension.url = "code"
-* extension[=].extension.valueCodeableConcept = ELGAAustriaReligionVS#100 "Katholische Kirche (o.n.A.)"
+* extension[0].valueCodeableConcept = https://termgit.elga.gv.at/CodeSystem/hl7-at-religionaustria#100 "Katholische Kirche (o.n.A.)"
 * extension[=].url = "http://hl7.org/fhir/StructureDefinition/patient-religion"
 * extension[+].extension[0].url = "code"
 * extension[=].extension[=].valueCodeableConcept = ISOCountryCodes#AUT "Österreich"
