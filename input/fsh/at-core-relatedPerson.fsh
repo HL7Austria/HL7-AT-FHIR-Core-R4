@@ -23,7 +23,7 @@ The HL7® AT Core RelatedPerson is based upon the core FHIR® RelatedPeson Resou
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.ordered = false
-* identifier contains socialSecurityNumber 0..1 and bPK 0..*
+* identifier contains socialSecurityNumber 0..1 and bPK 0..1
 * identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[socialSecurityNumber].type.coding.code = HL7V2#SS
 * identifier[socialSecurityNumber].system 1..1
