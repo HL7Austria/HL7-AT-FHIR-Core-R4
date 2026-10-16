@@ -1,12 +1,17 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
+  <li><a href="index.html">Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li><a href="tests.html">Tests</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR® Spec <img src="external.png" style="text-align: baseline"/></a></li>
+      <li><a href="imprint.html">Imprint</a></li>
+      <li><a href="authors.html">Authors and Contributors</a></li>
+      <li><a href="downloads.html">Download</a></li>
+      <li><a href="dependencies.html">Dependencies</a></li>
+      <li><a href="copyright.html">Copyright</a></li>
+      <li><a href="https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/issues">Known Issues</a></li>
     </ul>
   </li>
 </ul>
