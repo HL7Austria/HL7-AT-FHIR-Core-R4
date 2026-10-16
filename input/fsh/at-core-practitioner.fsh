@@ -24,14 +24,14 @@ Description:    "HL7® Austria FHIR® Core Profile for practitioner data in Aust
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the GDA in Austria"
 * identifier[GDA-OID].system 1..1
-* identifier[GDA-OID].system = "urn:ietf:rfc:3986" (exactly)
+* identifier[GDA-OID].system = "urn:ietf:rfc:3986"
 * identifier[GDA-OID].system ^short = "A GDA in Austria is represented via an URI (OID)"
-* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit" (exactly)
+* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit"
 * identifier[VPNR].value 1..1
 * identifier[VPNR].system 1..1
-* identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2" (exactly)
+* identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2"
 * identifier[VPNR].system ^short = "OID for the Vertragspartnernummer (VPNR) in Austria"
-* identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
+* identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[vbPK].value 1..1
 * identifier[vbPK].system 1..1
 * identifier[vbPK].system from HL7ATCoreVBPK (required)
