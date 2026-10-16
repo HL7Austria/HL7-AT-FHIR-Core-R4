@@ -12,28 +12,11 @@ This guide is a working specification. We anticipate that it will be implemented
 - Furthermore the codes for gender were extended to allow the usage of all official administrative genders in Austria.
 - It defines the requirements for Organization, Practitioner or PractitionerRole to carry information specific to Austria (e.g. identifiers).
 - This guide contains no code systems or value sets on its own. Note, that code systems and value sets that are used in the various Profiles or Extensions of this guide will generally be made available via a separate IG on the [Austrian Terminology Server](https://termgit.elga.gv.at/) based on [TerminoloGit](https://gitlab.com/elga-gmbh/termgit).
-  - It does contain an Extension and a Profile for the ValueSet resource, that allows to add the OID of code systems that are referenced within the ValueSet, not just the URL reference.
+  - It does contain an Extension and a Profile for the ValueSet resource, that allows to add the OID of code cystems that are referenced within the ValueSet, not just the URL reference.
   - This profile is already used by the Austrian Terminology Server.
 
-**Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
 ### Relation to Austrian EHR System (ELGA)
 
 Currently, the Austrian EHR system (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
 Furthermore ELGA is using the HL7® Austria FHIR® Core IG as a basis for their FHIR® Implementation Guides.
-
-### Dependencies
-This guide is based on the <a href="{{site.data.fhir.path}}">FHIR® R4</a> specification.  In addition, this guide also relies on a number of parent implementation guides:
-
-{% include dependency-table-short.xhtml %}
-
-### Governance
-
-HL7® Austria is an official Affiliate of HL7® International. Within HL7® Austria the technical committee for FHIR® (TC FHIR®) is responsible to promote and disseminate the new upcoming standard HL7® FHIR®.
-The TC FHIR® deals with the standard-compliant and coordinated usage of HL7® FHIR® based communication solutions.
-It coordinates and describes necessary localizations and offers concrete help for FHIR®-compliant interfaces.
-
-### License and Legal Terms
-HL7®, HEALTH LEVEL SEVEN® and FHIR® are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.
-
-This Implementation Guide contains and references intellectual property owned by third parties (“Third Party IP”). Acceptance of these License Terms does not grant any rights with respect to Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize Third Party IP in connection with the specification or otherwise.
