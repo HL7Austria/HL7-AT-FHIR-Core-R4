@@ -25,16 +25,16 @@ The HL7® AT Core RelatedPerson is based upon the core FHIR® RelatedPeson Resou
 * identifier ^slicing.ordered = false
 * identifier contains socialSecurityNumber 0..1 and bPK 0..*
 * identifier[socialSecurityNumber].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
-* identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* identifier[socialSecurityNumber].type.coding.code = HL7V2#SS (exactly)
+* identifier[socialSecurityNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[socialSecurityNumber].type.coding.code = HL7V2#SS
 * identifier[socialSecurityNumber].system 1..1
-* identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1" (exactly)
+* identifier[socialSecurityNumber].system = "urn:oid:1.2.40.0.10.1.4.3.1"
 * identifier[socialSecurityNumber].system ^short = "OID for the Social Security Number in Austria"
-* identifier[socialSecurityNumber].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
+* identifier[socialSecurityNumber].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[bPK].type from https://termgit.elga.gv.at/ValueSet/hl7-at-patientidentifier (required)
-* identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* identifier[bPK].type.coding.code = HL7V2#NI (exactly)
+* identifier[bPK].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[bPK].type.coding.code = HL7V2#NI
 * identifier[bPK].system 1..1
-* identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149" (exactly)
+* identifier[bPK].system = "urn:oid:1.2.40.0.10.2.1.1.149"
 * identifier[bPK].system ^short = "OID for the bPK in Austria"
-* identifier[bPK].assigner.display = "Bundesministerium für Inneres" (exactly)
+* identifier[bPK].assigner.display = "Bundesministerium für Inneres"
