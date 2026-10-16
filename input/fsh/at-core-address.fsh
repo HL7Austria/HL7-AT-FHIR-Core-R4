@@ -23,19 +23,23 @@ Description:    "HL7® Austria FHIR® Core Profile for address data in Austria. 
 
 //Slice for line extension, order matters, no further definition of the slice necessary since the default value are applied (discriminator=url, slice open, orderd=false)
 * line.extension contains ISOStreetName named street 0..1 and ISOStreetNumber named streetNumber 0..1 and ISOAdditionalLocator named floorDoorNumber 0..1 and AddressAdditionalInformation named additionalInformation 0..1
-* line.extension[street] ^short = "Name of the street"
-* line.extension[street] ^definition = "Name of the street without the street number"
-* line.extension[streetNumber] ^short = "Number of the street"
-* line.extension[streetNumber] ^definition = "Number of the street without the street name"
-* line.extension[floorDoorNumber] ^short = "Floor and/or door number"
-* line.extension[floorDoorNumber] ^definition = "Floor and/or door number"
+* line.extension[street] ^short = "Street name (Straßenname)"
+* line.extension[street] ^definition = "Name of the street (Straßenname) without the street number."
+* line.extension[streetNumber] ^short = "Street number (Hausnummer)"
+* line.extension[streetNumber] ^definition = "Number of the house (Hausnummer) without the street name."
+* line.extension[floorDoorNumber] ^short = "Floor and/or door number (Stiege, Stock, Tür)"
+* line.extension[floorDoorNumber] ^definition = "Additional locator information within a building, such as staircase (Stiege), floor (Stock) and/or door number (Tür)."
 * line.extension[additionalInformation] only AddressAdditionalInformation
-* line.extension[additionalInformation] ^short = "Additional Information"
-* line.extension[additionalInformation] ^definition = "Additional information about the street address"
+* line.extension[additionalInformation] ^short = "Additional address information (Adresszusatz)"
+* line.extension[additionalInformation] ^definition = "Additional information about the street address (Adresszusatz), e.g. street direction, P.O. Box number or delivery hints."
 
 //Extension for municipality code and key -> HL7 Austria's AddressMunicipalityCode and AddressMunicipalityKey Extension
 * extension contains AddressMunicipalityCode named municipalityCode 0..1
-* extension contains AddressMunicipalityKey named municipalityKey 0..1
+* extension contains AddressMunicipalityKey named GKZ 0..1
+* extension[municipalityCode] ^short = "Municipality code (Gemeindecode)"
+* extension[municipalityCode] ^definition = "The municipality code (Gemeindecode) of the Austrian municipality the address belongs to, as published by Statistics Austria (Statistik Austria). It is generally identical to the Gemeindekennziffer (GKZ), except in Vienna, where the Gemeindecode varies by district while the Gemeindekennziffer is 90001 for the whole city."
+* extension[GKZ] ^short = "Gemeindekennziffer (GKZ)"
+* extension[GKZ] ^definition = "The Gemeindekennziffer (GKZ) of the Austrian municipality the address belongs to, as published by Statistics Austria (Statistik Austria). It is generally identical to the municipality code (Gemeindecode), except in Vienna, where the Gemeindekennziffer is 90001 for the whole city while the Gemeindecode varies by district."
 
 //Definition of invariants for address
 Invariant:    at-addr-1
