@@ -13,7 +13,7 @@ Description: "Example of a healthcare service with an Austrian Funktionscode as 
 * active = true
 * name = "Rheumatology Service"
 
-* providedBy = Reference(HL7ATCoreOrganizationExample01)
+* providedBy = Reference(OrganizationAmadeusSpitalInnereMedizin)
 * location = Reference(HL7ATCoreLocationLinz)
 
 * specialty = HealthcareServiceSpecialtyCS#"11114" "Rheumatologie"
