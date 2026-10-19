@@ -36,6 +36,18 @@ Usage:       #example
 * gender = #male
 
 // Qualifications
+* qualification[+].code.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0360"
+* qualification[=].code.coding[=].code = #MD
+* qualification[=].code.coding[=].display = "Doctor of Medicine"
+* qualification[=].code.text = "Doctor of Medicine (MD)"
+* qualification[=].period.start = "1999-07-09"
+* qualification[=].issuer.display = "Medizinische Universität Sonnenfeld"
+
+// Specialist medical qualification
+* qualification[+].code.text = "Fachärztin/Facharzt für Innere Medizin und Rheumatologie"
+* qualification[=].period.start = "2011-11-15"
+* qualification[=].issuer.display = "Österreichische Ärztekammer"
+
 // Austrian Medical Chamber continuing medical education diploma
 * qualification[+].code.text = "ÖÄK-Fortbildungsdiplom (DFP-Diplom)"
 * qualification[=].period.start = "2024-01-01"
