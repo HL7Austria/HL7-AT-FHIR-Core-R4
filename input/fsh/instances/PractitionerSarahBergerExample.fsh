@@ -24,7 +24,7 @@ Usage:       #example
 * identifier[=].assigner.display = "Österreichisches Hebammengremium"
 
 // Encrypted sector-specific personal identifier (vbPK-GH)
-* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22"
+* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.1"
 * identifier[vbPK].value = "VBPK-GH-EXAMPLE-Sarah-Berger-001"
 * identifier[vbPK].assigner.display = "Bundesministerium für Inneres"
 
