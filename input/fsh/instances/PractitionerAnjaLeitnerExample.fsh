@@ -30,7 +30,20 @@ Usage:       #example
 
 * gender = #female
 
-// Professional qualification
+// Professional qualifications
+
+ // Academic qualification
+* qualification[+].code.coding = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
+* qualification[=].code.text = "Doctor of Medicine (MD)"
+* qualification[=].period.start = "2005-06-30"
+* qualification[=].issuer.display = "Medizinische Universität Sonnenfeld"
+
+// Specialist medical qualification
+* qualification[+].code.text = "Fachärztin/Facharzt für Frauenheilkunde und Geburtshilfe"
+* qualification[=].period.start = "2012-11-15"
+* qualification[=].issuer.display = "Österreichische Ärztekammer"
+
+// Further qualification
 * qualification[+].code.text = "Fortbildungszertifikat Gynäkologische Ultraschalldiagnostik"
-* qualification[=].period.start = "2024-09-20"
+* qualification[=].period.start = "2020-09-20"
 * qualification[=].issuer.display = "Fiktive Akademie für Medizinische Ultraschalldiagnostik"
