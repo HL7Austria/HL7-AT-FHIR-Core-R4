@@ -25,29 +25,29 @@ Description:    "HL7® Austria FHIR® Core Profile for organization data in Aust
 * identifier[GDA-OID].value 1..1
 * identifier[GDA-OID].value ^short = "OID for the Gesundheitsdiensteanbieter (GDA) in Austria"
 * identifier[GDA-OID].system 1..1
-* identifier[GDA-OID].system = "urn:ietf:rfc:3986" (exactly)
+* identifier[GDA-OID].system = "urn:ietf:rfc:3986"
 * identifier[GDA-OID].system ^short = "A Gesundheitsdiensteanbieter (GDA) in Austria is represented via a URI (OID)"
-* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit" (exactly)
+* identifier[GDA-OID].assigner.display = "Bundesministerium für Gesundheit"
 * identifier[VPNR] ^short = "Vertragspartnernummer (VPNR)"
 * identifier[VPNR] ^definition = "The contract partner number (Vertragspartnernummer, VPNR) of the organization, assigned by the Federation of Austrian Social Insurances (Dachverband der österreichischen Sozialversicherungsträger)."
 * identifier[VPNR].value 1..1
 * identifier[VPNR].system 1..1
-* identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2" (exactly)
+* identifier[VPNR].system = "urn:oid:1.2.40.0.10.1.4.3.2"
 * identifier[VPNR].system ^short = "OID for the Vertragspartnernummer (VPNR) in Austria"
-* identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger" (exactly)
+* identifier[VPNR].assigner.display = "Dachverband der österreichischen Sozialversicherungsträger"
 * identifier[VKZ] ^short = "Verwaltungskennzeichen (VKZ)"
 * identifier[VKZ] ^definition = "The administrative identifier (Verwaltungskennzeichen, VKZ) of the organization, used in Austrian e-Government processes and assigned by the Federal Ministry of Finance (Bundesministerium für Finanzen)."
 * identifier[VKZ].value 1..1
 * identifier[VKZ].system 1..1
-* identifier[VKZ].system = "urn:oid:1.2.40.0.10.2.1.1.71" (exactly)
+* identifier[VKZ].system = "urn:oid:1.2.40.0.10.2.1.1.71"
 * identifier[VKZ].system ^short = "OID for the Verwaltungskennzeichen (VKZ) in Austria"
-* identifier[VKZ].assigner.display = "Bundesministerium für Finanzen" (exactly)
+* identifier[VKZ].assigner.display = "Bundesministerium für Finanzen"
 * identifier[KANR] ^short = "Krankenanstaltennummer (KA-Nr)"
 * identifier[KANR] ^definition = "The hospital identification number (Krankenanstaltennummer, KA-Nr) of the organization according to the Austrian hospital register (Krankenanstaltenkataster), assigned by the Federal Ministry of Health (Österreichisches Bundesministerium für Gesundheit). Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')."
 * identifier[KANR].value 1..1
 * identifier[KANR].value ^short = "Krankenanstaltennummer according to Krankenanstaltenkataster. Virtual KA-Nrs are suffixed with '+' (e.g. 'K101+')"
 * identifier[KANR].system 1..1
-* identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10" (exactly)
+* identifier[KANR].system = "urn:oid:1.2.40.0.34.4.10"
 * identifier[KANR].system ^short = "OID for the Krankenanstaltennummer (KA-Nr) in Austria"
-* identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit" (exactly)
+* identifier[KANR].assigner.display = "Österreichisches Bundesministerium für Gesundheit"
 * type from https://termgit.elga.gv.at/ValueSet/hl7-at-organizationtype (extensible)
