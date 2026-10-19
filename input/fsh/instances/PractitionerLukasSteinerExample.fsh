@@ -22,7 +22,7 @@ Usage:       #example
 //TODO: with the new triple, do we even offer VPNR as part of the Practitioner? shouldn't it always be on Organization?
 
 // Encrypted sector-specific personal identifier (vbPK-GH)
-* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22"
+* identifier[vbPK].system = "urn:oid:1.2.40.0.34.4.22.1"
 * identifier[vbPK].value = "VBPK-GH-EXAMPLE-LUKAS-STEINER-001"
 * identifier[vbPK].assigner.display = "Bundesministerium für Inneres"
 
