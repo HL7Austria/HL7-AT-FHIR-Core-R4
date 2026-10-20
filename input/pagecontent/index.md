@@ -18,5 +18,5 @@ This guide is a working specification. We anticipate that it will be implemented
 
 ### Relation to Austrian EHR System (ELGA)
 
-Currently, the Austrian EHR system (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html#mappings-for-allgemeiner-implementierungsleitfaden-v3-https-wiki)).
+Currently, the Austrian EHR system (ELGA) is mainly based on HL7® CDA®. In order to enable the creation of FHIR® resources that have a similar data structure this Implementation Guide provides mappings to the CDA® based implementation guides (e.g. [Mappings for Allgemeiner Implementierungsleitfaden v3](StructureDefinition-at-core-patient-mappings.html)).
 Furthermore ELGA is using the HL7® Austria FHIR® Core IG as a basis for their FHIR® Implementation Guides.
