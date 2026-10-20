@@ -40,7 +40,18 @@ releaseLabel: STU3
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# menu:
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Tests: tests.html
+  Artifacts: artifacts.html
+  About:
+    Imprint: imprint.html
+    Authors and Contributors: authors.html
+    Download: downloads.html
+    Dependencies: dependencies.html
+    Copyright: copyright.html
+    Known Issues: new-tab external https://github.com/HL7Austria/HL7-AT-FHIR-Core-R4/issues
 #   IG Home: index.html
 #   Table of Contents: toc.html
 #   Artifacts Summary: artifacts.html
