@@ -3,4 +3,4 @@
 - description: FHIR&reg; R4 Implementation Guide for the national FHIR&reg; core profiles provided by HL7&reg; Austria.
 - last_published: %%date%%
 - branch: %%branch%%
-- type: draft
+- type: official
